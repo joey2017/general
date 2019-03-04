@@ -1,0 +1,27 @@
+---------------------------------------------------------------
+[2019-02-28T15:42:13+08:00] 127.0.0.1 POST dev.admin.com/admin/login.html?spm=
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:528]
+---------------------------------------------------------------
+[2019-02-28T15:42:16+08:00] 127.0.0.1 POST dev.admin.com/admin/login.html?spm=
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:528]
+---------------------------------------------------------------
+[2019-02-28T15:42:20+08:00] 127.0.0.1 POST dev.admin.com/admin/login.html?spm=
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:528]
+---------------------------------------------------------------
+[2019-02-28T17:44:14+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_v3.system_domain' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-02-28T17:44:51+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_v3.system_domain' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-02-28T17:44:55+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_v3.system_domain' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-02-28T17:44:58+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_v3.system_domain' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-02-28T17:45:05+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_v3.system_domain' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-02-28T17:45:17+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_v3.system_domain' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
