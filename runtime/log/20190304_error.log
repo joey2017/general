@@ -7,3 +7,72 @@
 ---------------------------------------------------------------
 [2019-03-04T10:01:26+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getApps?spm=m-1-55-56
 [ error ] [0]模板文件不存在:D:\phpStudy\WWW\general\application\admin\view\domain\get_apps.html[D:\phpStudy\WWW\general\thinkphp\library\think\view\driver\Think.php:86]
+---------------------------------------------------------------
+[2019-03-04T17:20:06+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]致命错误: Class 'app\admin\controller\Db' not found[D:\phpStudy\WWW\general\application\admin\controller\Share.php:106]
+---------------------------------------------------------------
+[2019-03-04T17:20:12+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]致命错误: Class 'app\admin\controller\Db' not found[D:\phpStudy\WWW\general\application\admin\controller\Share.php:106]
+---------------------------------------------------------------
+[2019-03-04T17:28:34+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?spm=m-1-49-50
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:53]
+---------------------------------------------------------------
+[2019-03-04T17:28:38+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?spm=m-1-49-50
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:53]
+---------------------------------------------------------------
+[2019-03-04T17:34:49+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ':', expecting ']'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:34:58+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ':', expecting ']'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:35:00+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ':', expecting ']'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:38:26+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:38:31+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:39:43+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:39:53+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:39:58+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:40:02+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:40:19+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:40:22+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:40:28+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:40:32+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-03-04T17:44:19+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index/1.html?spm=m-1-49-50
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:53]
+---------------------------------------------------------------
+[2019-03-04T17:44:26+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index/1.html?spm=m-1-49-50
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:53]
+---------------------------------------------------------------
+[2019-03-04T17:47:48+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?spm=m-1-49-50
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:53]
+---------------------------------------------------------------
+[2019-03-04T17:50:21+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index/1.html?spm=m-1-49-50
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:53]
+---------------------------------------------------------------
+[2019-03-04T17:50:27+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index/1.html?spm=m-1-49-50
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:53]
+---------------------------------------------------------------
+[2019-03-04T17:54:37+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index/1.html?spm=m-1-49-50
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:53]

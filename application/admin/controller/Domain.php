@@ -75,10 +75,6 @@ class Domain extends BasicAdmin
     {
         $this->title = '添加域名';
         return $this->_form($this->table, 'form');
-        $vo = $this->_form($this->table, 'form');
-        //公众号列表
-        $domainList = Db::name('SystemApp')->where(['is_deleted' => '0', 'status' => 1])->order('sort asc,id desc');
-        return [$vo, $domainList];
     }
 
     /**
@@ -93,9 +89,6 @@ class Domain extends BasicAdmin
     {
         $this->title = '编辑域名';
         return $this->_form($this->table, 'form');
-        //公众号列表
-        $domainList = Db::name('SystemApp')->where(['is_deleted' => '0', 'status' => 1])->order('sort asc,id desc');
-        return [$vo, $domainList];
     }
 
     /**
@@ -150,7 +143,7 @@ class Domain extends BasicAdmin
     }
 
     /**
-     * 域名
+     * 公众号
      * @throws \think\Exception
      * @throws \think\exception\PDOException
      */
