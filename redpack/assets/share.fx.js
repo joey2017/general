@@ -107,7 +107,7 @@ function share_config(data){
 function share_tip(share_app_times, share_timeline_times) {
     if (share_app_times < 3) {
         if (share_app_times == 2){
-            weui.alert('分享<span style="font-size: 30px;color: #f5294c">分享成功</span>,请继续分享到不同的群！', '好')
+            weui.alert('<span style="font-size: 30px;color: #f5294c">分享成功</span>,请继续分享到不同的群！', '好')
 			configReload(1);
         }else{
             weui.alert('分享成功,请继续分享到<span style="font-size: 30px;color: #f5294c">' + (2 - share_app_times) + '</span>个不同的群即可领取！', '好');

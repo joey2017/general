@@ -15,6 +15,7 @@
 namespace app\admin\controller;
 
 use controller\BasicAdmin;
+use service\DataService;
 use think\Db;
 
 /**
@@ -50,7 +51,7 @@ class Share extends BasicAdmin
     {
         $this->title = '分享设置列表';
         $get         = $this->request->get();
-        $db          = Db::name($this->table)->where(['is_deleted' => '0','type' => $get['type'],'status' => '1']);
+        $db          = Db::name($this->table)->where(['is_deleted' => '0','type' => $get['type']]);
         if (isset($get['name']) && $get['name'] !== '') {
             $db->whereLike('name', "%{$get['name']}%");
         }

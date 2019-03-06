@@ -1,74 +1,120 @@
-{extend name="admin@public/content"}
+{extend name='admin@public/content'}
+
+{block name="button"}
+
+<!--{if auth("$classuri/add")}-->
+<button data-open='{:url("$classuri/add")}' data-title="添加视频" class='layui-btn layui-btn-sm layui-btn-primary'>添加视频</button>
+<!--{/if}-->
+
+<!--{if auth("$classuri/del")}-->
+<button data-update="" data-field='delete' data-action='{:url("$classuri/del")}' class='layui-btn layui-btn-sm layui-btn-primary'>删除视频</button>
+<!--{/if}-->
+
+{/block}
 
 {block name="content"}
-<form autocomplete="off" onsubmit="return false;" action="{:request()->url()}" data-auto="true" method="post" class='form-horizontal layui-form padding-top-20'>
 
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            VideoLink<br><span class="nowrap color-desc">视频VID</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="video_link" required="required" title="请输入视频VID" placeholder="请输入视频VID" value="{:sysconf('video_link')}" class="layui-input">
-            <p class="help-block">当前视频VID，用于观看及分享</p>
+<!-- 表单搜索 开始 -->
+<form autocomplete="off" class="layui-form layui-form-pane form-search" action="{:request()->url()}" onsubmit="return false" method="get">
+
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">视频标题</label>
+        <div class="layui-input-inline">
+            <input name="title" value="{$Think.get.title}" placeholder="请输入视频标题" class="layui-input">
         </div>
     </div>
 
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            Title<br><span class="nowrap color-desc">视频标题</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="video_title" required="required" title="请输入视频标题" placeholder="请输入视频标题" value="{:sysconf('video_title')}" class="layui-input">
-            <p class="help-block">当前视频标题，用于自定义分享</p>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">添加时间</label>
+        <div class="layui-input-inline">
+            <input name="create_at" id="create_at" value="{$Think.get.create_at}" placeholder="请选择添加时间" class="layui-input">
         </div>
     </div>
 
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            PopUp<br><span class="nowrap color-desc">播放几秒后弹出</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="video_play_seconds" required="required" title="请输入播放秒数" placeholder="请输入播放秒数" value="{:sysconf('video_play_seconds')}" class="layui-input">
-            <p class="help-block">当前播放秒数，用于播放几秒后弹出</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            ReadMin<br><span class="nowrap color-desc">视频最小阅读量</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="read_min" required="required" title="请输入最小阅读量" placeholder="请输入最小阅读量" value="{:sysconf('read_min')}" class="layui-input">
-            <p class="help-block">当前最小阅读量，用于视频阅读量设置</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            ReadMax<br><span class="nowrap color-desc">视频最大阅读量</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="read_max" required="required" title="请输入最大阅读量" placeholder="请输入最大阅读量" value="{:sysconf('read_max')}" class="layui-input">
-            <p class="help-block">当前最大阅读量，用于视频阅读量设置</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            ReadMax<br><span class="nowrap color-desc">视频点赞数</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="stars" required="required" title="请输入点赞数" placeholder="请输入点赞数" value="{:sysconf('stars')}" class="layui-input">
-            <p class="help-block">当前视频点赞数，用于视频点赞数设置</p>
-        </div>
-    </div>
-
-    <div class="col-sm-4 col-sm-offset-2">
-        <div class="layui-form-item text-center">
-            <button class="layui-btn" type="submit">保存配置</button>
-        </div>
+    <div class="layui-form-item layui-inline">
+        <button class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe615;</i> 搜 索</button>
     </div>
 
 </form>
 
+<script>
+    window.laydate.render({range: true, elem: '#create_at'});
+    window.form.render();
+</script>
+<!-- 表单搜索 结束 -->
+
+<form onsubmit="return false;" data-auto="true" method="post">
+    {if empty($list)}
+    <p class="help-block text-center well">没 有 记 录 哦！</p>
+    {else}
+    <input type="hidden" value="resort" name="action"/>
+    <table class="layui-table" lay-skin="line">
+        <thead>
+        <tr>
+            <th class='list-table-check-td think-checkbox'>
+                <input data-auto-none="none" data-check-target='.list-check-box' type='checkbox'/>
+            </th>
+            <th class='list-table-sort-td'>
+                <button type="submit" class="layui-btn layui-btn-normal layui-btn-xs">排 序</button>
+            </th>
+            <th class='text-left nowrap'>视频标题</th>
+            <th class='text-left nowrap'>视频vid</th>
+            <th class='text-left nowrap'>暂停播放秒数</th>
+            <th class='text-left nowrap'>最小阅读量</th>
+            <th class='text-left nowrap'>最大阅读量</th>
+            <th class='text-left nowrap'>封面图片链接</th>
+            <th class='text-left nowrap'>点赞数</th>
+            <th class='text-left nowrap'>添加时间</th>
+            <th class='text-left nowrap'>视频状态</th>
+            <th class='text-left'>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {foreach $list as $key=>$vo}
+        <tr>
+            <td class='list-table-check-td think-checkbox'>
+                <input class="list-check-box" value='{$vo.id}' type='checkbox'/>
+            </td>
+            <td class='list-table-sort-td'>
+                <input name="_{$vo.id}" value="{$vo.sort}" class="list-sort-input"/>
+            </td>
+            <td class='text-left nowrap'>{$vo.title}</td>
+            <td class='text-left nowrap'>{$vo.vid}</td>
+            <td class='text-left nowrap'>{$vo.pause}</td>
+            <td class='text-left nowrap'>{$vo.read_min}</td>
+            <td class='text-left nowrap'>{$vo.read_max}</td>
+            <td class='text-left nowrap'>{$vo.image}</td>
+            <td class='text-left nowrap'>{$vo.stars}</td>
+            <td class='text-left nowrap'>{$vo.create_at|format_datetime}</td>
+            <td class='text-left nowrap'>
+                {if $vo.status eq 0}<span class="color-red">已禁用</span>{elseif $vo.status eq 1}<span class="color-green">使用中</span>{/if}
+            </td>
+            <td class='text-left nowrap'>
+
+                {if auth("$classuri/edit")}
+                <span class="text-explode">|</span>
+                <a data-title="编辑视频" data-open='{:url("$classuri/edit")}?id={$vo.id}'>编辑</a>
+                {/if}
+
+                {if $vo.status eq 1 and auth("$classuri/forbid")}
+                <span class="text-explode">|</span>
+                <a data-update="{$vo.id}" data-field='status' data-value='0' data-action='{:url("$classuri/forbid")}'>禁用</a>
+                {elseif auth("$classuri/resume")}
+                <span class="text-explode">|</span>
+                <a data-update="{$vo.id}" data-field='status' data-value='1' data-action='{:url("$classuri/resume")}'>启用</a>
+                {/if}
+
+                {if auth("$classuri/del")}
+                <span class="text-explode">|</span>
+                <a data-update="{$vo.id}" data-field='delete' data-action='{:url("$classuri/del")}'>删除</a>
+                {/if}
+
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    {if isset($page)}<p>{$page|raw}</p>{/if}
+    {/if}
+</form>
 {/block}
