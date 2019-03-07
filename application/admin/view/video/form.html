@@ -1,0 +1,84 @@
+{extend name='admin@public/content'}
+
+{block name="content"}
+<form autocomplete="off" onsubmit="return false;" action="{:request()->url()}" data-auto="true" method="post" class='form-horizontal layui-form padding-top-20'>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">视频标题</label>
+        <div class='col-sm-8'>
+            <input autofocus name="title" value='{$vo.title|default=""}' required="required" title="请输入视频标题" placeholder="请输入视频标题" class="layui-input">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">视频vid</label>
+        <div class='col-sm-8'>
+            <input autofocus name="vid" value='{$vo.vid|default=""}' required="required" title="请输入视频vid" placeholder="请输入视频vid" class="layui-input">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">视频播放暂停秒数</label>
+        <div class='col-sm-8'>
+            <input autofocus name="pause" value='{$vo.pause|default=""}' required="required" title="请输入播放暂停秒数" placeholder="请输入播放暂停秒数" class="layui-input">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">视频播放最小阅读量</label>
+        <div class='col-sm-8'>
+            <input autofocus name="read_min" value='{$vo.read_min|default=""}' required="required" title="请输入最小阅读量" placeholder="请输入最小阅读量" class="layui-input">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">视频播放最大阅读量</label>
+        <div class='col-sm-8'>
+            <input autofocus name="read_max" value='{$vo.read_max|default=""}' required="required" title="请输入最大阅读量" placeholder="请输入最大阅读量" class="layui-input">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">视频封面图片链接</label>
+        <div class='col-sm-8'>
+            <input autofocus name="image" value='{$vo.image|default=""}' required="required" title="请输入视频封面图片链接" placeholder="请输入视频封面图片链接" class="layui-input">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">视频点赞数</label>
+        <div class='col-sm-8'>
+            <input autofocus name="stars" value='{$vo.stars|default=""}' required="required" title="请输入点赞数" placeholder="请输入点赞数" class="layui-input">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">排序</label>
+        <div class='col-sm-8'>
+            <input autofocus name="sort" value='{$vo.sort|default=""}' required="required" title="请输入排序" placeholder="请输入排序" class="layui-input">
+        </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+
+    <div class="col-sm-7 col-sm-offset-2">
+        <div class="layui-form-item text-center">
+            {if !empty($vo.id)}<input type="hidden" name="id" value="{$vo.id}">{/if}
+            <button class="layui-btn" type="submit">保存配置</button>
+            <button class="layui-btn layui-btn-danger" type='button' onclick="window.history.back()">取消编辑</button>
+        </div>
+    </div>
+
+    <script>window.form.render();</script>
+
+    <style>
+        .background-item {
+            padding: 15px;
+            background: #efefef;
+        }
+
+        .background-item thead tr {
+            background: #e0e0e0
+        }
+    </style>
+</form>
+{/block}
