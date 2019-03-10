@@ -1,4 +1,4 @@
-<?php /*a:2:{s:66:"D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html";i:1551238725;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
+<?php /*a:2:{s:66:"D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html";i:1552206121;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1551941934;}*/ ?>
 <!-- 右则内容区域 开始 -->
 
 <div class="layui-card">
@@ -66,8 +66,9 @@
             <th class='text-left nowrap'>公众号名称</th>
             <th class='text-left nowrap'>公众号appid</th>
             <th class='text-left nowrap'>公众号appsecret</th>
-            <th class='text-left nowrap'>公众号access_token</th>
-            <th class='text-left nowrap'>公众号jsapi_ticket</th>
+            <th class='text-left nowrap'>群入口域名</th>
+            <th class='text-left nowrap'>圈入口域名</th>
+            <th class='text-left nowrap'>落地域名</th>
             <th class='text-left nowrap'>添加时间</th>
             <th class='text-left nowrap'>公众号状态</th>
             <th class='text-left'>操作</th>
@@ -85,8 +86,9 @@
             <td class='text-left nowrap'><?php echo htmlentities($vo['name']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['appid']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['appsecret']); ?></td>
-            <td class='text-left nowrap'><?php echo htmlentities($vo['access_token']); ?></td>
-            <td class='text-left nowrap'><?php echo htmlentities($vo['jsapi_ticket']); ?></td>
+            <td class='text-left nowrap'><?php echo htmlentities($vo['bind_domain_qun']); ?></td>
+            <td class='text-left nowrap'><?php echo htmlentities($vo['bind_domain_quan']); ?></td>
+            <td class='text-left nowrap'><?php echo htmlentities($vo['bind_domain_ld']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities(format_datetime($vo['create_at'])); ?></td>
             <td class='text-left nowrap'>
                 <?php if($vo['status'] == 0): ?><span class="color-red">已禁用</span><?php elseif($vo['status'] == 1): ?><span class="color-green">使用中</span><?php endif; ?>

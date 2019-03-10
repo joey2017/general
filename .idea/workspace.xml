@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31bbbf98-8f4a-4eda-9143-dd07842e9233" name="Default" comment="" />
+    <list default="true" id="31bbbf98-8f4a-4eda-9143-dd07842e9233" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/wechat/applist.html" afterPath="$PROJECT_DIR$/application/admin/view/wechat/applist.html" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/wechat/form.html" afterPath="$PROJECT_DIR$/application/admin/view/wechat/form.html" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/wechat/index.html" afterPath="$PROJECT_DIR$/application/admin/view/wechat/index.html" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/3427fda5d7dccfd4e1b98d171a3a766b.php" afterPath="$PROJECT_DIR$/runtime/temp/3427fda5d7dccfd4e1b98d171a3a766b.php" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/50d6bff22f50b5f275aa2d05b0210837.php" afterPath="$PROJECT_DIR$/runtime/temp/50d6bff22f50b5f275aa2d05b0210837.php" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/ed1fb3d8e09a51a6bd0fa397e35c7534.php" afterPath="$PROJECT_DIR$/runtime/temp/ed1fb3d8e09a51a6bd0fa397e35c7534.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,27 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="continue_c.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../share/assets/continue_c.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="86" column="92" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="92" />
-              <folding>
-                <marker date="1551685744103" expanded="true" signature="455:485" ph="..." />
-                <marker date="1551685744103" expanded="true" signature="2649:2679" ph="..." />
-                <marker date="1551685744103" expanded="true" signature="2768:2798" ph="..." />
-                <marker date="1551685744103" expanded="true" signature="3066:3096" ph="..." />
-                <marker date="1551685744103" expanded="true" signature="3220:3250" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Share.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Share.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Share.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="103" column="7" lean-forward="true" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding>
                 <element signature="e#692#718#0#PHP" expanded="true" />
               </folding>
@@ -39,75 +31,156 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Request.php">
+      <file leaf-file-name="Wechat.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/controller/Wechat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="996" column="20" lean-forward="false" selection-start-line="996" selection-start-column="20" selection-end-line="996" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="helper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thinkphp/helper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="646" column="22" lean-forward="true" selection-start-line="646" selection-start-column="22" selection-end-line="646" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extend/controller/BasicAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-499">
-              <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/share/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="94" column="51" lean-forward="true" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="-295">
+              <caret line="67" column="56" lean-forward="true" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
+              <folding>
+                <element signature="e#7#81#0#PHP" expanded="true" />
+                <element signature="e#692#718#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/share/form.html">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/wechat/form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="22" column="131" lean-forward="false" selection-start-line="22" selection-start-column="131" selection-end-line="22" selection-end-column="131" />
+            <state relative-caret-position="333">
+              <caret line="43" column="77" lean-forward="false" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Config.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/wechat/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="399">
+              <caret line="47" column="2" lean-forward="true" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_c.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../share/assets/page_c.js">
+      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../share/init.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+            <state relative-caret-position="-701">
+              <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding>
-                <element signature="e#3353#3828#0" expanded="false" />
-                <marker date="1551431303766" expanded="true" signature="557:573" ph="..." />
+                <marker date="1552209478799" expanded="true" signature="488:515" ph="SELECT * FRO... system_config" />
+                <marker date="1552209478799" expanded="true" signature="742:837" ph="select * fro... system_app" />
+                <marker date="1552209478799" expanded="true" signature="905:1001" ph="select * fro... system_video" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="realphphtmlpage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../share/realphphtmlpage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-63">
+              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+              <folding>
+                <marker date="1552207956477" expanded="true" signature="2081:7354" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="2088:3243" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="3303:3325" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="3326:6425" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="3362:3448" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="3505:3553" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="3554:6272" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="3584:3650" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="3651:6215" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="3700:5684" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="3807:5669" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="3847:5650" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="3930:3946" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="3947:5627" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="4114:4130" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="4131:4438" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="4346:4360" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="4519:4532" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="4533:4564" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="4600:4617" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="4618:4731" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="4808:4825" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="4826:5600" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="4903:4917" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="5220:5406" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="5737:6196" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="5794:5858" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="5914:5929" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="5930:6181" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="5950:6162" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="6028:6141" ph="..." />
+                <marker date="1552207956477" expanded="false" signature="6093:6115" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="6233:6245" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="6301:6410" ph="..." />
+                <marker date="1552207956477" expanded="true" signature="6434:7228" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="realjumppage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../share/realjumppage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="realphpsharepage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../share/realphpsharepage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1029">
+              <caret line="49" column="52" lean-forward="true" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+              <folding>
+                <marker date="1552207908133" expanded="true" signature="413:3204" ph="..." />
+                <marker date="1552207908133" expanded="true" signature="420:1333" ph="..." />
+                <marker date="1552207908133" expanded="false" signature="1393:1415" ph="..." />
+                <marker date="1552207908133" expanded="true" signature="1416:2487" ph="..." />
+                <marker date="1552207908133" expanded="false" signature="1452:1538" ph="..." />
+                <marker date="1552207908133" expanded="false" signature="1595:1643" ph="..." />
+                <marker date="1552207908133" expanded="true" signature="1644:2084" ph="..." />
+                <marker date="1552207908133" expanded="false" signature="1674:1740" ph="..." />
+                <marker date="1552207908133" expanded="true" signature="1741:2027" ph="..." />
+                <marker date="1552207908133" expanded="false" signature="1846:1942" ph="..." />
+                <marker date="1552207908133" expanded="true" signature="1943:2016" ph="..." />
+                <marker date="1552207908133" expanded="false" signature="1968:1978" ph="..." />
+                <marker date="1552207908133" expanded="false" signature="2045:2057" ph="..." />
+                <marker date="1552207908133" expanded="false" signature="2116:2129" ph="..." />
+                <marker date="1552207908133" expanded="true" signature="2130:2479" ph="..." />
+                <marker date="1552207908133" expanded="false" signature="2213:2242" ph="..." />
+                <marker date="1552207908133" expanded="true" signature="2243:2472" ph="..." />
+                <marker date="1552207908133" expanded="true" signature="2336:2461" ph="..." />
+                <marker date="1552207908133" expanded="false" signature="2363:2411" ph="..." />
+                <marker date="1552207908133" expanded="true" signature="2496:3074" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a233e0bc115427b8dd5ba7dc2374e3d0.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../share/a233e0bc115427b8dd5ba7dc2374e3d0.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applist.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/wechat/applist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="82" column="61" lean-forward="false" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,15 +189,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onMenuShareQZone</find>
-      <find>updateAppMessageShareData</find>
-      <find>$vid</find>
-      <find>continue</find>
-      <find>pauseplay</find>
-      <find>flyUrl</find>
-      <find>backUrl</find>
-      <find>jump</find>
-      <find>playVideo</find>
       <find>video</find>
       <find>realphpsharepage</find>
       <find>好</find>
@@ -146,6 +210,15 @@
       <find>{:url</find>
       <find>url(</find>
       <find>公众号</find>
+      <find>$appsArray</find>
+      <find>$domainList</find>
+      <find>$videoList</find>
+      <find>$systemSetting</find>
+      <find>$share_link</find>
+      <find>$safe_link</find>
+      <find>realjump</find>
+      <find>$name_link</find>
+      <find>$shares_link</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -157,16 +230,18 @@
       <replace>分享设置</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>D:\phpStudy\WWW\share</dir>
       <dir>D:\phpStudy\WWW\general</dir>
+      <dir>D:\phpStudy\WWW\share</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/admin/controller/Advertisement.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Qrcode.php" />
-        <option value="$PROJECT_DIR$/../share/realjumppage.php" />
         <option value="$PROJECT_DIR$/extend/service/LogService.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Config.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Auth.php" />
@@ -191,9 +266,7 @@
         <option value="$PROJECT_DIR$/../share/jssdkphpversion/getversion.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Wechat.php" />
         <option value="$PROJECT_DIR$/../wechat/error.html" />
-        <option value="$PROJECT_DIR$/../share/realphpsharepage.php" />
         <option value="$PROJECT_DIR$/../share/domainCheck.php" />
-        <option value="$PROJECT_DIR$/../share/realphphtmlpage.php" />
         <option value="$PROJECT_DIR$/../share/tousu/index.htm" />
         <option value="$PROJECT_DIR$/../share/index.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
@@ -204,6 +277,14 @@
         <option value="$PROJECT_DIR$/application/admin/view/share/form.html" />
         <option value="$PROJECT_DIR$/application/admin/view/share/index.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Share.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/wechat/form.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/wechat/applist.html" />
+        <option value="$PROJECT_DIR$/../share/realphpsharepage.php" />
+        <option value="$PROJECT_DIR$/../share/realphphtmlpage.php" />
+        <option value="$PROJECT_DIR$/../share/realjumppage.php" />
+        <option value="$PROJECT_DIR$/../share/a233e0bc115427b8dd5ba7dc2374e3d0.php" />
+        <option value="$PROJECT_DIR$/../share/init.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/wechat/index.html" />
       </list>
     </option>
   </component>
@@ -214,11 +295,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="142" />
-    <option name="y" value="245" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="350" />
+    <option name="y" value="22" />
     <option name="width" value="1725" />
-    <option name="height" value="817" />
+    <option name="height" value="958" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -235,7 +316,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -243,24 +323,6 @@
             <path>
               <item name="general" type="b2602c69:ProjectViewProjectNode" />
               <item name="general" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="general" type="b2602c69:ProjectViewProjectNode" />
-              <item name="general" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="general" type="b2602c69:ProjectViewProjectNode" />
-              <item name="general" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="general" type="b2602c69:ProjectViewProjectNode" />
-              <item name="general" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="general" type="b2602c69:ProjectViewProjectNode" />
@@ -281,20 +343,17 @@
               <item name="share" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tousu" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="general" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wechat" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../share" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -333,23 +392,24 @@
       <workItem from="1551228669860" duration="26300000" />
       <workItem from="1551314541733" duration="25981000" />
       <workItem from="1551687635551" duration="4439000" />
+      <workItem from="1552203344163" duration="6285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56720000" />
+    <option name="totallyTimeSpent" value="63005000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="350" y="22" width="1725" height="958" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0836887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13933934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -377,99 +437,19 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="3327" column="4" lean-forward="false" selection-start-line="3327" selection-start-column="4" selection-end-line="3327" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/share/realphphtmlpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1890">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wechat/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../share/assets/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Qrcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Wechat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../share/jssdkphpversion/getversion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="120" column="5" lean-forward="false" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../wechat/gg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2219">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wechat/duapp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wechat/more.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wechat/aliyun.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wechat/crypt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/continue_c.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../wechat/gg.js" />
+    <entry file="file://$PROJECT_DIR$/../wechat/duapp.php" />
+    <entry file="file://$PROJECT_DIR$/../wechat/more.js" />
+    <entry file="file://$PROJECT_DIR$/../wechat/aliyun.js" />
+    <entry file="file://$PROJECT_DIR$/../wechat/crypt.php" />
+    <entry file="file://$USER_HOME$/Desktop/continue_c.js" />
     <entry file="file://$PROJECT_DIR$/runtime/temp/207c36b1189bd4b46eff582853cb06ad.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1323">
@@ -491,20 +471,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../wechat/c_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wechat/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../wechat/c_app.js" />
+    <entry file="file://$PROJECT_DIR$/../wechat/error.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/basic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -520,20 +488,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../redpack/assets/weiqun.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4032">
-          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../redpack/assets/share.fx.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../redpack/assets/weiqun.js" />
+    <entry file="file://$PROJECT_DIR$/../redpack/assets/share.fx.js" />
     <entry file="file://$PROJECT_DIR$/thinkphp/base.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -541,13 +497,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../share/domainCheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../share/domainCheck.php" />
     <entry file="file://$PROJECT_DIR$/../share/tousu/tijiao.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -569,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../share/realphphtmlpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/PDO/PDO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -588,32 +531,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/realphpsharepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-819">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/realphphtmlpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="117" column="7" lean-forward="true" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../share/realphpsharepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1281">
-          <caret line="61" column="38" lean-forward="false" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/realphpsharepage.php" />
+    <entry file="file://$USER_HOME$/Desktop/realphphtmlpage.php" />
     <entry file="file://$PROJECT_DIR$/../share/config.php" />
     <entry file="file://$PROJECT_DIR$/extend/service/DataService.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -623,19 +545,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/wechat/applist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-777">
-          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,15 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/wechat/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -665,7 +569,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="924">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
@@ -673,18 +577,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../share/assets/page_c.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="1428">
           <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-          <folding>
-            <element signature="e#3353#3828#0" expanded="false" />
-            <marker date="1551431303766" expanded="true" signature="557:573" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extend/controller/BasicAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-499">
+        <state relative-caret-position="861">
           <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
           <folding />
         </state>
@@ -692,21 +593,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../share/assets/continue_c.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="1806">
           <caret line="86" column="92" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="92" />
-          <folding>
-            <marker date="1551685744103" expanded="true" signature="455:485" ph="..." />
-            <marker date="1551685744103" expanded="true" signature="2649:2679" ph="..." />
-            <marker date="1551685744103" expanded="true" signature="2768:2798" ph="..." />
-            <marker date="1551685744103" expanded="true" signature="3066:3096" ph="..." />
-            <marker date="1551685744103" expanded="true" signature="3220:3250" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/share/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="462">
           <caret line="22" column="131" lean-forward="false" selection-start-line="22" selection-start-column="131" selection-end-line="22" selection-end-column="131" />
           <folding />
         </state>
@@ -714,8 +609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/share/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="94" column="51" lean-forward="true" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="51" />
+        <state relative-caret-position="1974">
+          <caret line="94" column="51" lean-forward="false" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -724,21 +619,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="646" column="22" lean-forward="true" selection-start-line="646" selection-start-column="22" selection-end-line="646" selection-end-column="22" />
+        <state relative-caret-position="13041">
+          <caret line="646" column="22" lean-forward="false" selection-start-line="646" selection-start-column="22" selection-end-line="646" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="20727">
           <caret line="996" column="20" lean-forward="false" selection-start-line="996" selection-start-column="20" selection-end-line="996" selection-end-column="20" />
           <folding />
         </state>
@@ -747,10 +641,154 @@
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Share.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="103" column="7" lean-forward="true" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
             <element signature="e#692#718#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Wechat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295">
+          <caret line="67" column="56" lean-forward="true" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
+          <folding>
+            <element signature="e#7#81#0#PHP" expanded="true" />
+            <element signature="e#692#718#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/wechat/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="43" column="77" lean-forward="false" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/wechat/applist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="82" column="61" lean-forward="false" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../share/151.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../share/realphphtmlpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <marker date="1552207956477" expanded="true" signature="2081:7354" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="2088:3243" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="3303:3325" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="3326:6425" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="3362:3448" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="3505:3553" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="3554:6272" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="3584:3650" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="3651:6215" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="3700:5684" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="3807:5669" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="3847:5650" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="3930:3946" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="3947:5627" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="4114:4130" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="4131:4438" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="4346:4360" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="4519:4532" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="4533:4564" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="4600:4617" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="4618:4731" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="4808:4825" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="4826:5600" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="4903:4917" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="5220:5406" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="5737:6196" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="5794:5858" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="5914:5929" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="5930:6181" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="5950:6162" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="6028:6141" ph="..." />
+            <marker date="1552207956477" expanded="false" signature="6093:6115" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="6233:6245" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="6301:6410" ph="..." />
+            <marker date="1552207956477" expanded="true" signature="6434:7228" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../share/realjumppage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../share/realphpsharepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="49" column="52" lean-forward="true" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+          <folding>
+            <marker date="1552207908133" expanded="true" signature="413:3204" ph="..." />
+            <marker date="1552207908133" expanded="true" signature="420:1333" ph="..." />
+            <marker date="1552207908133" expanded="false" signature="1393:1415" ph="..." />
+            <marker date="1552207908133" expanded="true" signature="1416:2487" ph="..." />
+            <marker date="1552207908133" expanded="false" signature="1452:1538" ph="..." />
+            <marker date="1552207908133" expanded="false" signature="1595:1643" ph="..." />
+            <marker date="1552207908133" expanded="true" signature="1644:2084" ph="..." />
+            <marker date="1552207908133" expanded="false" signature="1674:1740" ph="..." />
+            <marker date="1552207908133" expanded="true" signature="1741:2027" ph="..." />
+            <marker date="1552207908133" expanded="false" signature="1846:1942" ph="..." />
+            <marker date="1552207908133" expanded="true" signature="1943:2016" ph="..." />
+            <marker date="1552207908133" expanded="false" signature="1968:1978" ph="..." />
+            <marker date="1552207908133" expanded="false" signature="2045:2057" ph="..." />
+            <marker date="1552207908133" expanded="false" signature="2116:2129" ph="..." />
+            <marker date="1552207908133" expanded="true" signature="2130:2479" ph="..." />
+            <marker date="1552207908133" expanded="false" signature="2213:2242" ph="..." />
+            <marker date="1552207908133" expanded="true" signature="2243:2472" ph="..." />
+            <marker date="1552207908133" expanded="true" signature="2336:2461" ph="..." />
+            <marker date="1552207908133" expanded="false" signature="2363:2411" ph="..." />
+            <marker date="1552207908133" expanded="true" signature="2496:3074" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../share/a233e0bc115427b8dd5ba7dc2374e3d0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../share/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-701">
+          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <marker date="1552209478799" expanded="true" signature="488:515" ph="SELECT * FRO... system_config" />
+            <marker date="1552209478799" expanded="true" signature="742:837" ph="select * fro... system_app" />
+            <marker date="1552209478799" expanded="true" signature="905:1001" ph="select * fro... system_video" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/wechat/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="47" column="2" lean-forward="true" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>

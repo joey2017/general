@@ -1,4 +1,4 @@
-<?php /*a:2:{s:64:"D:\phpStudy\WWW\general\application\admin\view\wechat\index.html";i:1551237926;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
+<?php /*a:2:{s:64:"D:\phpStudy\WWW\general\application\admin\view\wechat\index.html";i:1552209622;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1551941934;}*/ ?>
 <!-- 右则内容区域 开始 -->
 
 <div class="layui-card">
@@ -33,27 +33,27 @@
 
     <div class="hr-line-dashed"></div> -->
 
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            SafeLink<br><span class="nowrap color-desc">落地域名</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="safe_link" required="required" title="请输入落地域名" placeholder="请输入落地域名" value="<?php echo sysconf('safe_link'); ?>" class="layui-input">
-            <p class="help-block">当前落地域名，用于视频分享后跳转</p>
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            ShareLink<br><span class="nowrap color-desc">入口域名</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="share_link" required="required" title="请输入入口域名" placeholder="请输入入口域名" value="<?php echo sysconf('share_link'); ?>" class="layui-input">
-            <p class="help-block">当前入口域名，用于视频分享</p>
-        </div>
-    </div>
-    
-    <div class="hr-line-dashed"></div>
+    <!--<div class="form-group">-->
+        <!--<label class="col-sm-2 control-label">-->
+            <!--SafeLink<br><span class="nowrap color-desc">落地域名</span>-->
+        <!--</label>-->
+        <!--<div class='col-sm-8'>-->
+            <!--<input name="safe_link" required="required" title="请输入落地域名" placeholder="请输入落地域名" value="<?php echo sysconf('safe_link'); ?>" class="layui-input">-->
+            <!--<p class="help-block">当前落地域名，用于视频分享后跳转</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!---->
+    <!--<div class="form-group">-->
+        <!--<label class="col-sm-2 control-label">-->
+            <!--ShareLink<br><span class="nowrap color-desc">入口域名</span>-->
+        <!--</label>-->
+        <!--<div class='col-sm-8'>-->
+            <!--<input name="share_link" required="required" title="请输入入口域名" placeholder="请输入入口域名" value="<?php echo sysconf('share_link'); ?>" class="layui-input">-->
+            <!--<p class="help-block">当前入口域名，用于视频分享</p>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="hr-line-dashed"></div>-->
 
     <div class="form-group">
         <label class="col-sm-2 control-label">
