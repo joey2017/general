@@ -1,4 +1,4 @@
-<?php /*a:2:{s:66:"D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html";i:1552206121;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1551941934;}*/ ?>
+<?php /*a:2:{s:66:"D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html";i:1552271611;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
 <!-- 右则内容区域 开始 -->
 
 <div class="layui-card">
