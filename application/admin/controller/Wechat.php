@@ -163,4 +163,23 @@ class Wechat extends BasicAdmin
         $this->error("公众号启用失败，请稍候再试！");
     }
 
+    /**
+     * 公众号jsapi_ticket,access_token刷新
+     * @throws \think\Exception
+     * @throws \think\exception\PDOException
+     */
+    public function fresh()
+    {
+        if (chdir(dirname(ROOT_PATH).'/default/jssdkphpversion')) {
+            if (is_file('access_token.php') && is_file('jsapi_ticket.php')) {
+                unlink('access_token.php');
+                unlink('jsapi_ticket.php');
+                $this->success("更新成功！");
+            };
+        } else {
+            $this->error("更新失败！");
+        };
+
+    }
+
 }

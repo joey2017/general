@@ -14,6 +14,9 @@
 
 namespace think;
 
+// 定义常量
+define('ROOT_PATH',__DIR__);
+
 // 加载基础文件
 require __DIR__ . '/thinkphp/base.php';
 

@@ -2,6 +2,10 @@
 
 {block name="button"}
 
+<!--{if auth("$classuri/fresh")}-->
+<button data-open='{:url("$classuri/fresh")}' data-title="刷新token" class='layui-btn layui-btn-sm layui-btn-info'>刷新token</button>
+<!--{/if}-->
+
 <!--{if auth("$classuri/add")}-->
 <button data-open='{:url("$classuri/add")}' data-title="添加公众号" class='layui-btn layui-btn-sm layui-btn-primary'>添加公众号</button>
 <!--{/if}-->
