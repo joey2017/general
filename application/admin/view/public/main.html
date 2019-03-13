@@ -24,3 +24,21 @@
         {block name="script"}{/block}
     </body>
 </html>
+<script>
+    function getNoticeMessage() {
+        $.ajax('{:url("domain/getnotice")}?t='+Math.random(), {
+            success:function (data) {
+                if (data.status) {
+                    voicePlay(data.msg);
+                }
+            }
+        });
+    }
+    setInterval(getNoticeMessage,60000);
+    function voicePlay(msg){
+        var url = "https://fanyi.baidu.com/gettts?lan=zh&text="+encodeURI(msg)+"&spd=5&source=web"; // baidu
+        var n = new Audio(url);
+        n.src = url;
+        n.play();
+    }
+</script>

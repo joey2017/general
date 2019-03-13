@@ -153,4 +153,28 @@ class Domain extends BasicAdmin
         return $list;
     }
 
+    /**
+     * 禁用域名
+     * @throws \think\Exception
+     * @throws \think\exception\PDOException
+     */
+    public function getnotice()
+    {
+        $list   = Db::name('SystemDisabledDomain')->select();
+        if (empty($list)) {
+            return ['status' => false];
+        }
+        $msg = '注意，域名';
+        $ids = [];
+        foreach ($list as $item) {
+            $msg .= $item['domain'].',';
+            $ids[] = $item['id'];
+        }
+        $msg = substr($msg,0,strlen($msg)-1);
+        $msg .= '被禁用了';
+
+        Db::name('SystemDisabledDomain')->where('id','in', $ids)->delete();
+        return ['status' => true,'msg' => $msg];
+    }
+
 }

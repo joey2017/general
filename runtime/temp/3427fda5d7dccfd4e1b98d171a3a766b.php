@@ -1,4 +1,4 @@
-<?php /*a:2:{s:63:"D:\phpStudy\WWW\general\application\admin\view\index\index.html";i:1551941934;s:63:"D:\phpStudy\WWW\general\application\admin\view\public\main.html";i:1551941934;}*/ ?>
+<?php /*a:2:{s:63:"D:\phpStudy\WWW\general\application\admin\view\index\index.html";i:1552464218;s:63:"D:\phpStudy\WWW\general\application\admin\view\public\main.html";i:1552467680;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head>
@@ -57,6 +57,7 @@
         <!--<?php endif; ?>-->
     </div>
     <a class="topbar-btn pull-right transition" data-tips-text="刷新" data-reload="true" style="width:50px"><span class="glyphicon glyphicon-refresh font-s12"></span></a>
+    <a class="topbar-btn pull-right transition" onclick="getNoticeMessage();" data-tips-text="语音" style="width:50px"><span class="glyphicon glyphicon-bell font-s12"></span></a>
 </div>
 <!-- 顶部菜单区域 结束 -->
 
@@ -105,3 +106,21 @@
         
     </body>
 </html>
+<script>
+    function getNoticeMessage() {
+        $.ajax('<?php echo url("domain/getnotice"); ?>?t='+Math.random(), {
+            success:function (data) {
+                if (data.status) {
+                    voicePlay(data.msg);
+                }
+            }
+        });
+    }
+    setInterval(getNoticeMessage,60000);
+    function voicePlay(msg){
+        var url = "https://fanyi.baidu.com/gettts?lan=zh&text="+encodeURI(msg)+"&spd=5&source=web"; // baidu
+        var n = new Audio(url);
+        n.src = url;
+        n.play();
+    }
+</script>
