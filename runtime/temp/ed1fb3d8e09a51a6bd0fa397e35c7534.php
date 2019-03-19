@@ -1,4 +1,4 @@
-<?php /*a:2:{s:66:"D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html";i:1552271611;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
+<?php /*a:2:{s:66:"D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html";i:1552445898;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
 <!-- 右则内容区域 开始 -->
 
 <div class="layui-card">
@@ -6,6 +6,10 @@
     <div class="layui-header notselect">
         <div class="pull-left"><span><?php echo htmlentities($title); ?></span></div>
         <div class="pull-right margin-right-15 nowrap">
+
+<!--<?php if(auth("$classuri/fresh")): ?>-->
+<button data-open='<?php echo url("$classuri/fresh"); ?>' data-title="刷新token" class='layui-btn layui-btn-sm layui-btn-info'>刷新token</button>
+<!--<?php endif; ?>-->
 
 <!--<?php if(auth("$classuri/add")): ?>-->
 <button data-open='<?php echo url("$classuri/add"); ?>' data-title="添加公众号" class='layui-btn layui-btn-sm layui-btn-primary'>添加公众号</button>
@@ -66,6 +70,10 @@
             <th class='text-left nowrap'>公众号名称</th>
             <th class='text-left nowrap'>公众号appid</th>
             <th class='text-left nowrap'>公众号appsecret</th>
+            <!-- <th class='text-left nowrap'>公众号access_token</th> -->
+            <th class='text-left nowrap'>公众号access_token到期时间</th>
+            <!-- <th class='text-left nowrap'>公众号jsapi_ticket</th> -->
+            <th class='text-left nowrap'>公众号jsapi_ticket到期时间</th>
             <th class='text-left nowrap'>群入口域名</th>
             <th class='text-left nowrap'>圈入口域名</th>
             <th class='text-left nowrap'>落地域名</th>
@@ -86,6 +94,10 @@
             <td class='text-left nowrap'><?php echo htmlentities($vo['name']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['appid']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['appsecret']); ?></td>
+            <!-- <td class='text-left nowrap'><?php echo htmlentities($vo['access_token']); ?></td> -->
+            <td class='text-left nowrap'><?php echo htmlentities($vo['access_token_expire_time']); ?></td>
+            <!-- <td class='text-left nowrap'><?php echo htmlentities($vo['jsapi_ticket']); ?></td> -->
+            <td class='text-left nowrap'><?php echo htmlentities($vo['jsapi_ticket_expire_time']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['bind_domain_qun']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['bind_domain_quan']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['bind_domain_ld']); ?></td>
