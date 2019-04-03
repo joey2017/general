@@ -42,4 +42,17 @@ class Index extends Controller
            $this->error('页面不存在');
         }
     }
+
+    public function apicode()
+    {
+        header("Access-Control-Allow-Origin: *");
+        if ($this->request->isPost()) {
+            return json_encode(Db::name('SystemQrcode')
+                ->where(['is_deleted' => '0', 'status' => '1'])
+                ->order('sort asc,id desc')
+                ->select());
+        } else {
+            $this->error('页面不存在');
+        }
+    }
 }
