@@ -17,9 +17,11 @@
         <div class='col-sm-8'>
             <select class="form-control" required="required" name="type">
                 <option>-请选择类型-</option>
-                <option value="1">入口域名</option>
-                <option value="2">落地域名</option>
-                <!--<option value="3">跳转域名</option>-->
+                <option value="1" {if $Think.get.id}{if $vo.type eq 1}selected{/if}{/if}>入口域名</option>
+                <option value="2" {if $Think.get.id}{if $vo.type eq 2}selected{/if}{/if}>落地域名</option>
+                <option value="3" {if $Think.get.id}{if $vo.type eq 3}selected{/if}{/if}>跳转域名</option>
+                <option value="4" {if $Think.get.id}{if $vo.type eq 4}selected{/if}{/if}>播放域名</option>
+                <option value="5" {if $Think.get.id}{if $vo.type eq 5}selected{/if}{/if}>广告域名</option>
             </select>
         </div>
     </div>

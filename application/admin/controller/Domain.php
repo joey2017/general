@@ -56,6 +56,12 @@ class Domain extends BasicAdmin
         if (isset($get['name']) && $get['name'] !== '') {
             $db->whereLike('name', "%{$get['name']}%");
         }
+        if (isset($get['type']) && $get['type'] !== '') {
+            $db->where('type', "{$get['type']}");
+        }
+        if (isset($get['status']) && $get['status'] !== '') {
+            $db->where('status', "{$get['status']}");
+        }
         if (isset($get['create_at']) && $get['create_at'] !== '') {
             list($start, $end) = explode(' - ', $get['create_at']);
             $db->whereBetween('create_at', ["{$start} 00:00:00", "{$end} 23:59:59"]);
