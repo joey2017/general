@@ -1,4 +1,4 @@
-<?php /*a:2:{s:64:"D:\phpStudy\WWW\general\application\admin\view\wechat\index.html";i:1552872188;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
+<?php /*a:2:{s:64:"D:\phpStudy\WWW\general\application\admin\view\wechat\index.html";i:1552975217;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1551941934;}*/ ?>
 <!-- 右则内容区域 开始 -->
 
 <div class="layui-card">
@@ -52,7 +52,19 @@
             <p class="help-block">加密secretKey，用于url参数加密</p>
         </div>
     </div>
-    
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">
+            UrlParam<br><span class="nowrap color-desc">入口链接URL参数</span>
+        </label>
+        <div class='col-sm-8'>
+            <input name="url_param" required="required" title="请输入URL参数" placeholder="请输入URL参数"
+                   value="<?php echo sysconf('url_param'); ?>" class="layui-input">
+            <p class="help-block">当前入口链接url参数，格式：token=158616...,token值仅为数字、大小写字母</p>
+        </div>
+    </div>
+
+
     <div class="hr-line-dashed"></div>
 
     <div class="form-group">

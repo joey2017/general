@@ -1,4 +1,4 @@
-<?php /*a:2:{s:66:"D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html";i:1552445898;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
+<?php /*a:2:{s:66:"D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html";i:1554387779;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1551941934;}*/ ?>
 <!-- 右则内容区域 开始 -->
 
 <div class="layui-card">
@@ -12,11 +12,11 @@
 <!--<?php endif; ?>-->
 
 <!--<?php if(auth("$classuri/add")): ?>-->
-<button data-open='<?php echo url("$classuri/add"); ?>' data-title="添加公众号" class='layui-btn layui-btn-sm layui-btn-primary'>添加公众号</button>
+<button data-open='<?php echo url("$classuri/add"); ?>' data-title="添加公众号" class='layui-btn layui-btn-sm layui-btn-info'>添加公众号</button>
 <!--<?php endif; ?>-->
 
 <!--<?php if(auth("$classuri/del")): ?>-->
-<button data-update="" data-field='delete' data-action='<?php echo url("$classuri/del"); ?>' class='layui-btn layui-btn-sm layui-btn-primary'>删除公众号</button>
+<button data-update="" data-field='delete' data-action='<?php echo url("$classuri/del"); ?>' class='layui-btn layui-btn-sm layui-btn-danger'>删除公众号</button>
 <!--<?php endif; ?>-->
 
 </div>
@@ -42,7 +42,7 @@
     </div>
 
     <div class="layui-form-item layui-inline">
-        <button class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe615;</i> 搜 索</button>
+        <button class="layui-btn layui-btn-normal"><i class="layui-icon">&#xe615;</i> 搜 索</button>
     </div>
 
 </form>

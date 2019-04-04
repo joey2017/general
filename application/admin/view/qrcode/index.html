@@ -3,11 +3,11 @@
 {block name="button"}
 
 <!--{if auth("$classuri/add")}-->
-<button data-open='{:url("$classuri/add")}' data-title="添加二维码" class='layui-btn layui-btn-sm layui-btn-primary'>添加二维码</button>
+<button data-open='{:url("$classuri/add")}' data-title="添加二维码" class='layui-btn layui-btn-sm layui-btn-info'>添加二维码</button>
 <!--{/if}-->
 
 <!--{if auth("$classuri/del")}-->
-<button data-update="" data-field='delete' data-action='{:url("$classuri/del")}' class='layui-btn layui-btn-sm layui-btn-primary'>删除二维码</button>
+<button data-update="" data-field='delete' data-action='{:url("$classuri/del")}' class='layui-btn layui-btn-sm layui-btn-danger'>删除二维码</button>
 <!--{/if}-->
 
 {/block}
@@ -32,7 +32,7 @@
     </div>
 
     <div class="layui-form-item layui-inline">
-        <button class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe615;</i> 搜 索</button>
+        <button class="layui-btn layui-btn-normal"><i class="layui-icon">&#xe615;</i> 搜 索</button>
     </div>
 
 </form>

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../bbb/.idea/bbb.iml" filepath="$PROJECT_DIR$/../bbb/.idea/bbb.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/general.iml" filepath="$PROJECT_DIR$/.idea/general.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lmideas520.com/.idea/lmideas520.com.iml" filepath="$PROJECT_DIR$/../lmideas520.com/.idea/lmideas520.com.iml" />
       <module fileurl="file://$PROJECT_DIR$/../share/.idea/share.iml" filepath="$PROJECT_DIR$/../share/.idea/share.iml" />
       <module fileurl="file://$PROJECT_DIR$/../wechat/.idea/wechat.iml" filepath="$PROJECT_DIR$/../wechat/.idea/wechat.iml" />
     </modules>

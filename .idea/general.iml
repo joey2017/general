@@ -6,5 +6,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="share" />
     <orderEntry type="module" module-name="wechat" />
+    <orderEntry type="module" module-name="bbb" />
+    <orderEntry type="module" module-name="lmideas520.com" />
   </component>
 </module>
