@@ -2,12 +2,16 @@
 
 {block name="button"}
 
+<!--{if auth("$classuri/fresh")}-->
+<button data-open='{:url("$classuri/fresh")}' data-title="刷新广告域名缓存" class='layui-btn layui-btn-sm layui-btn-primary'>刷新广告域名缓存</button>
+<!--{/if}-->
+
 <!--{if auth("$classuri/add")}-->
-<button data-open='{:url("$classuri/add")}' data-title="添加域名" class='layui-btn layui-btn-sm layui-btn-primary'>添加域名</button>
+<button data-open='{:url("$classuri/add")}' data-title="添加域名" class='layui-btn layui-btn-sm layui-btn-info'>添加域名</button>
 <!--{/if}-->
 
 <!--{if auth("$classuri/del")}-->
-<button data-update="" data-field='delete' data-action='{:url("$classuri/del")}' class='layui-btn layui-btn-sm layui-btn-primary'>删除域名</button>
+<button data-update="" data-field='delete' data-action='{:url("$classuri/del")}' class='layui-btn layui-btn-sm layui-btn-danger'>删除域名</button>
 <!--{/if}-->
 
 {/block}
@@ -43,7 +47,7 @@
         <div class="layui-input-inline">
             <select class="form-control" name="status">
                 <option value="">-请选择-</option>
-                <option value="0" {if $Think.get.status eq 0}selected{/if}>已禁用</option>
+                <option value="0" {if $Think.get.status eq 0 and $Think.get.status neq ''}selected{/if}>已禁用</option>
                 <option value="1" {if $Think.get.status eq 1}selected{/if}>使用中</option>
             </select>
         </div>
@@ -57,7 +61,7 @@
     </div>
 
     <div class="layui-form-item layui-inline">
-        <button class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe615;</i> 搜 索</button>
+        <button class="layui-btn layui-btn-normal"><i class="layui-icon">&#xe615;</i> 搜 索</button>
     </div>
 
 </form>

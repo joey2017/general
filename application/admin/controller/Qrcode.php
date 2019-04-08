@@ -49,6 +49,9 @@ class Qrcode extends BasicAdmin
         if (isset($get['title']) && $get['title'] !== '') {
             $db->whereLike('title', "%{$get['title']}%");
         }
+        if (isset($get['status']) && $get['status'] !== '') {
+            $db->where('status', "{$get['status']}");
+        }
         if (isset($get['create_at']) && $get['create_at'] !== '') {
             list($start, $end) = explode(' - ', $get['create_at']);
             $db->whereBetween('create_at', ["{$start} 00:00:00", "{$end} 23:59:59"]);
