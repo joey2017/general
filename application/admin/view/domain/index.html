@@ -2,10 +2,6 @@
 
 {block name="button"}
 
-<!--{if auth("$classuri/fresh")}-->
-<button data-open='{:url("$classuri/fresh")}' data-title="刷新广告域名缓存" class='layui-btn layui-btn-sm layui-btn-primary'>刷新广告域名缓存</button>
-<!--{/if}-->
-
 <!--{if auth("$classuri/add")}-->
 <button data-open='{:url("$classuri/add")}' data-title="添加域名" class='layui-btn layui-btn-sm layui-btn-info'>添加域名</button>
 <!--{/if}-->
@@ -90,6 +86,7 @@
             <th class='text-left nowrap'>类型</th>
             <th class='text-left nowrap'>状态</th>
             <th class='text-left nowrap'>添加时间</th>
+            <th class='text-left nowrap'>被封时间</th>
             <th class='text-left'>操作</th>
         </tr>
         </thead>
@@ -110,6 +107,7 @@
                 {if $vo.status eq 0}<span class="color-red">已禁用</span>{elseif $vo.status eq 1}<span class="color-green">使用中</span>{/if}
             </td>
             <td class='text-left nowrap'>{$vo.create_at|format_datetime}</td>
+            <td class='text-left nowrap'>{$vo.edit_time}</td>
             <td class='text-left nowrap'>
 
                 {if auth("$classuri/edit")}
