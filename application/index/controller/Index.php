@@ -29,30 +29,4 @@ class Index extends Controller
         $this->redirect('@admin/login');
     }
 
-    public function getsharedata()
-    {
-        header("Access-Control-Allow-Origin: *");
-        if ($this->request->isPost()) {
-            $post  = $this->request->post();
-            return json_encode(Db::name('SystemShare')
-                ->where(['is_deleted' => '0', 'status' => '1', 'type' => $post['type']])
-                ->order('sort asc,id desc')
-                ->select());
-        } else {
-            return json_encode(['code' => '100','msg' => '无访问权限']);
-        }
-    }
-
-    public function apicode()
-    {
-        header("Access-Control-Allow-Origin: *");
-        if ($this->request->isPost()) {
-            return json_encode(Db::name('SystemQrcode')
-                ->where(['is_deleted' => '0', 'status' => '1'])
-                ->order('sort asc,id desc')
-                ->select());
-        } else {
-            return json_encode(['code' => '100','msg' => '无访问权限']);
-        }
-    }
 }
