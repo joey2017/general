@@ -39,7 +39,7 @@ class Index extends Controller
                 ->order('sort asc,id desc')
                 ->select());
         } else {
-           $this->error('页面不存在');
+            return json_encode(['code' => '100','msg' => '无访问权限']);
         }
     }
 
@@ -52,7 +52,7 @@ class Index extends Controller
                 ->order('sort asc,id desc')
                 ->select());
         } else {
-            $this->error('页面不存在');
+            return json_encode(['code' => '100','msg' => '无访问权限']);
         }
     }
 }

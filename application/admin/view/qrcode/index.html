@@ -69,7 +69,7 @@
                 <button type="submit" class="layui-btn layui-btn-normal layui-btn-xs">排 序</button>
             </th>
             <th class='text-left nowrap'>二维码名称</th>
-            <!-- <th class='text-left nowrap'>二维码图片</th> -->
+             <th class='text-left nowrap'>二维码图片</th>
             <th class='text-left nowrap'>添加时间</th>
             <th class='text-left nowrap'>二维码状态</th>
             <th class='text-left'>操作</th>
@@ -85,7 +85,7 @@
                 <input name="_{$vo.id}" value="{$vo.sort}" class="list-sort-input"/>
             </td>
             <td class='text-left nowrap'>{$vo.title}</td>
-            <!-- <td class='text-left nowrap'>{$vo.pic}</td> -->
+            <td class='text-left nowrap'>{$vo.pic}</td>
             <td class='text-left nowrap'>{$vo.create_at|format_datetime}</td>
             <td class='text-left nowrap'>
                 {if $vo.status eq 0}<span class="color-red">已禁用</span>{elseif $vo.status eq 1}<span class="color-green">使用中</span>{/if}

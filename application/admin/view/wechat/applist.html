@@ -7,11 +7,11 @@
 <!--{/if}-->
 
 <!--{if auth("$classuri/add")}-->
-<button data-open='{:url("$classuri/add")}' data-title="添加公众号" class='layui-btn layui-btn-sm layui-btn-primary'>添加公众号</button>
+<button data-open='{:url("$classuri/add")}' data-title="添加公众号" class='layui-btn layui-btn-sm layui-btn-info'>添加公众号</button>
 <!--{/if}-->
 
 <!--{if auth("$classuri/del")}-->
-<button data-update="" data-field='delete' data-action='{:url("$classuri/del")}' class='layui-btn layui-btn-sm layui-btn-primary'>删除公众号</button>
+<button data-update="" data-field='delete' data-action='{:url("$classuri/del")}' class='layui-btn layui-btn-sm layui-btn-danger'>删除公众号</button>
 <!--{/if}-->
 
 {/block}
@@ -36,7 +36,7 @@
     </div>
 
     <div class="layui-form-item layui-inline">
-        <button class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe615;</i> 搜 索</button>
+        <button class="layui-btn layui-btn-normal"><i class="layui-icon">&#xe615;</i> 搜 索</button>
     </div>
 
 </form>
@@ -65,9 +65,9 @@
             <th class='text-left nowrap'>公众号appid</th>
             <th class='text-left nowrap'>公众号appsecret</th>
             <!-- <th class='text-left nowrap'>公众号access_token</th> -->
-            <th class='text-left nowrap'>公众号access_token到期时间</th>
+            <!-- <th class='text-left nowrap'>公众号access_token到期时间</th> -->
             <!-- <th class='text-left nowrap'>公众号jsapi_ticket</th> -->
-            <th class='text-left nowrap'>公众号jsapi_ticket到期时间</th>
+            <!-- <th class='text-left nowrap'>公众号jsapi_ticket到期时间</th> -->
             <th class='text-left nowrap'>群入口域名</th>
             <th class='text-left nowrap'>圈入口域名</th>
             <th class='text-left nowrap'>落地域名</th>
@@ -89,9 +89,9 @@
             <td class='text-left nowrap'>{$vo.appid}</td>
             <td class='text-left nowrap'>{$vo.appsecret}</td>
             <!-- <td class='text-left nowrap'>{$vo.access_token}</td> -->
-            <td class='text-left nowrap'>{$vo.access_token_expire_time}</td>
+            <!-- <td class='text-left nowrap'>{$vo.access_token_expire_time}</td> -->
             <!-- <td class='text-left nowrap'>{$vo.jsapi_ticket}</td> -->
-            <td class='text-left nowrap'>{$vo.jsapi_ticket_expire_time}</td>
+            <!-- <td class='text-left nowrap'>{$vo.jsapi_ticket_expire_time}</td> -->
             <td class='text-left nowrap'>{$vo.bind_domain_qun}</td>
             <td class='text-left nowrap'>{$vo.bind_domain_quan}</td>
             <td class='text-left nowrap'>{$vo.bind_domain_ld}</td>
