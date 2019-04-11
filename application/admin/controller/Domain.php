@@ -52,21 +52,25 @@ class Domain extends BasicAdmin
     {
         $this->title = '域名列表';
         $get         = $this->request->get();
-        $db          = Db::name($this->table)->where(['is_deleted' => '0']);
+        $db          = Db::name($this->table)->alias('d')->where(['d.is_deleted' => '0']);
         if (isset($get['name']) && $get['name'] !== '') {
-            $db->whereLike('name', "%{$get['name']}%");
+            $db->whereLike('d.name', "%{$get['name']}%");
         }
         if (isset($get['type']) && $get['type'] !== '') {
-            $db->where('type', "{$get['type']}");
+            $db->where('d.type', "{$get['type']}");
         }
         if (isset($get['status']) && $get['status'] !== '') {
-            $db->where('status', "{$get['status']}");
+            $db->where('d.status', "{$get['status']}");
+        }
+        if (isset($get['server_id']) && $get['server_id'] !== '') {
+            $db->where('d.server_id', "{$get['server_id']}");
         }
         if (isset($get['create_at']) && $get['create_at'] !== '') {
             list($start, $end) = explode(' - ', $get['create_at']);
-            $db->whereBetween('create_at', ["{$start} 00:00:00", "{$end} 23:59:59"]);
+            $db->whereBetween('d.create_at', ["{$start} 00:00:00", "{$end} 23:59:59"]);
         }
-        return parent::_list($db->order('sort asc,id desc'));
+        $db->join('system_server s','s.id=d.server_id','LEFT')->field('s.ip,d.*');
+        return parent::_list($db->order('d.sort asc,d.id desc'));
     }
 
     /**
@@ -156,6 +160,17 @@ class Domain extends BasicAdmin
     public function getApps()
     {
         $list   = Db::name('SystemApp')->where(['is_deleted' => '0', 'status' => 1, 'is_bind_domain' => 0])->order('sort asc,id desc')->select();
+        return $list;
+    }
+
+    /**
+     * ip
+     * @throws \think\Exception
+     * @throws \think\exception\PDOException
+     */
+    public function getIps()
+    {
+        $list   = Db::name('SystemServer')->field('id,ip,name')->where(['is_deleted' => '0', 'status' => 1])->order('sort asc,id desc')->select();
         return $list;
     }
 
