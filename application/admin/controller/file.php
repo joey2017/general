@@ -24,7 +24,7 @@ use think\Db;
  * @package app\admin\controller
  * @date 2017/02/15 18:05
  */
-class Share extends BasicAdmin
+class File extends BasicAdmin
 {
 
     /**
