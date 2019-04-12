@@ -16,6 +16,7 @@ namespace app\admin\controller;
 
 use controller\BasicAdmin;
 use service\DataService;
+use service\LogService;
 use think\Db;
 
 /**
@@ -145,6 +146,40 @@ class Server extends BasicAdmin
             $this->success("服务器启用成功！", '');
         }
         $this->error("服务器启用失败，请稍候再试！");
+    }
+
+    /**
+     * 广告开启或关闭
+     * @throws \think\Exception
+     * @throws \think\exception\PDOException
+     */
+    public function adver()
+    {
+        if ($this->request->isPost()) {
+            $data = $this->request->post();
+            //$data = ['field' => 'value','value' => 1,'id' => 104];
+            $array = ['name' => 'gg_s' . $data['id'], 'value' => $data['value']];
+            sysconf($array['name'], $array['value']);
+            LogService::write('系统管理', '广告配置成功');
+            $this->success('广告开启成功！', '');
+        }
+    }
+
+    /**
+     * 导量开启或关闭
+     * @throws \think\Exception
+     * @throws \think\exception\PDOException
+     */
+    public function change()
+    {
+        if ($this->request->isPost()) {
+            $data = $this->request->post();
+            //$data = ['field' => 'value','value' => 1,'id' => 104];
+            $array = ['name' => 'dl_s' . $data['id'], 'value' => $data['value']];
+            sysconf($array['name'], $array['value']);
+            LogService::write('系统管理', '导量配置成功');
+            $this->success('导量开启成功！', '');
+        }
     }
 
 }

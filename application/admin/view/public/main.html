@@ -11,11 +11,15 @@
         <link href="__STATIC__/plugs/layui/css/layui.css?v={:date('ymd')}" rel="stylesheet">
         <link href="__STATIC__/theme/css/console.css?v={:date('ymd')}" rel="stylesheet">
         <link href="__STATIC__/theme/css/animate.css?v={:date('ymd')}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.min.css" />
+
         {block name="style"}{/block}
         <script>window.ROOT_URL = '__ROOT__';</script>
         <script src="__STATIC__/plugs/jquery/pace.min.js"></script>
         <script src="__STATIC__/plugs/layui/layui.all.js"></script>
         <script src="__STATIC__/admin.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js"></script>
+
     </head>
     <body class="framework mini">
         {block name="body"}{/block}
@@ -30,6 +34,16 @@
             success:function (data) {
                 if (data.status) {
                     voicePlay(data.msg);
+                    var ok = layer.confirm(data.msg, {
+                        btn: ['知道了','关闭'] //按钮
+                    }, function(){
+                        $.post('{:url("domain/noticedel")}',{'id':data.data},function(res){
+                            console.log(res);
+                            layer.close(ok);
+                        },'json');
+                    }, function(){
+                        layer.close(ok);
+                    });
                 }
             }
         });

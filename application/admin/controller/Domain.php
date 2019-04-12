@@ -194,8 +194,20 @@ class Domain extends BasicAdmin
         $msg = substr($msg,0,strlen($msg)-1);
         $msg .= '被禁用了';
 
-        Db::name('SystemDisabledDomain')->where('id','in', $ids)->delete();
-        return ['status' => true,'msg' => $msg];
+        //Db::name('SystemDisabledDomain')->where('id','in', $ids)->delete();
+        return ['status' => true,'msg' => $msg, 'data' => $ids];
+    }
+
+    /**
+     * 删除禁用域名
+     * @throws \think\Exception
+     * @throws \think\exception\PDOException
+     */
+    public function noticedel()
+    {
+        $post = $this->request->post();
+        Db::name('SystemDisabledDomain')->where('id','in', $post['id'])->delete();
+        return ['status' => true,'msg' => '删除成功'];
     }
 
 }
