@@ -149,19 +149,33 @@ class Server extends BasicAdmin
     }
 
     /**
-     * 广告开启或关闭
+     * 导量域名数据
      * @throws \think\Exception
      * @throws \think\exception\PDOException
      */
-    public function adver()
+    public function getdomain()
     {
         if ($this->request->isPost()) {
             $data = $this->request->post();
-            //$data = ['field' => 'value','value' => 1,'id' => 104];
-            $array = ['name' => 'gg_s' . $data['id'], 'value' => $data['value']];
-            sysconf($array['name'], $array['value']);
-            LogService::write('系统管理', '广告配置成功');
-            $this->success('广告开启成功！', '');
+            $list = Db::name('SystemDomain')
+                ->alias('d')
+                ->field('d.id,d.name,s.ip,s.name as sname')
+                ->where(['d.is_deleted' => '0', 'd.status' => '1', 'd.type' => '2'])->where('d.server_id', '<>', $data['id'])
+                ->join('system_server s','s.id=d.server_id','LEFT')
+                ->order('d.sort asc,d.id desc')
+                ->select();
+            $html = '<select name="dl_domain" style="width:80%;margin: 20px auto 0px auto;" class="form-control">' .
+                    '<option data-domain="" value="">--请选择--</option>';
+            if (!empty($list)) {
+                foreach ($list as $item) {
+                    $html .= '<option data-domain="'.$item['name'].'" value="' . $item['id'] . '">' . $item['name'] . '('.$item['ip'].')'.'</option>';
+                }
+
+            }
+            $html .= '</select>';
+            return $html;
+        } else {
+            return json_encode(['code' => '100', 'msg' => '无访问权限']);
         }
     }
 
@@ -174,11 +188,10 @@ class Server extends BasicAdmin
     {
         if ($this->request->isPost()) {
             $data = $this->request->post();
-            //$data = ['field' => 'value','value' => 1,'id' => 104];
-            $array = ['name' => 'dl_s' . $data['id'], 'value' => $data['value']];
-            sysconf($array['name'], $array['value']);
-            LogService::write('系统管理', '导量配置成功');
-            $this->success('导量开启成功！', '');
+            $data['value'] = !empty($data['value']) ? 'http://'.trim($data['value']).'/' : '';
+            sysconf($data['name'], $data['value']);
+            LogService::write('系统管理', $data['name'] . '配置成功');
+            $this->success('操作成功！', '');
         }
     }
 

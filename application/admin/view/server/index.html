@@ -72,7 +72,7 @@
     <p class="help-block text-center well">没 有 记 录 哦！</p>
     {else}
     <input type="hidden" value="resort" name="action"/>
-    <table class="layui-table" lay-skin="line">
+    <table class="layui-table" lay-skin="line" id="container">
         <thead>
         <tr>
             <th class='list-table-check-td think-checkbox'>
@@ -130,20 +130,20 @@
                 <a data-update="{$vo.id}" data-field='delete' data-action='{:url("$classuri/del")}'>删除</a>
                 {/if}
 
-                {if sysconf('gg_s'.$vo.id) eq 1 and auth("$classuri/adver")}
+                {if sysconf('gg_s'.$vo.id) eq 1 and auth("$classuri/change")}
                 <span class="text-explode">|</span>
-                <a data-update="{$vo.id}" data-field='value' data-value='0' data-action='{:url("$classuri/adver")}'>广告关闭</a>
-                {elseif auth("$classuri/adver")}
-                <span class="text-explode">|</span>
-                <a data-update="{$vo.id}" data-field='value' data-value='1' data-action='{:url("$classuri/adver")}'>广告开启</a>
-                {/if}
-
-                {if sysconf('dl_s'.$vo.id) eq 1 and auth("$classuri/change")}
-                <span class="text-explode">|</span>
-                <a data-id="{$vo.id}" data-field='value' data-value='0' data-action='{:url("$classuri/change")}' onclick="change(this)">导量关闭</a>
+                <a data-gg="{$vo.id}" data-name="gg_s{$vo.id}" data-field='value' data-value='0' data-action='{:url("$classuri/change")}'>广告关闭</a>
                 {elseif auth("$classuri/change")}
                 <span class="text-explode">|</span>
-                <a data-id="{$vo.id}" data-field='value' data-value='1' data-action='{:url("$classuri/change")}' onclick="change(this)">导量开启</a>
+                <a data-gg="{$vo.id}" data-name="gg_s{$vo.id}" data-field='value' data-value='1' data-action='{:url("$classuri/change")}'>广告开启</a>
+                {/if}
+
+                {if sysconf('dl_s'.$vo.id) neq '' and auth("$classuri/change")}
+                <span class="text-explode">|</span>
+                <a data-dl="{$vo.id}" data-name="dl_s{$vo.id}" data-field='value' data-value='0' data-action='{:url("$classuri/change")}'>导量关闭</a>
+                {elseif auth("$classuri/change")}
+                <span class="text-explode">|</span>
+                <a data-dl="{$vo.id}" data-name="dl_s{$vo.id}" data-field='value' data-value='1' data-action='{:url("$classuri/change")}'>导量开启</a>
                 {/if}
 
             </td>
@@ -152,38 +152,71 @@
         </tbody>
     </table>
     <script>
-        /*! 待完成 */
-        function change(obj) {
-            var that = $(obj);
-            var args = {};
-            var action = that.attr('data-action');
-            args.id    = that.attr('data-id');
-            args.field = that.attr('data-field');
-            args.value = that.attr('data-value');
 
-            $.ajax({
-                url:'{:url("domain/get")}',
-                type:'POST',
-                data:{id:args.id},
-                dataType:'json',
-                success:function (data) {
-                    console.log(data);
-                    var html = '<select name="city" class="form-control"><option value="">关闭</option>';
-                    $.each(data,function(i,v){
-                        html += '<option value="'+ v.id +'">'+ v.name +'</option>';
-                    });
-                    html += '</select>';
-                    layer.open({
-                        title: '导量开关设置',
-                        content:html,
-                    });
-                },
-                error:function (res) {
-                    console.log(res);
-                },
-            })
+        /*! 注册 data-gg 事件行为 */
+        $('#container td').on('click', '[data-gg]', function () {
+            var id = $(this).attr('data-gg') || (function () {
+                var data = [];
+                return $($(this).attr('data-list-target') || 'input.list-check-box').map(function () {
+                    (this.checked) && data.push(this.value);
+                }), data.join(',');
+            }).call(this);
+            if (id.length < 1) {
+                return $.msg.tips('请选择需要操作的数据！');
+            }
+            var name = $(this).attr('data-name');
+            var action = $(this).attr('data-action');
+            var value = $(this).attr('data-value') || 0;
+            var msg = '确定要' + (value == 1 ? '开启' : '关闭') + '广告吗';
+            $.msg.confirm(msg, function () {
+                $.form.load(action, {value: value, name: name}, 'post');
+            });
+        });
 
-        }
+        /*! 注册 data-dl 事件行为 */
+        $('#container').off('click').on('click', '[data-dl]', function () {
+            var id = $(this).attr('data-dl') || (function () {
+                var data = [];
+                return $($(this).attr('data-list-target') || 'input.list-check-box').map(function () {
+                    (this.checked) && data.push(this.value);
+                }), data.join(',');
+            }).call(this);
+            if (id.length < 1) {
+                return $.msg.tips('请选择需要操作的数据！');
+            }
+            var name = $(this).attr('data-name');
+            var action = $(this).attr('data-action');
+            var value = $(this).attr('data-value') || 0;
+            var status = value == 1 ? '开启' : '关闭';
+            var msg = '确定要' + status + '导量吗';
+
+            $.form.load('{:url("$classuri/getdomain")}', {id:id}, 'POST', function (res) {
+                if (typeof (res) === 'object') {
+                    return $.msg.auto(res);
+                }
+                var args = {
+                    type: 1,
+                    btn: ["确定","取消"],
+                    area: ["350px","200px"],
+                    content: res,
+                    title: '导量开关设置',
+                    yes: function(){
+                        var dl_domain = $('select[name=dl_domain]').find('option:selected').attr('data-domain');
+                        $.msg.confirm(msg, function () {
+                            $.form.load(action, {value: dl_domain, name: name}, 'post');
+                        });
+
+                    },
+                    btn2: function(){
+                        layer.closeAll();
+                    }
+                };
+                var layerIndex = layer.open(args);
+                $.msg.dialogIndexs.push(layerIndex);
+                return (typeof callback === 'function') && callback.call(this);
+            });
+        });
+
         window.laydate.render({range: true, elem: '#create_at'});
         window.form.render();
     </script>
