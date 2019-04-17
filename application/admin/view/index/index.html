@@ -50,6 +50,11 @@
         <div class="line-top">
             <i class="layui-icon font-s12">&#xe65f;</i>
         </div>
+        <!--<ul class="layui-nav layui-nav-tree layui-nav-tree-top" style="width: auto;">-->
+            <!--<li class="layui-nav-item" id="slidetoogle">-->
+                <!--<a class="transition text-center" style="height: 40px;"><i class="layui-icon layui-icon-spread-left"></i></a>-->
+            <!--</li>-->
+        <!--</ul>-->
         {foreach $oneMenu.sub as $twoMenu}
         <!--{empty name='$twoMenu.sub'}-->
         <a class='transition' data-menu-node="m-{$oneMenu.id}-{$twoMenu.id}" data-open="{$twoMenu.url}">

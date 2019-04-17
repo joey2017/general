@@ -132,7 +132,7 @@ label{font-size:100%;font-weight:500;margin-bottom:0}
 .framework-topbar .dropdown.open .topbar-btn{color:#333;background:#fff}
 
 /* 左则菜单 */
-.framework-leftbar{font-size:13px;top:50px;bottom:0;width:220px;position:fixed;overflow:auto;overflow-x:hidden;background:#293038;box-shadow:1px 0 3px 0 rgba(0,0,0,.08);z-index:3}
+.framework-leftbar{font-size:13px;top:50px;bottom:0;width:170px;position:fixed;overflow:auto;overflow-x:hidden;background:#293038;box-shadow:1px 0 3px 0 rgba(0,0,0,.08);z-index:3}
 .framework-leftbar .leftbar-container .line-top{font-size:10px;color:#ccc;text-align:center;letter-spacing:2px}
 .framework-leftbar .leftbar-container .font-icon{min-width:15px;text-align:center;margin-right:5px;display:inline-block;font-size:14px}
 .framework-leftbar .leftbar-container a{line-height:40px;display:block;background:#22282e;color:#fff;padding:0 15px;border-bottom:1px solid rgba(0,0,0,.05);}
@@ -145,7 +145,7 @@ label{font-size:100%;font-weight:500;margin-bottom:0}
 .framework-leftbar .leftbar-container div div a.active{background:#2494f2}
 
 /* 右则内容 */
-.framework-body{right:0;bottom:0;top:50px;left:220px;position:fixed;overflow-y:scroll;z-index:1}
+.framework-body{right:0;bottom:0;top:50px;left:170px;position:fixed;overflow-y:scroll;z-index:1}
 .framework-body>.layui-card{box-shadow:none}
 .framework-body>.layui-card>.layui-header{height:50px;line-height:50px;font-size:14px;background:#fff;padding-left:15px;box-shadow:0 2px 3px 0 rgba(0,0,0,.1);z-index:2;position:relative}
 .framework-body>.layui-card>.layui-header span{color:#333;padding:3px 0;}

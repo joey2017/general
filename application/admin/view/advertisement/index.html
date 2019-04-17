@@ -5,41 +5,11 @@
 
     <div class="form-group">
         <label class="col-sm-2 control-label">
-            AdverLink<br><span class="nowrap color-desc">广告专用域名</span>
+            FanHui<br><span class="nowrap color-desc">返回开关</span>
         </label>
         <div class='col-sm-8'>
-            <input name="adver_link" required="required" title="请输入广告专用域名" placeholder="请输入广告专用域名" value="{:sysconf('adver_link')}" class="layui-input">
-            <p class="help-block">当前广告专用域名，用于广告展示</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            BackLink1<br><span class="nowrap color-desc">后退链接1</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="back_link_1" required="required" title="请输入后退链接1" placeholder="请输入后退链接1" value="{:sysconf('back_link_1')}" class="layui-input">
-            <p class="help-block">当前后退链接1，用于分享后展示</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            BackLink2<br><span class="nowrap color-desc">后退链接2</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="back_link_2" required="required" title="请输入后退链接2" placeholder="请输入后退链接2" value="{:sysconf('back_link_2')}" class="layui-input">
-            <p class="help-block">当前后退链接2，用于分享后展示</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            BackLink3<br><span class="nowrap color-desc">后退链接3</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="back_link_3" required="required" title="请输入后退链接3" placeholder="请输入后退链接3" value="{:sysconf('back_link_3')}" class="layui-input">
-            <p class="help-block">当前后退链接3，用于分享后展示</p>
+            <input name="fanhui" required="required" title="请输入fanhui参数" placeholder="请输入fanhui参数" value="{:sysconf('fanhui')}" class="layui-input">
+            <p class="help-block">值为0表示关，值为1表示开</p>
         </div>
     </div>
 
@@ -47,67 +17,21 @@
 
     <div class="form-group">
         <label class="col-sm-2 control-label">
-            BottomADLink1<br><span class="nowrap color-desc">底部广告链接1</span>
+            Gg_item<br><span class="nowrap color-desc">底部广告下标</span>
         </label>
         <div class='col-sm-8'>
-            <input name="ad_link_1" required="required" title="请输入广告链接1" placeholder="请输入广告链接1" value="{:sysconf('ad_link_1')}" class="layui-input">
-            <p class="help-block">当前广告链接1，用于底部广告展示</p>
+            <input name="gg_item" required="required" title="请输入底部广告下标" placeholder="请输入广告链接1" value="{:sysconf('gg_item')}" class="layui-input">
+            <p class="help-block">当前底部广告下标，用于底部广告链接跳转</p>
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-sm-2 control-label">
-            BottomADImg1<br><span class="nowrap color-desc">底部广告链接图片1</span>
+            Gg_img<br><span class="nowrap color-desc">广告图片</span>
         </label>
         <div class='col-sm-8'>
-            <img data-tips-image style="height:auto;max-height:60px;min-width:350px" src="{:sysconf('ad_link_img_1')}"/>
-            <input type="hidden" required="required" name="ad_link_img_1" onchange="$(this).prev('img').attr('src', this.value)" value="{:sysconf('ad_link_img_1')}" class="layui-input">
-            <a class="btn btn-link" data-file="one" data-uptype="local" data-type="ico,jpg,png" data-field="ad_link_img_1">上传图片</a>
-            <p class="help-block">当前广告链接图片1，用于底部广告图片展示，建议上传图片的尺寸为350x60px，格式为jpg，png</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            BottomADLink2<br><span class="nowrap color-desc">底部广告链接2</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="ad_link_2" required="required" title="请输入广告链接2" placeholder="请输入广告链接2" value="{:sysconf('ad_link_2')}" class="layui-input">
-            <p class="help-block">当前广告链接2，用于底部广告展示</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            BottomADImg2<br><span class="nowrap color-desc">底部广告链接图片2</span>
-        </label>
-        <div class='col-sm-8'>
-            <img data-tips-image style="height:auto;max-height:60px;min-width:350px" src="{:sysconf('ad_link_img_2')}"/>
-            <input type="hidden" required="required" name="ad_link_img_2" onchange="$(this).prev('img').attr('src', this.value)" value="{:sysconf('ad_link_img_2')}" class="layui-input">
-            <a class="btn btn-link" data-file="one" data-uptype="local" data-type="ico,jpg,png" data-field="ad_link_img_2">上传图片</a>
-            <p class="help-block">当前广告链接图片2，用于底部广告图片展示，建议上传图片的尺寸为350x60px，格式为jpg，png</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            BottomADLink3<br><span class="nowrap color-desc">底部广告链接3</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="ad_link_3" required="required" title="请输入广告链接3" placeholder="请输入广告链接3" value="{:sysconf('ad_link_3')}" class="layui-input">
-            <p class="help-block">当前广告链接3，用于底部广告展示</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            BottomADImg3<br><span class="nowrap color-desc">底部广告链接图片3</span>
-        </label>
-        <div class='col-sm-8'>
-            <img data-tips-image style="height:auto;max-height:60px;min-width:350px" src="{:sysconf('ad_link_img_3')}"/>
-            <input type="hidden" required="required" name="ad_link_img_3" onchange="$(this).prev('img').attr('src', this.value)" value="{:sysconf('ad_link_img_3')}" class="layui-input">
-            <a class="btn btn-link" data-file="one" data-uptype="local" data-type="ico,jpg,png" data-field="ad_link_img_3">上传图片</a>
-            <p class="help-block">当前广告链接图片3，用于底部广告图片展示，建议上传图片的尺寸为350x60px，格式为jpg，png</p>
+            <input name="gg_img" required="required" title="请输入gg_img参数" placeholder="请输入gg_img参数" value="{:sysconf('gg_img')}" class="layui-input">
+            <p class="help-block">多个值以英文逗号,隔开</p>
         </div>
     </div>
 

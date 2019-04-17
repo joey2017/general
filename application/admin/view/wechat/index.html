@@ -3,38 +3,6 @@
 {block name="content"}
 <form autocomplete="off" onsubmit="return false;" action="{:request()->url()}" data-auto="true" method="post" class='form-horizontal layui-form padding-top-20'>
 
-    <!-- <div class="form-group">
-        <label class="col-sm-2 control-label">
-            AppID<br><span class="nowrap color-desc">公众号appid</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="appid" required="required" title="请输入公众号appid" placeholder="请输入公众号appid" value="{:sysconf('appid')}" class="layui-input">
-            <p class="help-block">当前公众号appid，用于域名绑定和自定义分享</p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            AppSecret<br><span class="nowrap color-desc">公众号appsecret</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="appsecret" required="required" title="请输入公众号secret" placeholder="请输入公众号secret" value="{:sysconf('appsecret')}" class="layui-input">
-            <p class="help-block">当前公众号secret，用于域名绑定和自定义分享</p>
-        </div>
-    </div>
-
-    <div class="hr-line-dashed"></div> -->
-
-    <!--<div class="form-group">-->
-        <!--<label class="col-sm-2 control-label">-->
-            <!--SafeLink<br><span class="nowrap color-desc">落地域名</span>-->
-        <!--</label>-->
-        <!--<div class='col-sm-8'>-->
-            <!--<input name="safe_link" required="required" title="请输入落地域名" placeholder="请输入落地域名" value="{:sysconf('safe_link')}" class="layui-input">-->
-            <!--<p class="help-block">当前落地域名，用于视频分享后跳转</p>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!---->
     <div class="form-group">
         <label class="col-sm-2 control-label">
             SecretKey<br><span class="nowrap color-desc">数据加密secretKey</span>
@@ -44,18 +12,6 @@
             <p class="help-block">加密secretKey，用于url参数加密</p>
         </div>
     </div>
-
-    <div class="form-group">
-        <label class="col-sm-2 control-label">
-            UrlParam<br><span class="nowrap color-desc">入口链接URL参数</span>
-        </label>
-        <div class='col-sm-8'>
-            <input name="url_param" required="required" title="请输入URL参数" placeholder="请输入URL参数"
-                   value="{:sysconf('url_param')}" class="layui-input">
-            <p class="help-block">当前入口链接url参数，格式：token=158616...,token值仅为数字、大小写字母</p>
-        </div>
-    </div>
-
 
     <div class="hr-line-dashed"></div>
 

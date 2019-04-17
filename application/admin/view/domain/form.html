@@ -53,11 +53,13 @@
     <script>
         window.form.render();
         $(function(){
+            var server_id = '{$vo.server_id}';
+            console.log(server_id)
             $.post('admin/domain/getIps', {}, function (data) {
                 var html = '<option value="">-请选择ip-</option>';
                 if (data.length > 0) {
                     $.each(data, function (i, v) {
-                        html += '<option value="' + v.id + '">' + v.ip + '('+ v.name +')' + '</option>';
+                        html += '<option value="' + v.id + '"'+ (server_id == v.id ? 'selected' : '') +'>' + v.ip + '('+ v.name +')' + '</option>';
                     });
 
                 } else {

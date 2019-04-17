@@ -1,4 +1,4 @@
-<?php /*a:2:{s:63:"D:\phpStudy\WWW\general\application\admin\view\index\index.html";i:1552464218;s:63:"D:\phpStudy\WWW\general\application\admin\view\public\main.html";i:1552467680;}*/ ?>
+<?php /*a:2:{s:63:"D:\phpStudy\WWW\general\application\admin\view\index\index.html";i:1555464329;s:63:"D:\phpStudy\WWW\general\application\admin\view\public\main.html";i:1555041343;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head>
@@ -12,11 +12,15 @@
         <link href="/static/plugs/layui/css/layui.css?v=<?php echo date('ymd'); ?>" rel="stylesheet">
         <link href="/static/theme/css/console.css?v=<?php echo date('ymd'); ?>" rel="stylesheet">
         <link href="/static/theme/css/animate.css?v=<?php echo date('ymd'); ?>" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.min.css" />
+
         
         <script>window.ROOT_URL = '';</script>
         <script src="/static/plugs/jquery/pace.min.js"></script>
         <script src="/static/plugs/layui/layui.all.js"></script>
         <script src="/static/admin.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js"></script>
+
     </head>
     <body class="framework mini">
         
@@ -69,6 +73,11 @@
         <div class="line-top">
             <i class="layui-icon font-s12">&#xe65f;</i>
         </div>
+        <!--<ul class="layui-nav layui-nav-tree layui-nav-tree-top" style="width: auto;">-->
+            <!--<li class="layui-nav-item" id="slidetoogle">-->
+                <!--<a class="transition text-center" style="height: 40px;"><i class="layui-icon layui-icon-spread-left"></i></a>-->
+            <!--</li>-->
+        <!--</ul>-->
         <?php foreach($oneMenu['sub'] as $twoMenu): ?>
         <!--<?php if(empty($twoMenu['sub']) || (($twoMenu['sub'] instanceof \think\Collection || $twoMenu['sub'] instanceof \think\Paginator ) && $twoMenu['sub']->isEmpty())): ?>-->
         <a class='transition' data-menu-node="m-<?php echo htmlentities($oneMenu['id']); ?>-<?php echo htmlentities($twoMenu['id']); ?>" data-open="<?php echo htmlentities($twoMenu['url']); ?>">
@@ -112,6 +121,16 @@
             success:function (data) {
                 if (data.status) {
                     voicePlay(data.msg);
+                    var ok = layer.confirm(data.msg, {
+                        btn: ['知道了','关闭'] //按钮
+                    }, function(){
+                        $.post('<?php echo url("domain/noticedel"); ?>',{'id':data.data},function(res){
+                            console.log(res);
+                            layer.close(ok);
+                        },'json');
+                    }, function(){
+                        layer.close(ok);
+                    });
                 }
             }
         });

@@ -20,6 +20,12 @@ class Manage extends Controller
         $this->_header = header("Access-Control-Allow-Origin: *");
     }
 
+    /**分享数据
+     * @return string
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
     public function getsharedata()
     {
         $this->_header;
@@ -35,6 +41,12 @@ class Manage extends Controller
         }
     }
 
+    /**二维码数据
+     * @return string
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
     public function apicode()
     {
         $this->_header;
@@ -49,6 +61,12 @@ class Manage extends Controller
         }
     }
 
+    /**广告位置数据
+     * @return string
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
     public function pages()
     {
         $this->_header;
@@ -58,6 +76,27 @@ class Manage extends Controller
                 ->where(['is_deleted' => '0', 'status' => '1'])
                 ->order('sort asc,id desc')
                 ->select());
+        } else {
+            return json_encode(['code' => '100','msg' => '无访问权限']);
+        }
+    }
+
+    /**视频数据
+     * @return string
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
+    public function video()
+    {
+        $this->_header;
+        if ($this->request->isPost()) {
+            return json_encode(Db::name('SystemVideo')
+                ->field('title,vid,pause,read_min,read_max,image,stars')
+                ->where(['is_deleted' => '0', 'status' => '1'])
+                ->order('sort asc,id desc')
+                ->find()
+            );
         } else {
             return json_encode(['code' => '100','msg' => '无访问权限']);
         }
