@@ -53,8 +53,7 @@
     <script>
         window.form.render();
         $(function(){
-            var server_id = '{$vo.server_id}';
-            console.log(server_id)
+            var server_id = '{$vo.server_id|default=""}';
             $.post('admin/domain/getIps', {}, function (data) {
                 var html = '<option value="">-请选择ip-</option>';
                 if (data.length > 0) {
