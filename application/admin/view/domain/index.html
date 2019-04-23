@@ -111,6 +111,7 @@
             <th class='text-left nowrap'>绑定ip</th>
             <th class='text-left nowrap'>类型</th>
             <th class='text-left nowrap'>状态</th>
+            <th class='text-left nowrap'>备注</th>
             <th class='text-left nowrap'>添加时间</th>
             <th class='text-left nowrap'>被封时间</th>
             <th class='text-left'>操作</th>
@@ -133,6 +134,7 @@
             <td class='text-left nowrap'>
                 {if $vo.status eq 0}<span class="color-red">已禁用</span>{elseif $vo.status eq 1}<span class="color-green">使用中</span>{/if}
             </td>
+            <td class='text-left nowrap'>{$vo.remark}</td>
             <td class='text-left nowrap'>{$vo.create_at|format_datetime}</td>
             <td class='text-left nowrap'>{$vo.edit_time}</td>
             <td class='text-left nowrap'>
