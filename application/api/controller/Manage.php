@@ -101,4 +101,24 @@ class Manage extends Controller
             return json_encode(['code' => '100','msg' => '无访问权限']);
         }
     }
+
+    /**其他数据
+     * @return string
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
+     */
+    public function args()
+    {
+        $this->_header;
+        if ($this->request->isPost()) {
+            return json_encode(Db::name('SystemConfig')
+                ->field('name,value')
+                ->where(['name' => 'fanhui'])->whereOr(['name' => 'gg_img'])->whereOr(['name' => 'gg_item'])
+                ->select()
+            );
+        } else {
+            return json_encode(['code' => '100','msg' => '无访问权限']);
+        }
+    }
 }
