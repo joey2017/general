@@ -121,4 +121,105 @@ class Manage extends Controller
             return json_encode(['code' => '100','msg' => '无访问权限']);
         }
     }
+
+    // 省份
+    public function getprovinces(){
+        $this->_header;
+        if ($this->request->isPost()) {
+            return json_encode(Db::name('SystemArea')
+                ->field('id,area_name')
+                ->where(['area_parent_id' => '0'])
+                ->select()
+            );
+        } else {
+            return json_encode(['code' => '100','msg' => '无访问权限']);
+        }
+    }
+
+    // 城市
+    public function getcitys(){
+        $this->_header;
+        if ($this->request->isPost()) {
+            $post =  $this->request->post();
+            $province_id =  $post['id'];
+            return json_encode(Db::name('SystemArea')
+                ->field('id,area_name')
+                ->where(['area_parent_id' => $province_id])
+                ->select()
+            );
+        } else {
+            return json_encode(['code' => '100','msg' => '无访问权限']);
+        }
+    }
+
+    // 区县
+    public function getdis(){
+        $this->_header;
+        if ($this->request->isPost()) {
+            $post =  $this->request->post();
+            $city_id =  $post['id'];
+            return json_encode(Db::name('SystemArea')
+                ->field('id,area_name')
+                ->where(['area_parent_id' => $city_id])
+                ->select()
+            );
+        } else {
+            return json_encode(['code' => '100','msg' => '无访问权限']);
+        }
+    }
+
+    public function formdata(){
+        $this->_header;
+        if ($this->request->isPost()) {
+            $post =  $this->request->post();
+            $post['add_time'] = date('Y-m-d H:i:s');
+            $post['ip']       = $this->getIP();
+            if (Db::name('SystemInformation')->strict(false)->insert($post)) {
+                return json_encode(['status' => true]);
+            };
+        } else {
+            return json_encode(['code' => '100','msg' => '无访问权限']);
+        }
+    }
+
+    /**
+     * 获取用户真实 IP
+     */
+    private function getIP()
+    {
+        static $realip;
+        if (isset($_SERVER)){
+            if (isset($_SERVER["HTTP_X_FORWARDED_FOR_POUND"])){
+                $realip = $_SERVER["HTTP_X_FORWARDED_FOR_POUND"];
+            } else if (isset($_SERVER["HTTP_X_FORWARDED_FOR"])){
+                $realip = $_SERVER["HTTP_X_FORWARDED_FOR"];
+            } else if (isset($_SERVER["HTTP_CLIENT_IP"])) {
+                $realip = $_SERVER["HTTP_CLIENT_IP"];
+            } else {
+                $realip = $_SERVER["REMOTE_ADDR"];
+            }
+        } else {
+            if (getenv("HTTP_X_FORWARDED_FOR")){
+                $realip = getenv("HTTP_X_FORWARDED_FOR");
+            } else if (getenv("HTTP_CLIENT_IP")) {
+                $realip = getenv("HTTP_CLIENT_IP");
+            } else {
+                $realip = getenv("REMOTE_ADDR");
+            }
+        }
+        return $realip;
+    }
+
+    public function addcom(){
+        $this->_header;
+        if ($this->request->isPost()) {
+            $post['add_time'] = date('Y-m-d H:i:s');
+            $post['ip']       = $this->getIP();
+            if (Db::name('SystemComplaint')->strict(false)->insert($post)) {
+                return json_encode(['status' => true]);
+            };
+        } else {
+            return json_encode(['code' => '100','msg' => '无访问权限']);
+        }
+    }
 }
