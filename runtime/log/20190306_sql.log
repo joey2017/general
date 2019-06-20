@@ -1,0 +1,1063 @@
+---------------------------------------------------------------
+[2019-03-06T14:29:25+08:00] 127.0.0.1 GET dev.admin.com/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017134s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.013455s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001237s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.014809s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000673s ]
+---------------------------------------------------------------
+[2019-03-06T14:29:26+08:00] 127.0.0.1 GET dev.admin.com/admin/advertisement/index.html?spm=m-1-43-44
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000639s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014027s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/advertisement/index' LIMIT 1 [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.013827s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000702s ]
+---------------------------------------------------------------
+[2019-03-06T14:29:31+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000704s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014941s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/index' LIMIT 1 [ RunTime:0.001290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_domain` [ RunTime:0.014456s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_domain` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SELECT * FROM `system_domain` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT `node` FROM `system_node` WHERE  `is_auth` = 1 [ RunTime:0.000968s ]
+---------------------------------------------------------------
+[2019-03-06T14:48:33+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000954s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013695s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.012616s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000731s ]
+---------------------------------------------------------------
+[2019-03-06T14:48:39+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000700s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014215s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013998s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.001036s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001016s ]
+---------------------------------------------------------------
+[2019-03-06T14:48:42+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000707s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013216s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012488s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2  AND `status` = 1 LIMIT 1 [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000961s ]
+---------------------------------------------------------------
+[2019-03-06T14:51:13+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000752s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015012s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.013272s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000847s ]
+---------------------------------------------------------------
+[2019-03-06T16:34:18+08:00] 127.0.0.1 GET dev.admin.com/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000991s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017692s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.001108s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.012557s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001074s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.012433s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000750s ]
+---------------------------------------------------------------
+[2019-03-06T16:34:19+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000823s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016364s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001283s ]
+---------------------------------------------------------------
+[2019-03-06T16:34:23+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000635s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014678s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.013556s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_app` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT `node` FROM `system_node` WHERE  `is_auth` = 1 [ RunTime:0.000987s ]
+---------------------------------------------------------------
+[2019-03-06T16:34:26+08:00] 127.0.0.1 GET dev.admin.com/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000706s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023723s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.011587s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.011994s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.001154s ]
+---------------------------------------------------------------
+[2019-03-06T16:34:27+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000611s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.039874s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.001109s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.012691s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_app` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT `node` FROM `system_node` WHERE  `is_auth` = 1 [ RunTime:0.000890s ]
+---------------------------------------------------------------
+[2019-03-06T16:34:33+08:00] 127.0.0.1 GET dev.admin.com/admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017255s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/login/index' LIMIT 1 [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.011992s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[2019-03-06T16:34:35+08:00] 127.0.0.1 POST dev.admin.com/admin/login.html?spm=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017717s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/login/index' LIMIT 1 [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.017221s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `username` = 'admin'  AND `is_deleted` = 0 LIMIT 1 [ RunTime:0.001368s ]
+[ sql ] [ SQL ] UPDATE `system_user`  SET `login_at` = now() , `login_num` = login_num+1  WHERE  `id` = 10000 [ RunTime:0.008595s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.015069s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.001893s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.013904s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `action` , `content` , `username`) VALUES ('127.0.0.1' , 'admin/login/index' , '系统管理' , '用户登录系统成功' , 'admin') [ RunTime:0.002370s ]
+---------------------------------------------------------------
+[2019-03-06T16:34:36+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014630s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.012917s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.012349s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.012448s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.011671s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.001033s ]
+---------------------------------------------------------------
+[2019-03-06T16:34:37+08:00] 127.0.0.1 GET dev.admin.com/admin/advertisement/index.html?spm=m-1-43-44
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000666s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.011814s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/advertisement/index' LIMIT 1 [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.012299s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000727s ]
+---------------------------------------------------------------
+[2019-03-06T16:34:42+08:00] 127.0.0.1 GET dev.admin.com/admin/menu/index.html?spm=m-1-10-2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000809s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013586s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/menu/index' LIMIT 1 [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.014887s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000935s ]
+---------------------------------------------------------------
+[2019-03-06T16:35:06+08:00] 127.0.0.1 GET dev.admin.com/admin/menu/edit.html?id=46&spm=m-1-10-2&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000644s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025738s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/menu/edit' LIMIT 1 [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.014186s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001439s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.001049s ]
+---------------------------------------------------------------
+[2019-03-06T16:35:19+08:00] 127.0.0.1 POST dev.admin.com/admin/menu/edit.html?id=46&spm=m-1-10-2&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.016387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_menu` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.000841s ]
+[ sql ] [ SQL ] UPDATE `system_menu`  SET `pid` = 45 , `title` = '视频管理列表' , `url` = 'admin/video/index' , `params` = '' , `icon` = 'fa fa-film' , `id` = 46  WHERE  `id` = 46 [ RunTime:0.002045s ]
+---------------------------------------------------------------
+[2019-03-06T16:35:23+08:00] 127.0.0.1 GET dev.admin.com/admin/menu/index.html?spm=m-1-10-2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000681s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015555s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/menu/index' LIMIT 1 [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.013487s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000956s ]
+---------------------------------------------------------------
+[2019-03-06T16:41:15+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000917s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013452s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000988s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.012259s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.012613s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.012710s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000995s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.012324s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000753s ]
+---------------------------------------------------------------
+[2019-03-06T16:41:16+08:00] 127.0.0.1 GET dev.admin.com/admin/menu/index.html?spm=m-1-10-2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001069s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018744s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/menu/index' LIMIT 1 [ RunTime:0.002439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.016158s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001381s ]
+---------------------------------------------------------------
+[2019-03-06T16:42:27+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000877s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014274s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.014143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_app` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000834s ]
+---------------------------------------------------------------
+[2019-03-06T16:45:49+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000697s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025220s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000843s ]
+---------------------------------------------------------------
+[2019-03-06T16:45:55+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000750s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015061s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.012658s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.013426s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.012601s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.015423s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000886s ]
+---------------------------------------------------------------
+[2019-03-06T16:45:56+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000743s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025697s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001160s ]
+---------------------------------------------------------------
+[2019-03-06T16:45:59+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000722s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014916s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000894s ]
+---------------------------------------------------------------
+[2019-03-06T16:46:19+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000680s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025871s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000857s ]
+---------------------------------------------------------------
+[2019-03-06T16:46:53+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000704s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017409s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.014255s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001425s ]
+---------------------------------------------------------------
+[2019-03-06T16:46:59+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000826s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015084s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.013707s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.012499s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.001189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.013522s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001102s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.013869s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000748s ]
+---------------------------------------------------------------
+[2019-03-06T16:47:00+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000845s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016999s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.015507s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000993s ]
+---------------------------------------------------------------
+[2019-03-06T16:52:00+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000812s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020601s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.013055s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.001396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.014504s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.012798s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.014361s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000882s ]
+---------------------------------------------------------------
+[2019-03-06T16:52:02+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000703s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017039s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.016255s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.001250s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001528s ]
+---------------------------------------------------------------
+[2019-03-06T16:57:39+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000900s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014126s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.012357s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.014215s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.012658s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.001296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.014124s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000806s ]
+---------------------------------------------------------------
+[2019-03-06T16:57:40+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002816s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.012684s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.017996s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000902s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:07+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014810s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.011906s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.012378s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.012498s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.013385s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000887s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:08+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000890s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020324s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.005488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.013083s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001313s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:11+08:00] 127.0.0.1 GET dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000830s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014601s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/add' LIMIT 1 [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.014703s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:21+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011441s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020815s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.015471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_app` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.001476s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000917s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:27+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013900s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.013390s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.012808s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.012065s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000995s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.012627s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000906s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:29+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000609s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013395s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.001550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.013451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_app` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000857s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:35+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/edit.html?id=3&spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000635s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023358s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/edit' LIMIT 1 [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.012031s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000838s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:38+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000638s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015219s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.013746s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_app` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000846s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:41+08:00] 127.0.0.1 POST dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009944s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025997s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.012338s ]
+[ sql ] [ SQL ] UPDATE `system_app`  SET `sort` = 0  WHERE  `id` = 3 [ RunTime:0.002124s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:45+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014793s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.012880s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_app` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000873s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:56+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014275s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.012657s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001020s ]
+---------------------------------------------------------------
+[2019-03-06T16:58:58+08:00] 127.0.0.1 POST dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010990s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.011515s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.013457s ]
+[ sql ] [ SQL ] UPDATE `system_video`  SET `sort` = 1  WHERE  `id` = 8 [ RunTime:0.001992s ]
+[ sql ] [ SQL ] UPDATE `system_video`  SET `sort` = 1  WHERE  `id` = 7 [ RunTime:0.001668s ]
+[ sql ] [ SQL ] UPDATE `system_video`  SET `sort` = 3  WHERE  `id` = 9 [ RunTime:0.001667s ]
+---------------------------------------------------------------
+[2019-03-06T16:59:02+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013662s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.012096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000891s ]
+---------------------------------------------------------------
+[2019-03-06T16:59:30+08:00] 127.0.0.1 GET dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.027451s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/add' LIMIT 1 [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.013627s ]
+---------------------------------------------------------------
+[2019-03-06T16:59:38+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000680s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015284s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.013294s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000969s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001254s ]
+---------------------------------------------------------------
+[2019-03-06T17:00:00+08:00] 127.0.0.1 GET dev.admin.com/admin/video/edit.html?id=8&spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011131s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026627s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/edit' LIMIT 1 [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.012497s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.001018s ]
+---------------------------------------------------------------
+[2019-03-06T17:00:04+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010132s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015076s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.012888s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001093s ]
+---------------------------------------------------------------
+[2019-03-06T17:00:09+08:00] 127.0.0.1 POST dev.admin.com/admin/video/forbid.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010039s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013492s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/forbid' LIMIT 1 [ RunTime:0.000919s ]
+---------------------------------------------------------------
+[2019-03-06T17:00:20+08:00] 127.0.0.1 POST dev.admin.com/admin/video/forbid.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000630s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022678s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/forbid' LIMIT 1 [ RunTime:0.000827s ]
+---------------------------------------------------------------
+[2019-03-06T17:01:46+08:00] 127.0.0.1 GET dev.admin.com/admin/video/forbid.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013164s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/forbid' LIMIT 1 [ RunTime:0.000899s ]
+---------------------------------------------------------------
+[2019-03-06T17:02:52+08:00] 127.0.0.1 POST dev.admin.com/admin/video/forbid.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000850s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015052s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/forbid' LIMIT 1 [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.014327s ]
+[ sql ] [ SQL ] UPDATE `system_video`  SET `status` = 0  WHERE  `id` IN (8) [ RunTime:0.002095s ]
+---------------------------------------------------------------
+[2019-03-06T17:02:56+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014922s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.012921s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0  AND `status` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000931s ]
+---------------------------------------------------------------
+[2019-03-06T17:04:14+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000755s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014691s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.013257s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.015774s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.013146s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.001123s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.014155s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000742s ]
+---------------------------------------------------------------
+[2019-03-06T17:04:15+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001070s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.010612s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.018211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.001324s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000983s ]
+---------------------------------------------------------------
+[2019-03-06T17:04:20+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011160s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014717s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/index' LIMIT 1 [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_domain` [ RunTime:0.013747s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_domain` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `system_domain` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001172s ]
+---------------------------------------------------------------
+[2019-03-06T17:04:24+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000691s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018132s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.020773s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000760s ]
+---------------------------------------------------------------
+[2019-03-06T17:04:26+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000672s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015476s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013608s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 LIMIT 1 [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000774s ]
+---------------------------------------------------------------
+[2019-03-06T17:04:29+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011090s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013523s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000946s ]
+---------------------------------------------------------------
+[2019-03-06T17:05:00+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000647s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019072s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012415s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 LIMIT 1 [ RunTime:0.001410s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000915s ]
+---------------------------------------------------------------
+[2019-03-06T17:05:07+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000682s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023827s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012606s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000815s ]
+---------------------------------------------------------------
+[2019-03-06T17:06:06+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001042s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021414s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.012308s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.012321s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.012030s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.013711s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000710s ]
+---------------------------------------------------------------
+[2019-03-06T17:06:07+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000640s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016095s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.014229s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000805s ]
+---------------------------------------------------------------
+[2019-03-06T17:06:10+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024922s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 LIMIT 1 [ RunTime:0.001030s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001084s ]
+---------------------------------------------------------------
+[2019-03-06T17:06:19+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000789s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021648s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001184s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.012703s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.001071s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001033s ]
+---------------------------------------------------------------
+[2019-03-06T17:06:53+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011102s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019181s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012984s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001053s ]
+---------------------------------------------------------------
+[2019-03-06T17:06:56+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016886s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013402s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 LIMIT 1 [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000928s ]
+---------------------------------------------------------------
+[2019-03-06T17:06:58+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000673s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013939s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013420s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000913s ]
+---------------------------------------------------------------
+[2019-03-06T17:07:01+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010781s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019844s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013820s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 LIMIT 1 [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000947s ]
+---------------------------------------------------------------
+[2019-03-06T17:07:07+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000805s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020593s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013983s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001644s ]
+---------------------------------------------------------------
+[2019-03-06T17:07:10+08:00] 127.0.0.1 GET dev.admin.com/admin/share/add.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000879s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024960s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/add' LIMIT 1 [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013588s ]
+---------------------------------------------------------------
+[2019-03-06T17:07:27+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014779s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013159s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 LIMIT 1 [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001404s ]
+---------------------------------------------------------------
+[2019-03-06T17:07:30+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000647s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014717s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.014084s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.001187s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000950s ]
+---------------------------------------------------------------
+[2019-03-06T17:07:31+08:00] 127.0.0.1 GET dev.admin.com/admin/share/add.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015868s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/add' LIMIT 1 [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012324s ]
+---------------------------------------------------------------
+[2019-03-06T17:07:57+08:00] 127.0.0.1 POST dev.admin.com/admin/share/add.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000673s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014128s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/add' LIMIT 1 [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012673s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000794s ]
+[ sql ] [ SQL ] INSERT INTO `system_share` (`type` , `name` , `content` , `sort`) VALUES (1 , '群分享2' , '分享<span style=\"font-size: 30px;color: #f5294c\">分享成功</span>,请继续分享到不同的群！' , 2) [ RunTime:0.002147s ]
+---------------------------------------------------------------
+[2019-03-06T17:08:01+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033832s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012235s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000900s ]
+---------------------------------------------------------------
+[2019-03-06T17:23:49+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001277s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019759s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.015506s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.002185s ]
+---------------------------------------------------------------
+[2019-03-06T17:23:54+08:00] 127.0.0.1 GET dev.admin.com/admin/share/edit.html?id=7&type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000650s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.031865s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/edit' LIMIT 1 [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.017249s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.001510s ]
+---------------------------------------------------------------
+[2019-03-06T17:24:23+08:00] 127.0.0.1 POST dev.admin.com/admin/share/edit.html?id=7&type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000731s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020048s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/edit' LIMIT 1 [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.014229s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] UPDATE `system_share`  SET `type` = 2 , `name` = '圈分享1' , `content` = '分享成功，剩下最后一步啦！<br />请分享到<span style=\"font-size: 30px;color: #f5294c\">朋友圈</span>即可领取!' , `sort` = 1 , `id` = 7  WHERE  `id` = 7 [ RunTime:0.002618s ]
+---------------------------------------------------------------
+[2019-03-06T17:24:27+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000756s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016861s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.014236s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 LIMIT 1 [ RunTime:0.001276s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000868s ]
+---------------------------------------------------------------
+[2019-03-06T17:24:30+08:00] 127.0.0.1 GET dev.admin.com/admin/share/add.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000629s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016256s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/add' LIMIT 1 [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.015093s ]
+---------------------------------------------------------------
+[2019-03-06T17:24:53+08:00] 127.0.0.1 POST dev.admin.com/admin/share/add.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000634s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014770s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/add' LIMIT 1 [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.014836s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001164s ]
+[ sql ] [ SQL ] INSERT INTO `system_share` (`type` , `name` , `content` , `sort`) VALUES (2 , '圈分享2' , '分享朋友圈<span style=\"font-size: 30px;color: #f5294c\">失败</span>,请继续分享朋友圈！' , 2) [ RunTime:0.002275s ]
+---------------------------------------------------------------
+[2019-03-06T17:24:57+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000615s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015648s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013423s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 LIMIT 1 [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000920s ]
+---------------------------------------------------------------
+[2019-03-06T17:25:14+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000791s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014587s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.013824s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000903s ]
+---------------------------------------------------------------
+[2019-03-06T17:29:06+08:00] 127.0.0.1 POST dev.admin.com/admin/video/del.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000766s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020130s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/del' LIMIT 1 [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.014800s ]
+[ sql ] [ SQL ] UPDATE `system_video`  SET `is_deleted` = 1  WHERE  `id` IN (8) [ RunTime:0.002942s ]
+---------------------------------------------------------------
+[2019-03-06T17:29:08+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000927s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013711s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.012352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000946s ]
+---------------------------------------------------------------
+[2019-03-06T17:29:13+08:00] 127.0.0.1 POST dev.admin.com/admin/video/del.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000679s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016327s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/del' LIMIT 1 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.013870s ]
+[ sql ] [ SQL ] UPDATE `system_video`  SET `is_deleted` = 1  WHERE  `id` IN (7,9) [ RunTime:0.002227s ]
+---------------------------------------------------------------
+[2019-03-06T17:29:17+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000691s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014662s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001723s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.012172s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000775s ]
+---------------------------------------------------------------
+[2019-03-06T17:29:21+08:00] 127.0.0.1 GET dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000882s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016456s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/add' LIMIT 1 [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.013982s ]
+---------------------------------------------------------------
+[2019-03-06T17:31:00+08:00] 127.0.0.1 POST dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000766s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.031082s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/add' LIMIT 1 [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.014305s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000795s ]
+[ sql ] [ SQL ] INSERT INTO `system_video` (`title` , `vid` , `pause` , `read_min` , `read_max` , `stars` , `sort`) VALUES ('女总裁被女同学当畜生羞辱，当场大怒，结局所有人都吓傻了！' , 'e0632jmb3wf' , 297 , 1002 , 5000 , 800 , 1) [ RunTime:0.002692s ]
+---------------------------------------------------------------
+[2019-03-06T17:31:04+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000649s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015832s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.014618s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001152s ]
+---------------------------------------------------------------
+[2019-03-06T17:37:31+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000808s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015119s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013893s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001083s ]
+---------------------------------------------------------------
+[2019-03-06T17:37:45+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/index.html?spm=m-1-47-54
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014519s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/index' LIMIT 1 [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.018288s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000866s ]
+---------------------------------------------------------------
+[2019-03-06T17:37:47+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000704s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023451s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.017477s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_app` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000946s ]
+---------------------------------------------------------------
+[2019-03-06T17:37:50+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000681s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014353s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.014641s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000872s ]
+---------------------------------------------------------------
+[2019-03-06T17:37:57+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000725s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.029760s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/index' LIMIT 1 [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_domain` [ RunTime:0.016630s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_domain` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.001604s ]
+[ sql ] [ SQL ] SELECT * FROM `system_domain` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000930s ]
+---------------------------------------------------------------
+[2019-03-06T17:38:02+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000669s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014881s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013596s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 LIMIT 1 [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 2 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000886s ]
+---------------------------------------------------------------
+[2019-03-06T17:38:04+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000663s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016200s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013296s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000945s ]
+---------------------------------------------------------------
+[2019-03-06T17:38:11+08:00] 127.0.0.1 GET dev.admin.com/admin/qrcode/index.html?spm=m-1-43-53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000808s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015483s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/qrcode/index' LIMIT 1 [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_qrcode` [ RunTime:0.015122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_qrcode` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `system_qrcode` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000986s ]
+---------------------------------------------------------------
+[2019-03-06T17:38:13+08:00] 127.0.0.1 GET dev.admin.com/admin/advertisement/index.html?spm=m-1-43-44
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002308s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018317s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/advertisement/index' LIMIT 1 [ RunTime:0.001123s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.013055s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000836s ]
+---------------------------------------------------------------
+[2019-03-06T17:38:18+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000676s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018813s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.001071s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.013714s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_app` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000885s ]
+---------------------------------------------------------------
+[2019-03-06T17:38:19+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000645s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015934s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012220s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.001143s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001022s ]
+---------------------------------------------------------------
+[2019-03-06T17:41:26+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010265s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015365s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.013480s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000854s ]
+---------------------------------------------------------------
+[2019-03-06T17:47:27+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001102s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.027590s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.015929s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.015755s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.015159s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001294s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.017980s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000749s ]
+---------------------------------------------------------------
+[2019-03-06T17:47:28+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000766s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015108s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.001167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.030039s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001305s ]
+---------------------------------------------------------------
+[2019-03-06T17:47:32+08:00] 127.0.0.1 GET dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000718s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015935s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/add' LIMIT 1 [ RunTime:0.001566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.015102s ]
+---------------------------------------------------------------
+[2019-03-06T17:47:44+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000715s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022360s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.013865s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000744s ]
+---------------------------------------------------------------
+[2019-03-06T17:47:49+08:00] 127.0.0.1 GET dev.admin.com/admin/video/edit.html?id=10&spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000647s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015659s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/edit' LIMIT 1 [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.014047s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000854s ]
+---------------------------------------------------------------
+[2019-03-06T17:48:00+08:00] 127.0.0.1 POST dev.admin.com/admin/video/edit.html?id=10&spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000835s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015975s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/edit' LIMIT 1 [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.012619s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000766s ]
+[ sql ] [ SQL ] UPDATE `system_video`  SET `title` = '女总裁被女同学当畜生羞辱，当场大怒，结局所有人都吓傻了！' , `vid` = 'e0632jmb3wf' , `pause` = 297 , `read_min` = 1002 , `read_max` = 5000 , `image` = 'http://wx1.sinaimg.cn/sq612/00669utAgy1fu9ahbo728j30al0akthr.jpg' , `stars` = 800 , `sort` = 1 , `id` = 10  WHERE  `id` = 10 [ RunTime:0.002148s ]
+---------------------------------------------------------------
+[2019-03-06T17:48:04+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014282s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.013057s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000913s ]
+---------------------------------------------------------------
+[2019-03-06T17:48:06+08:00] 127.0.0.1 GET dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000637s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023024s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/add' LIMIT 1 [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.011996s ]
+---------------------------------------------------------------
+[2019-03-06T17:48:44+08:00] 127.0.0.1 POST dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014248s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/add' LIMIT 1 [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.012931s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000833s ]
+[ sql ] [ SQL ] INSERT INTO `system_video` (`title` , `vid` , `pause` , `read_min` , `read_max` , `image` , `stars` , `sort`) VALUES ('农村小伙救了女总裁一命, 流落街头女总裁开着宝马找他报恩, 三年后...' , 't06631l66ap' , 151 , 18815 , 151885 , 'https://wx4.sinaimg.cn/mw690/005SSfhzgy1fu29p326apj30mr0ckdyv.jpg' , 12482 , 3) [ RunTime:0.002659s ]
+---------------------------------------------------------------
+[2019-03-06T17:48:48+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000907s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018836s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.015557s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000997s ]
+---------------------------------------------------------------
+[2019-03-06T17:48:54+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018527s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012417s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000865s ]
+---------------------------------------------------------------
+[2019-03-06T17:51:12+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000709s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014301s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.012266s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.013856s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.012803s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.014087s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000773s ]
+---------------------------------------------------------------
+[2019-03-06T17:51:13+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020722s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001052s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.008819s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001522s ]
+---------------------------------------------------------------
+[2019-03-06T17:55:14+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000787s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026202s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.015280s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.014036s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.014565s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001370s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.001128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.015458s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.001024s ]
+---------------------------------------------------------------
+[2019-03-06T17:55:15+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000751s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019838s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.008294s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.006152s ]
+---------------------------------------------------------------
+[2019-03-06T17:55:29+08:00] 127.0.0.1 GET dev.admin.com/admin/share/add.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010431s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016007s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/add' LIMIT 1 [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013625s ]
+---------------------------------------------------------------
+[2019-03-06T17:55:45+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000640s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017698s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.013348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000945s ]
+---------------------------------------------------------------
+[2019-03-06T18:00:29+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011330s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019014s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_video` [ RunTime:0.015209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_video` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.001957s ]
+[ sql ] [ SQL ] SELECT * FROM `system_video` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000991s ]
+---------------------------------------------------------------
+[2019-03-06T18:00:35+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023803s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/applist' LIMIT 1 [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_app` [ RunTime:0.015226s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_app` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `system_app` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.001227s ]
+---------------------------------------------------------------
+[2019-03-06T18:00:37+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/index.html?spm=m-1-47-54
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000676s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015671s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/index' LIMIT 1 [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.014228s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000670s ]
+---------------------------------------------------------------
+[2019-03-06T18:00:39+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000728s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019149s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_share` [ RunTime:0.012135s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT * FROM `system_share` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000965s ]
+---------------------------------------------------------------
+[2019-03-06T18:00:42+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/index.html?spm=m-1-47-54
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000718s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016719s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/wechat/index' LIMIT 1 [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.013960s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000749s ]

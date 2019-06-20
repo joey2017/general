@@ -1,0 +1,3532 @@
+---------------------------------------------------------------
+[2019-03-06T14:29:19+08:00] 127.0.0.1 GET dev.admin.com/
+[运行时间：0.519735s] [吞吐率：1.92req/s] [内存消耗：1,498.63kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2019-03-06T14:29:20+08:00] 127.0.0.1 GET dev.admin.com/favicon.ico
+[运行时间：0.532498s] [吞吐率：1.88req/s] [内存消耗：1,498.64kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2019-03-06T14:29:25+08:00] 127.0.0.1 GET dev.admin.com/admin
+[运行时间：0.501858s] [吞吐率：1.99req/s] [内存消耗：3,267.51kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T14:29:26+08:00] 127.0.0.1 GET dev.admin.com/admin/advertisement/index.html?spm=m-1-43-44
+[运行时间：0.345655s] [吞吐率：2.89req/s] [内存消耗：2,923.86kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-43-44',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\advertisement\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-03-06T14:29:31+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[运行时间：0.480924s] [吞吐率：2.08req/s] [内存消耗：3,282.34kb] [文件加载：81]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-55-56',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\domain\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T14:48:33+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.352527s] [吞吐率：2.84req/s] [内存消耗：2,920.87kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-03-06T14:48:39+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.424290s] [吞吐率：2.36req/s] [内存消耗：3,118.66kb] [文件加载：79]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T14:48:42+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.431288s] [吞吐率：2.32req/s] [内存消耗：3,114.41kb] [文件加载：79]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T14:51:13+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.345796s] [吞吐率：2.89req/s] [内存消耗：2,920.87kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:34:18+08:00] 127.0.0.1 GET dev.admin.com/admin
+[运行时间：0.513477s] [吞吐率：1.95req/s] [内存消耗：3,277.18kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:34:19+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.617233s] [吞吐率：1.62req/s] [内存消耗：2,972.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T16:34:23+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.430279s] [吞吐率：2.32req/s] [内存消耗：3,127.34kb] [文件加载：79]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:34:26+08:00] 127.0.0.1 GET dev.admin.com/admin
+[运行时间：0.535381s] [吞吐率：1.87req/s] [内存消耗：3,277.23kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:34:27+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.461862s] [吞吐率：2.17req/s] [内存消耗：3,127.59kb] [文件加载：79]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:34:33+08:00] 127.0.0.1 GET dev.admin.com/admin/login.html
+[运行时间：0.360366s] [吞吐率：2.77req/s] [内存消耗：3,087.76kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\login\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:34:35+08:00] 127.0.0.1 POST dev.admin.com/admin/login.html?spm=
+[运行时间：0.442715s] [吞吐率：2.26req/s] [内存消耗：2,973.46kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => '',
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T16:34:36+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.547497s] [吞吐率：1.83req/s] [内存消耗：3,288.95kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:34:37+08:00] 127.0.0.1 GET dev.admin.com/admin/advertisement/index.html?spm=m-1-43-44
+[运行时间：0.337817s] [吞吐率：2.96req/s] [内存消耗：2,924.00kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-43-44',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\advertisement\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:34:42+08:00] 127.0.0.1 GET dev.admin.com/admin/menu/index.html?spm=m-1-10-2
+[运行时间：0.659849s] [吞吐率：1.52req/s] [内存消耗：3,269.37kb] [文件加载：77]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-10-2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\menu\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:35:06+08:00] 127.0.0.1 GET dev.admin.com/admin/menu/edit.html?id=46&spm=m-1-10-2&open_type=modal
+[运行时间：0.478277s] [吞吐率：2.09req/s] [内存消耗：3,380.16kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '46',
+  'spm' => 'm-1-10-2',
+  'open_type' => 'modal',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\menu\form.html [ array (
+  0 => 'classuri',
+  1 => 'nodes',
+  2 => 'menus',
+  3 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:35:19+08:00] 127.0.0.1 POST dev.admin.com/admin/menu/edit.html?id=46&spm=m-1-10-2&open_type=modal
+[运行时间：0.434716s] [吞吐率：2.30req/s] [内存消耗：2,925.77kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '123',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '46',
+  'spm' => 'm-1-10-2',
+  'open_type' => 'modal',
+  'pid' => '45',
+  'title' => '视频管理列表',
+  'url' => 'admin/video/index',
+  'params' => '',
+  'icon' => 'fa fa-film',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T16:35:23+08:00] 127.0.0.1 GET dev.admin.com/admin/menu/index.html?spm=m-1-10-2
+[运行时间：0.639349s] [吞吐率：1.56req/s] [内存消耗：3,091.37kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-10-2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\menu\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:41:15+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.529495s] [吞吐率：1.89req/s] [内存消耗：3,289.27kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:41:16+08:00] 127.0.0.1 GET dev.admin.com/admin/menu/index.html?spm=m-1-10-2
+[运行时间：0.761643s] [吞吐率：1.31req/s] [内存消耗：3,091.37kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-10-2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\menu\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'list',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:42:27+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.419896s] [吞吐率：2.38req/s] [内存消耗：3,121.90kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:45:49+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.566932s] [吞吐率：1.76req/s] [内存消耗：2,971.95kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T16:45:55+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.536584s] [吞吐率：1.86req/s] [内存消耗：3,289.63kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:45:56+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.590469s] [吞吐率：1.69req/s] [内存消耗：2,971.95kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T16:45:59+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.558720s] [吞吐率：1.79req/s] [内存消耗：2,971.74kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T16:46:00+08:00] 127.0.0.1 GET dev.admin.com/favicon.ico
+[运行时间：0.500943s] [吞吐率：2.00req/s] [内存消耗：1,498.64kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2019-03-06T16:46:19+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.547291s] [吞吐率：1.83req/s] [内存消耗：2,972.20kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T16:46:53+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.715225s] [吞吐率：1.40req/s] [内存消耗：3,336.27kb] [文件加载：84]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:46:59+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.529962s] [吞吐率：1.89req/s] [内存消耗：3,289.41kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:47:00+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.706610s] [吞吐率：1.42req/s] [内存消耗：3,173.57kb] [文件加载：82]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:52:00+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.555761s] [吞吐率：1.80req/s] [内存消耗：3,289.41kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:52:02+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.568803s] [吞吐率：1.76req/s] [内存消耗：3,288.63kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:57:39+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.532491s] [吞吐率：1.88req/s] [内存消耗：3,289.41kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:57:40+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.497148s] [吞吐率：2.01req/s] [内存消耗：3,121.75kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:07+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.532708s] [吞吐率：1.88req/s] [内存消耗：3,289.41kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:08+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.515857s] [吞吐率：1.94req/s] [内存消耗：3,288.63kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:11+08:00] 127.0.0.1 GET dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[运行时间：0.361001s] [吞吐率：2.77req/s] [内存消耗：3,077.09kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:21+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.433044s] [吞吐率：2.31req/s] [内存消耗：3,121.90kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:27+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.524399s] [吞吐率：1.91req/s] [内存消耗：3,289.41kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:29+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.437329s] [吞吐率：2.29req/s] [内存消耗：3,121.90kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:35+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/edit.html?id=3&spm=m-1-47-48
+[运行时间：0.386398s] [吞吐率：2.59req/s] [内存消耗：3,074.66kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:38+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.408191s] [吞吐率：2.45req/s] [内存消耗：3,121.90kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:41+08:00] 127.0.0.1 POST dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.370832s] [吞吐率：2.70req/s] [内存消耗：2,890.27kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '18',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+  'action' => 'resort',
+  '_3' => '0',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T16:58:45+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.404951s] [吞吐率：2.47req/s] [内存消耗：3,121.90kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:56+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.430574s] [吞吐率：2.32req/s] [内存消耗：3,121.75kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:58:58+08:00] 127.0.0.1 POST dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.416397s] [吞吐率：2.40req/s] [内存消耗：2,888.22kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '28',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+  'action' => 'resort',
+  '_8' => '1',
+  '_7' => '1',
+  '_9' => '3',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T16:59:02+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.438557s] [吞吐率：2.28req/s] [内存消耗：3,121.75kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:59:30+08:00] 127.0.0.1 GET dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[运行时间：0.357781s] [吞吐率：2.80req/s] [内存消耗：2,927.91kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T16:59:38+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.426410s] [吞吐率：2.35req/s] [内存消耗：3,121.75kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:00:00+08:00] 127.0.0.1 GET dev.admin.com/admin/video/edit.html?id=8&spm=m-1-45-46
+[运行时间：0.373887s] [吞吐率：2.67req/s] [内存消耗：2,930.46kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '8',
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:00:04+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.435010s] [吞吐率：2.30req/s] [内存消耗：3,121.75kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:00:09+08:00] 127.0.0.1 POST dev.admin.com/admin/video/forbid.html?spm=m-1-45-46
+[运行时间：0.603626s] [吞吐率：1.66req/s] [内存消耗：2,971.93kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '25',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+  'field' => 'status',
+  'value' => '0',
+  'id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:00:20+08:00] 127.0.0.1 POST dev.admin.com/admin/video/forbid.html?spm=m-1-45-46
+[运行时间：0.546706s] [吞吐率：1.83req/s] [内存消耗：2,971.93kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '25',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+  'field' => 'status',
+  'value' => '0',
+  'id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:01:46+08:00] 127.0.0.1 GET dev.admin.com/admin/video/forbid.html?spm=m-1-45-46
+[运行时间：0.564878s] [吞吐率：1.77req/s] [内存消耗：2,971.40kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:02:52+08:00] 127.0.0.1 POST dev.admin.com/admin/video/forbid.html?spm=m-1-45-46
+[运行时间：0.374880s] [吞吐率：2.67req/s] [内存消耗：2,909.79kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '25',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+  'field' => 'status',
+  'value' => '0',
+  'id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:02:56+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.421279s] [吞吐率：2.37req/s] [内存消耗：3,120.61kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:04:14+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.528654s] [吞吐率：1.89req/s] [内存消耗：3,289.23kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:04:15+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.489278s] [吞吐率：2.04req/s] [内存消耗：3,120.91kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:04:20+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[运行时间：0.424829s] [吞吐率：2.35req/s] [内存消耗：3,118.01kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-55-56',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\domain\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:04:24+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.464285s] [吞吐率：2.15req/s] [内存消耗：3,117.89kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:04:26+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.364674s] [吞吐率：2.74req/s] [内存消耗：3,113.63kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:04:29+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.427888s] [吞吐率：2.34req/s] [内存消耗：3,117.89kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:05:00+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.428469s] [吞吐率：2.33req/s] [内存消耗：3,117.14kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:05:07+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.428752s] [吞吐率：2.33req/s] [内存消耗：3,117.89kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:06:06+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.559120s] [吞吐率：1.79req/s] [内存消耗：3,289.23kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:06:07+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.520121s] [吞吐率：1.92req/s] [内存消耗：3,276.24kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:06:10+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.433790s] [吞吐率：2.31req/s] [内存消耗：3,117.02kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:06:19+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.434040s] [吞吐率：2.30req/s] [内存消耗：3,120.91kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:06:53+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.429610s] [吞吐率：2.33req/s] [内存消耗：3,117.77kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:06:56+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.451889s] [吞吐率：2.21req/s] [内存消耗：3,117.02kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:06:58+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.423464s] [吞吐率：2.36req/s] [内存消耗：3,117.77kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:07:01+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.451856s] [吞吐率：2.21req/s] [内存消耗：3,117.02kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:07:07+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.431794s] [吞吐率：2.32req/s] [内存消耗：3,117.77kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:07:10+08:00] 127.0.0.1 GET dev.admin.com/admin/share/add.html?type=1&spm=m-1-49-50
+[运行时间：0.367873s] [吞吐率：2.72req/s] [内存消耗：2,924.98kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:07:27+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.421683s] [吞吐率：2.37req/s] [内存消耗：3,117.02kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:07:30+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.464971s] [吞吐率：2.15req/s] [内存消耗：3,117.77kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:07:31+08:00] 127.0.0.1 GET dev.admin.com/admin/share/add.html?type=1&spm=m-1-49-50
+[运行时间：0.362034s] [吞吐率：2.76req/s] [内存消耗：2,924.98kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:07:57+08:00] 127.0.0.1 POST dev.admin.com/admin/share/add.html?type=1&spm=m-1-49-50
+[运行时间：0.356032s] [吞吐率：2.81req/s] [内存消耗：2,976.96kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '288',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+  'name' => '群分享2',
+  'content' => '分享<span style="font-size: 30px;color: #f5294c">分享成功</span>,请继续分享到不同的群！',
+  'sort' => '2',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:08:01+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.451777s] [吞吐率：2.21req/s] [内存消耗：3,118.38kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:23:49+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.456970s] [吞吐率：2.19req/s] [内存消耗：3,117.63kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:23:54+08:00] 127.0.0.1 GET dev.admin.com/admin/share/edit.html?id=7&type=2&spm=m-1-49-51
+[运行时间：0.404666s] [吞吐率：2.47req/s] [内存消耗：2,926.57kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:24:23+08:00] 127.0.0.1 POST dev.admin.com/admin/share/edit.html?id=7&type=2&spm=m-1-49-51
+[运行时间：0.383844s] [吞吐率：2.61req/s] [内存消耗：2,978.44kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '366',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+  'name' => '圈分享1',
+  'content' => '分享成功，剩下最后一步啦！<br />请分享到<span style="font-size: 30px;color: #f5294c">朋友圈</span>即可领取!',
+  'sort' => '1',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:24:27+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.442399s] [吞吐率：2.26req/s] [内存消耗：3,117.15kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:24:30+08:00] 127.0.0.1 GET dev.admin.com/admin/share/add.html?type=2&spm=m-1-49-51
+[运行时间：0.350630s] [吞吐率：2.85req/s] [内存消耗：2,925.05kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:24:53+08:00] 127.0.0.1 POST dev.admin.com/admin/share/add.html?type=2&spm=m-1-49-51
+[运行时间：0.370624s] [吞吐率：2.70req/s] [内存消耗：2,977.03kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '279',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+  'name' => '圈分享2',
+  'content' => '分享朋友圈<span style="font-size: 30px;color: #f5294c">失败</span>,请继续分享朋友圈！',
+  'sort' => '2',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:24:57+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.440666s] [吞吐率：2.27req/s] [内存消耗：3,117.80kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:25:14+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.435499s] [吞吐率：2.30req/s] [内存消耗：3,120.98kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:29:06+08:00] 127.0.0.1 POST dev.admin.com/admin/video/del.html?spm=m-1-45-46
+[运行时间：0.380339s] [吞吐率：2.63req/s] [内存消耗：2,909.83kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '25',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+  'field' => 'delete',
+  'value' => '0',
+  'id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:29:08+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.432402s] [吞吐率：2.31req/s] [内存消耗：3,120.04kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:29:13+08:00] 127.0.0.1 POST dev.admin.com/admin/video/del.html?spm=m-1-45-46
+[运行时间：0.359901s] [吞吐率：2.78req/s] [内存消耗：2,910.39kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+  'field' => 'delete',
+  'value' => '0',
+  'id' => '7,9',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:29:17+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.373866s] [吞吐率：2.67req/s] [内存消耗：3,115.39kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:29:21+08:00] 127.0.0.1 GET dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[运行时间：0.372617s] [吞吐率：2.68req/s] [内存消耗：2,927.73kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:31:00+08:00] 127.0.0.1 POST dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[运行时间：0.407136s] [吞吐率：2.46req/s] [内存消耗：2,979.95kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '329',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+  'title' => '女总裁被女同学当畜生羞辱，当场大怒，结局所有人都吓傻了！',
+  'vid' => 'e0632jmb3wf',
+  'pause' => '297',
+  'read_min' => '1002',
+  'read_max' => '5000',
+  'stars' => '800',
+  'sort' => '1',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:31:04+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.439017s] [吞吐率：2.28req/s] [内存消耗：3,119.13kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:37:31+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.473169s] [吞吐率：2.11req/s] [内存消耗：3,118.99kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:37:45+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/index.html?spm=m-1-47-54
+[运行时间：0.358879s] [吞吐率：2.79req/s] [内存消耗：2,932.93kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-54',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:37:47+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.444547s] [吞吐率：2.25req/s] [内存消耗：3,121.97kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:37:50+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.418848s] [吞吐率：2.39req/s] [内存消耗：3,119.13kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:37:57+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[运行时间：0.463043s] [吞吐率：2.16req/s] [内存消耗：3,118.08kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-55-56',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\domain\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:38:02+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[运行时间：0.429410s] [吞吐率：2.33req/s] [内存消耗：3,117.80kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'spm' => 'm-1-49-51',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:38:04+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.436987s] [吞吐率：2.29req/s] [内存消耗：3,118.45kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:38:11+08:00] 127.0.0.1 GET dev.admin.com/admin/qrcode/index.html?spm=m-1-43-53
+[运行时间：0.477851s] [吞吐率：2.09req/s] [内存消耗：3,277.40kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-43-53',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\qrcode\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:38:13+08:00] 127.0.0.1 GET dev.admin.com/admin/advertisement/index.html?spm=m-1-43-44
+[运行时间：0.357488s] [吞吐率：2.80req/s] [内存消耗：2,924.07kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-43-44',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\advertisement\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:38:18+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.420085s] [吞吐率：2.38req/s] [内存消耗：3,121.97kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:38:19+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.442813s] [吞吐率：2.26req/s] [内存消耗：3,118.45kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:41:26+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.439822s] [吞吐率：2.27req/s] [内存消耗：3,119.13kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:47:27+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.588132s] [吞吐率：1.70req/s] [内存消耗：3,289.84kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:47:28+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.520375s] [吞吐率：1.92req/s] [内存消耗：3,282.48kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:47:32+08:00] 127.0.0.1 GET dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[运行时间：0.375537s] [吞吐率：2.66req/s] [内存消耗：3,077.91kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:47:44+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.432131s] [吞吐率：2.31req/s] [内存消耗：3,119.45kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:47:49+08:00] 127.0.0.1 GET dev.admin.com/admin/video/edit.html?id=10&spm=m-1-45-46
+[运行时间：0.366884s] [吞吐率：2.73req/s] [内存消耗：2,930.98kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '10',
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:48:00+08:00] 127.0.0.1 POST dev.admin.com/admin/video/edit.html?id=10&spm=m-1-45-46
+[运行时间：0.384778s] [吞吐率：2.60req/s] [内存消耗：2,982.05kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '416',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '10',
+  'spm' => 'm-1-45-46',
+  'title' => '女总裁被女同学当畜生羞辱，当场大怒，结局所有人都吓傻了！',
+  'vid' => 'e0632jmb3wf',
+  'pause' => '297',
+  'read_min' => '1002',
+  'read_max' => '5000',
+  'image' => 'http://wx1.sinaimg.cn/sq612/00669utAgy1fu9ahbo728j30al0akthr.jpg',
+  'stars' => '800',
+  'sort' => '1',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:48:04+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.433185s] [吞吐率：2.31req/s] [内存消耗：3,119.61kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:48:06+08:00] 127.0.0.1 GET dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[运行时间：0.362059s] [吞吐率：2.76req/s] [内存消耗：2,928.30kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:48:44+08:00] 127.0.0.1 POST dev.admin.com/admin/video/add.html?spm=m-1-45-46
+[运行时间：0.366791s] [吞吐率：2.73req/s] [内存消耗：2,980.78kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://dev.admin.com',
+  'accept' => '*/*',
+  'content-length' => '436',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+  'title' => '农村小伙救了女总裁一命, 流落街头女总裁开着宝马找他报恩, 三年后...',
+  'vid' => 't06631l66ap',
+  'pause' => '151',
+  'read_min' => '18815',
+  'read_max' => '151885',
+  'image' => 'https://wx4.sinaimg.cn/mw690/005SSfhzgy1fu29p326apj30mr0ckdyv.jpg',
+  'stars' => '12482',
+  'sort' => '3',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-03-06T17:48:48+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.432097s] [吞吐率：2.31req/s] [内存消耗：3,120.63kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:48:54+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.470499s] [吞吐率：2.13req/s] [内存消耗：3,118.45kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:51:12+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.539321s] [吞吐率：1.85req/s] [内存消耗：3,289.30kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:51:13+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.533684s] [吞吐率：1.87req/s] [内存消耗：3,121.63kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:55:14+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.586208s] [吞吐率：1.71req/s] [内存消耗：3,289.84kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:55:15+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.560363s] [吞吐率：1.78req/s] [内存消耗：3,288.98kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:55:29+08:00] 127.0.0.1 GET dev.admin.com/admin/share/add.html?type=1&spm=m-1-49-50
+[运行时间：0.375412s] [吞吐率：2.66req/s] [内存消耗：3,075.88kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\form.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'vo',
+) ]
+---------------------------------------------------------------
+[2019-03-06T17:55:45+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.478660s] [吞吐率：2.09req/s] [内存消耗：3,122.01kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T18:00:29+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[运行时间：0.465747s] [吞吐率：2.15req/s] [内存消耗：3,120.63kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-45-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\video\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T18:00:35+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[运行时间：0.438454s] [吞吐率：2.28req/s] [内存消耗：3,121.97kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-48',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\applist.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T18:00:37+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/index.html?spm=m-1-47-54
+[运行时间：0.358133s] [吞吐率：2.79req/s] [内存消耗：2,932.93kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-54',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-03-06T18:00:39+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[运行时间：0.454641s] [吞吐率：2.20req/s] [内存消耗：3,122.01kb] [文件加载：78]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'spm' => 'm-1-49-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\share\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'total',
+  3 => 'list',
+  4 => 'page',
+) ]
+---------------------------------------------------------------
+[2019-03-06T18:00:42+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/index.html?spm=m-1-47-54
+[运行时间：0.345801s] [吞吐率：2.89req/s] [内存消耗：2,932.93kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=tvq7cu4diu8hehlkra5h6ndmf6; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dev.admin.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1-47-54',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\wechat\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]

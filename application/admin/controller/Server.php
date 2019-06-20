@@ -190,7 +190,7 @@ class Server extends BasicAdmin
             $data = $this->request->post();
             $data['value'] = !empty($data['value']) ? 'http://'.trim($data['value']).'/' : '';
             sysconf($data['name'], $data['value']);
-            LogService::write('系统管理', $data['name'] . '配置成功');
+            //LogService::write('系统管理', $data['name'] . '配置成功');
             $this->success('操作成功！', '');
         }
     }

@@ -1,0 +1,30 @@
+---------------------------------------------------------------
+[2019-03-11T10:33:38+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ error ] [8]未定义数组索引: bind_domain_qun[D:\phpStudy\WWW\general\runtime\temp\ed1fb3d8e09a51a6bd0fa397e35c7534.php:89]
+---------------------------------------------------------------
+[2019-03-11T10:38:06+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ error ] [8]未定义数组索引: bind_domain_qun[D:\phpStudy\WWW\general\runtime\temp\ed1fb3d8e09a51a6bd0fa397e35c7534.php:89]
+---------------------------------------------------------------
+[2019-03-11T10:38:12+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ error ] [8]未定义数组索引: bind_domain_qun[D:\phpStudy\WWW\general\runtime\temp\ed1fb3d8e09a51a6bd0fa397e35c7534.php:89]
+---------------------------------------------------------------
+[2019-03-11T10:38:19+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ error ] [8]未定义数组索引: bind_domain_qun[D:\phpStudy\WWW\general\runtime\temp\ed1fb3d8e09a51a6bd0fa397e35c7534.php:89]
+---------------------------------------------------------------
+[2019-03-11T10:38:22+08:00] 127.0.0.1 GET dev.admin.com/admin/wechat/applist.html?spm=m-1-47-48
+[ error ] [8]未定义数组索引: bind_domain_qun[D:\phpStudy\WWW\general\runtime\temp\ed1fb3d8e09a51a6bd0fa397e35c7534.php:89]
+---------------------------------------------------------------
+[2019-03-11T11:23:50+08:00] 127.0.0.1 GET dev.admin.com/index/index/getShareData?type=1
+[ error ] [0]致命错误: Class 'app\index\controller\Db' not found[D:\phpStudy\WWW\general\application\index\controller\Index.php:34]
+---------------------------------------------------------------
+[2019-03-11T11:24:04+08:00] 127.0.0.1 GET dev.admin.com/index/index/getShareData?type=1
+[ error ] [0]variable type error： array[D:\phpStudy\WWW\general\thinkphp\library\think\Response.php:403]
+---------------------------------------------------------------
+[2019-03-11T11:24:43+08:00] 127.0.0.1 GET dev.admin.com/index/index/getShareData?type=1
+[ error ] [8]Array to string conversion[D:\phpStudy\WWW\general\application\index\controller\Index.php:38]
+---------------------------------------------------------------
+[2019-03-11T11:55:34+08:00] 127.0.0.1 POST dev.admin.com/index/index/getsharedata
+[ error ] [0]variable type error： array[D:\phpStudy\WWW\general\thinkphp\library\think\Response.php:403]
+---------------------------------------------------------------
+[2019-03-11T11:55:34+08:00] 127.0.0.1 POST dev.admin.com/index/index/getsharedata
+[ error ] [0]variable type error： array[D:\phpStudy\WWW\general\thinkphp\library\think\Response.php:403]

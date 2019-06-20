@@ -181,7 +181,7 @@ class Domain extends BasicAdmin
      */
     public function getnotice()
     {
-        $list   = Db::name('SystemDisabledDomain')->select();
+        $list   = Db::name('SystemDisabledDomain')->where(['status_notice' => '0'])->select();
         if (empty($list)) {
             return ['status' => false];
         }
@@ -199,6 +199,50 @@ class Domain extends BasicAdmin
     }
 
     /**
+     * 发送邮件
+     * @throws \think\Exception
+     * @throws \think\exception\PDOException
+     */
+    public function sendemail()
+    {
+        $list   = Db::name('SystemDisabledDomain')->where(['status_email' => '0'])->select();
+        if (empty($list)) {
+            return ['status' => false];
+        }
+
+        $msg = '注意，域名';
+        $ids = [];
+        foreach ($list as $item) {
+            $msg .= $item['domain'].',';
+            $ids[] = $item['id'];
+        }
+        $msg = substr($msg,0,strlen($msg)-1);
+        $msg .= '被禁用了';
+
+        try {
+            // Create the Transport
+            $transport = (new \Swift_SmtpTransport('smtp.exmail.qq.com', 465))
+                ->setUsername('lizongjun@jongjun.cn')
+                ->setPassword('Lzj300939');
+
+            // Create the Mailer using your created Transport
+            $mailer = new \Swift_Mailer($transport);
+
+            // Create a message
+            $message = (new \Swift_Message('域名禁用通知'))
+                ->setFrom(['lizongjun@jongjun.cn' => 'Joey'])
+                ->setTo(['zongjun.li@outlook.com'])
+                ->setBody($msg);
+
+            // Send the message
+            $result = $mailer->send($message);
+        } catch (\Exception $e){
+            echo "Message could not be sent. Mailer Error: {$e->getMessage()}";
+        }
+        return ['status' => true,'msg' => $msg, 'data' => $ids];
+    }
+
+    /**
      * 删除禁用域名
      * @throws \think\Exception
      * @throws \think\exception\PDOException
@@ -206,7 +250,8 @@ class Domain extends BasicAdmin
     public function noticedel()
     {
         $post = $this->request->post();
-        Db::name('SystemDisabledDomain')->where('id','in', $post['id'])->delete();
+        //Db::name('SystemDisabledDomain')->where('id','in', $post['id'])->delete();
+        Db::name('SystemDisabledDomain')->where('id','in', $post['id'])->update(['status_notice' => 1]);
         return ['status' => true,'msg' => '删除成功'];
     }
 

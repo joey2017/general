@@ -55,7 +55,7 @@ class Wechat extends BasicAdmin
             foreach ($this->request->post() as $key => $vo) {
                 sysconf($key, $vo);
             }
-            LogService::write('参数管理', '参数配置成功');
+            //LogService::write('参数管理', '参数配置成功');
             $this->success('参数配置成功！', '');
         }
     }

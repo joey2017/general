@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[2019-04-03T10:01:29+08:00] 127.0.0.1 GET dev.admin.com/index.php/admin/domain/add.html?spm=m-1-55-56
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\runtime\temp\364a85a59368fa67d48205c683092469.php:28]
+---------------------------------------------------------------
+[2019-04-03T10:01:33+08:00] 127.0.0.1 GET dev.admin.com/index.php/admin/domain/add.html?spm=m-1-55-56
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\runtime\temp\364a85a59368fa67d48205c683092469.php:28]
+---------------------------------------------------------------
+[2019-04-03T10:01:41+08:00] 127.0.0.1 GET dev.admin.com/index.php/admin/domain/add.html?spm=m-1-55-56
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\runtime\temp\364a85a59368fa67d48205c683092469.php:28]
+---------------------------------------------------------------
+[2019-04-03T10:14:50+08:00] 127.0.0.1 GET dev.admin.com/index.php/admin/domain/add.html?spm=m-1-55-56
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\runtime\temp\364a85a59368fa67d48205c683092469.php:28]

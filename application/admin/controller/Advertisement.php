@@ -55,7 +55,7 @@ class Advertisement extends BasicAdmin
             foreach ($this->request->post() as $key => $vo) {
                 sysconf($key, $vo);
             }
-            LogService::write('广告管理', '广告参数配置成功');
+            //LogService::write('广告管理', '广告参数配置成功');
             $this->success('广告参数配置成功！', '');
         }
     }

@@ -1,0 +1,77 @@
+{extend name='admin@public/content'}
+
+{block name="content"}
+<form autocomplete="off" onsubmit="return false;" action="{:request()->url()}" data-auto="true" method="post" class='form-horizontal layui-form padding-top-20'>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">小说二维码名称</label>
+        <div class='col-sm-8'>
+            <input autofocus name="title" value='{$vo.title|default=""}' required="required" title="请输入小说二维码名称" placeholder="请输入小说二维码名称" class="layui-input">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label label-required">小说二维码图片</label>
+        <div class='col-sm-8'>
+            <table class="layui-table background-item margin-none" lay-size="sm" lay-skin="nob">
+                <thead>
+                <tr>
+                    <td>小说二维码图片</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="text-top" style="width:100px">
+                        <input type="hidden" name="pic" value="{$vo.pic|default=''}">
+                        <script>$('[name=pic]').uploadOneImage()</script>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">小说二维码描述</label>
+        <div class='col-sm-8'>
+            <textarea placeholder="请输入小说二维码描述" title="请输入小说二维码描述" class="layui-textarea" name="desc">{$vo.desc|default=""}</textarea>
+        </div>
+    </div>
+
+    <!--<div class="form-group" style="display: none">-->
+        <!--<label class="col-sm-2 control-label">二维码内容</label>-->
+        <!--<div class='col-sm-8'>-->
+            <!--<textarea name="detail">{$vo.detail|default=''|raw}</textarea>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="hr-line-dashed"></div>
+
+    <div class="col-sm-7 col-sm-offset-2">
+        <div class="layui-form-item text-center">
+            {if !empty($vo.id)}<input type="hidden" name="id" value="{$vo.id}">{/if}
+            <button class="layui-btn" type="submit">保存配置</button>
+            <button class="layui-btn layui-btn-danger" type='button' onclick="window.history.back()">取消编辑</button>
+        </div>
+    </div>
+
+    <script>window.form.render();</script>
+
+    <script>
+        /*! 实例富文本编辑器  */
+        // require(['ckeditor'], function () {
+        //     window.createEditor('[name="detail"]', {height: 500});
+        // });
+    </script>
+    <style>
+        .background-item {
+            padding: 15px;
+            background: #efefef;
+        }
+
+        .background-item thead tr {
+            background: #e0e0e0
+        }
+    </style>
+</form>
+{/block}

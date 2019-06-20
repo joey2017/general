@@ -54,7 +54,7 @@ class Config extends BasicAdmin
             foreach ($this->request->post() as $key => $vo) {
                 sysconf($key, $vo);
             }
-            LogService::write('系统管理', '系统参数配置成功');
+            //LogService::write('系统管理', '系统参数配置成功');
             $this->success('系统参数配置成功！', '');
         }
     }

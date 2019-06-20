@@ -222,4 +222,32 @@ class Manage extends Controller
             return json_encode(['code' => '100','msg' => '无访问权限']);
         }
     }
+
+    public function getwxqcode(){
+        $this->_header;
+        if ($this->request->isPost()) {
+            $post =  $this->request->post();
+            $id =  $post['id'];
+            return json_encode(Db::name('SystemWximg')
+                ->field('id,title,pic')
+                ->where(['id' => $id])
+                ->find()
+            );
+        } else {
+            return json_encode(['code' => '100','msg' => '无访问权限']);
+        }
+    }
+  
+  	public function sharelog(){
+    	if ($this->request->isPost()) {
+            $post =  $this->request->post();
+          	$post['create_time'] = date('Y-m-d H:i:s');
+          	$post['ip']       = $this->getIP();
+          	if (Db::name('SystemShareLog')->strict(false)->insert($post)) {
+            	return json_encode(['status' => true]);
+            }
+        } else {
+            return json_encode(['code' => '100','msg' => '无访问权限']);
+        }
+    }
 }

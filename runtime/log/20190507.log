@@ -1,0 +1,945 @@
+---------------------------------------------------------------
+[2019-05-07T19:08:10+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[运行时间：0.258131s] [吞吐率：3.87req/s] [内存消耗：3,477.41kb] [文件加载：92]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=88aomjnjssu2j5dl451qqlvk70; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\general\application\admin\view\index\index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-05-07T19:08:29+08:00] 127.0.0.1 GET dev.admin.com/api/manage/getcitys
+[运行时间：0.083339s] [吞吐率：12.00req/s] [内存消耗：3,054.20kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=88aomjnjssu2j5dl451qqlvk70; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:08:30+08:00] 127.0.0.1 GET dev.admin.com/favicon.ico
+[运行时间：0.032103s] [吞吐率：31.15req/s] [内存消耗：1,587.80kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2019-05-07T19:08:50+08:00] 127.0.0.1 GET dev.admin.com/api/manage/getcitys?id=140000
+[运行时间：0.074187s] [吞吐率：13.48req/s] [内存消耗：2,999.67kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XDEBUG_SESSION=PHPSTORM; sf1ab9cca=88aomjnjssu2j5dl451qqlvk70; page-rows=20',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '140000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:14:58+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.064171s] [吞吐率：15.58req/s] [内存消耗：2,997.33kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '310000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:15:30+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.092909s] [吞吐率：10.76req/s] [内存消耗：2,997.78kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '310000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:16:14+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.078209s] [吞吐率：12.79req/s] [内存消耗：2,997.78kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '310000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:16:15+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.094962s] [吞吐率：10.53req/s] [内存消耗：2,999.30kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '310100',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:18:33+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.167887s] [吞吐率：5.96req/s] [内存消耗：2,997.78kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '310000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:18:34+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.110846s] [吞吐率：9.02req/s] [内存消耗：2,999.30kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '310100',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:19:40+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.104164s] [吞吐率：9.60req/s] [内存消耗：2,997.78kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '120000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:19:41+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.079884s] [吞吐率：12.52req/s] [内存消耗：2,999.23kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '120100',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:27:17+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.103804s] [吞吐率：9.63req/s] [内存消耗：3,000.34kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '310000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:27:18+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.086999s] [吞吐率：11.49req/s] [内存消耗：3,001.86kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '310100',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:28:22+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.120299s] [吞吐率：8.31req/s] [内存消耗：3,000.34kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '120000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:28:24+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.159858s] [吞吐率：6.26req/s] [内存消耗：3,001.80kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '120100',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:28:29+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[运行时间：0.098440s] [吞吐率：10.16req/s] [内存消耗：2,974.70kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => '*/*',
+  'content-length' => '349',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'data' => 'WFDDURL=http%3A%2F%2Fwww.nkgg.com%2Fform.html&source=&pid=7&wfproduct=%E5%BC%BA%E8%82%BE%E6%B1%A4lm(%E5%85%8D%E8%B4%B9%E9%A2%86%E5%8F%96%E4%B8%80%E4%BB%BD)&name=158151&phone=18951815666&wfprovince=120000&wfcity=120100&wfarea=120103&address=2626',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:30:02+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.105201s] [吞吐率：9.51req/s] [内存消耗：3,000.88kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '500000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:30:03+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.087258s] [吞吐率：11.46req/s] [内存消耗：3,004.20kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '500100',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:30:07+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[运行时间：0.097833s] [吞吐率：10.22req/s] [内存消耗：3,057.63kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => '*/*',
+  'content-length' => '349',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'data' => 'WFDDURL=http%3A%2F%2Fwww.nkgg.com%2Fform.html&source=&pid=7&wfproduct=%E5%BC%BA%E8%82%BE%E6%B1%A4lm(%E5%85%8D%E8%B4%B9%E9%A2%86%E5%8F%96%E4%B8%80%E4%BB%BD)&name=15151&phone=18951815666&wfprovince=500000&wfcity=500100&wfarea=500102&address=59848',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:38:46+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.151970s] [吞吐率：6.58req/s] [内存消耗：3,000.78kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '120000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:38:48+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.107927s] [吞吐率：9.27req/s] [内存消耗：3,002.23kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '120100',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:38:55+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[运行时间：0.132025s] [吞吐率：7.57req/s] [内存消耗：3,057.13kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => '*/*',
+  'content-length' => '151',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '15484',
+  'phone' => '15484862641',
+  'wfprovince' => '天津市',
+  'wfcity' => '天津市',
+  'wfarea' => '河西区',
+  'address' => '15151',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:39:16+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.091641s] [吞吐率：10.91req/s] [内存消耗：3,000.34kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '120000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:39:18+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.095678s] [吞吐率：10.45req/s] [内存消耗：3,001.80kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '120100',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:39:23+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[运行时间：0.082872s] [吞吐率：12.07req/s] [内存消耗：2,974.31kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => '*/*',
+  'content-length' => '151',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '15151',
+  'phone' => '18951815666',
+  'wfprovince' => '天津市',
+  'wfcity' => '天津市',
+  'wfarea' => '南开区',
+  'address' => '15151',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:46:44+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.109060s] [吞吐率：9.17req/s] [内存消耗：3,005.95kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '440000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:46:45+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.094348s] [吞吐率：10.60req/s] [内存消耗：3,004.91kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '440300',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:46:57+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[运行时间：0.131187s] [吞吐率：7.62req/s] [内存消耗：3,026.91kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => '*/*',
+  'content-length' => '150',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '15151',
+  'mobile' => '15684451510',
+  'province' => '广东省',
+  'city' => '深圳市',
+  'district' => '福田区',
+  'address' => '15151',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:51:32+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.113045s] [吞吐率：8.85req/s] [内存消耗：3,005.14kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '350000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:51:34+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.082854s] [吞吐率：12.07req/s] [内存消耗：3,004.86kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '350200',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:51:40+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[运行时间：0.095918s] [吞吐率：10.43req/s] [内存消耗：3,027.22kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => '*/*',
+  'content-length' => '149',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '1151',
+  'mobile' => '18951815666',
+  'province' => '福建省',
+  'city' => '厦门市',
+  'district' => '湖里区',
+  'address' => '15151',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:52:51+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.103548s] [吞吐率：9.66req/s] [内存消耗：3,005.14kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '350000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:52:52+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.075382s] [吞吐率：13.27req/s] [内存消耗：3,005.48kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '350100',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:52:57+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[运行时间：0.101041s] [吞吐率：9.90req/s] [内存消耗：3,027.22kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => '*/*',
+  'content-length' => '148',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '1515',
+  'mobile' => '18951815666',
+  'province' => '福建省',
+  'city' => '福州市',
+  'district' => '台江区',
+  'address' => '1515',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:54:43+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.096193s] [吞吐率：10.40req/s] [内存消耗：3,004.50kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '500000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:54:45+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.089624s] [吞吐率：11.16req/s] [内存消耗：3,004.57kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '500300',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:54:49+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.095166s] [吞吐率：10.51req/s] [内存消耗：3,007.81kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '500100',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:54:55+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[运行时间：0.103936s] [吞吐率：9.62req/s] [内存消耗：3,025.05kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => '*/*',
+  'content-length' => '149',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '15151',
+  'mobile' => '15184812510',
+  'province' => '重庆市',
+  'city' => '重庆市',
+  'district' => '渝中区',
+  'address' => '1588',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:55:44+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[运行时间：0.089230s] [吞吐率：11.21req/s] [内存消耗：3,005.52kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '350000',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:55:46+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[运行时间：0.091277s] [吞吐率：10.96req/s] [内存消耗：3,005.80kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '350500',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-05-07T19:55:52+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[运行时间：0.104608s] [吞吐率：9.56req/s] [内存消耗：2,974.96kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\general\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.nkgg.com/form.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0�(iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 MicroMessenger/4.3.2',
+  'origin' => 'http://www.nkgg.com',
+  'accept' => '*/*',
+  'content-length' => '149',
+  'connection' => 'keep-alive',
+  'host' => 'dev.admin.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '1848',
+  'mobile' => '18592848121',
+  'province' => '福建省',
+  'city' => '泉州市',
+  'district' => '泉港区',
+  'address' => '15151',
+)
+[ info ] [ DB ] INIT mysql

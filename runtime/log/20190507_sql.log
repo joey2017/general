@@ -1,0 +1,276 @@
+---------------------------------------------------------------
+[2019-05-07T19:08:10+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001739s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017222s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.014621s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.001093s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.013545s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.016104s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.001456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.017135s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000771s ]
+---------------------------------------------------------------
+[2019-05-07T19:08:29+08:00] 127.0.0.1 GET dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002796s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018496s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000625s ]
+---------------------------------------------------------------
+[2019-05-07T19:08:50+08:00] 127.0.0.1 GET dev.admin.com/api/manage/getcitys?id=140000
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000605s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013650s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.012331s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 140000 [ RunTime:0.000506s ]
+---------------------------------------------------------------
+[2019-05-07T19:14:58+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000892s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.012969s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000541s ]
+---------------------------------------------------------------
+[2019-05-07T19:15:30+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000634s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015233s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.012720s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 310000 [ RunTime:0.001218s ]
+---------------------------------------------------------------
+[2019-05-07T19:16:14+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000681s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015383s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.014311s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 310000 [ RunTime:0.000409s ]
+---------------------------------------------------------------
+[2019-05-07T19:16:15+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000585s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014230s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.014400s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 310100 [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[2019-05-07T19:18:33+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000962s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033903s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.005894s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.020287s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 310000 [ RunTime:0.000602s ]
+---------------------------------------------------------------
+[2019-05-07T19:18:34+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000934s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018670s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.020007s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 310100 [ RunTime:0.001393s ]
+---------------------------------------------------------------
+[2019-05-07T19:19:40+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001123s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024900s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.012827s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 120000 [ RunTime:0.000372s ]
+---------------------------------------------------------------
+[2019-05-07T19:19:41+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000639s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014542s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.013747s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 120100 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[2019-05-07T19:27:17+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000784s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015550s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.012843s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 310000 [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[2019-05-07T19:27:18+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015012s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.008369s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 310100 [ RunTime:0.003518s ]
+---------------------------------------------------------------
+[2019-05-07T19:28:22+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000897s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022537s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.020252s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 120000 [ RunTime:0.000686s ]
+---------------------------------------------------------------
+[2019-05-07T19:28:24+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000911s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.046162s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.020509s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 120100 [ RunTime:0.000828s ]
+---------------------------------------------------------------
+[2019-05-07T19:28:29+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000783s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020970s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/formdata' LIMIT 1 [ RunTime:0.000607s ]
+---------------------------------------------------------------
+[2019-05-07T19:30:02+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000756s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017628s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.012789s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 500000 [ RunTime:0.000944s ]
+---------------------------------------------------------------
+[2019-05-07T19:30:03+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000610s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015597s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.012094s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 500100 [ RunTime:0.000685s ]
+---------------------------------------------------------------
+[2019-05-07T19:30:07+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011555s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020155s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/formdata' LIMIT 1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[2019-05-07T19:38:46+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001021s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020398s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.020696s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 120000 [ RunTime:0.000638s ]
+---------------------------------------------------------------
+[2019-05-07T19:38:48+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000851s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015139s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.019959s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 120100 [ RunTime:0.000692s ]
+---------------------------------------------------------------
+[2019-05-07T19:38:55+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000756s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.041622s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/formdata' LIMIT 1 [ RunTime:0.000650s ]
+---------------------------------------------------------------
+[2019-05-07T19:39:16+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000663s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015493s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.014902s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 120000 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+[2019-05-07T19:39:18+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000722s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016717s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.018187s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 120100 [ RunTime:0.000586s ]
+---------------------------------------------------------------
+[2019-05-07T19:39:23+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001125s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020670s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/formdata' LIMIT 1 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[2019-05-07T19:46:44+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000930s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.011068s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.012368s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 440000 [ RunTime:0.000993s ]
+---------------------------------------------------------------
+[2019-05-07T19:46:45+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019905s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.016213s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 440300 [ RunTime:0.000590s ]
+---------------------------------------------------------------
+[2019-05-07T19:46:57+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000999s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019795s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/formdata' LIMIT 1 [ RunTime:0.000671s ]
+---------------------------------------------------------------
+[2019-05-07T19:51:32+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000818s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.012174s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 350000 [ RunTime:0.000491s ]
+---------------------------------------------------------------
+[2019-05-07T19:51:34+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000588s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014411s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.013106s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 350200 [ RunTime:0.000444s ]
+---------------------------------------------------------------
+[2019-05-07T19:51:40+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000822s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014696s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/formdata' LIMIT 1 [ RunTime:0.000990s ]
+---------------------------------------------------------------
+[2019-05-07T19:52:51+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000654s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015217s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.015590s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 350000 [ RunTime:0.000432s ]
+---------------------------------------------------------------
+[2019-05-07T19:52:52+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000554s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.012774s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.013249s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 350100 [ RunTime:0.000640s ]
+---------------------------------------------------------------
+[2019-05-07T19:52:57+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.014944s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/formdata' LIMIT 1 [ RunTime:0.000408s ]
+---------------------------------------------------------------
+[2019-05-07T19:54:43+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000654s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017872s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.013768s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 500000 [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[2019-05-07T19:54:45+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021599s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.011482s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 500300 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[2019-05-07T19:54:49+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000609s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024161s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.014899s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 500100 [ RunTime:0.000446s ]
+---------------------------------------------------------------
+[2019-05-07T19:54:55+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017888s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/formdata' LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_information` [ RunTime:0.014454s ]
+[ sql ] [ SQL ] INSERT INTO `system_information` (`name` , `mobile` , `province` , `city` , `district` , `address` , `add_time` , `ip`) VALUES ('15151' , '15184812510' , '重庆市' , '重庆市' , '渝中区' , '1588' , '2019-05-07 19:54:55' , '127.0.0.1') [ RunTime:0.001757s ]
+---------------------------------------------------------------
+[2019-05-07T19:55:44+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getcitys
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001275s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.013982s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getcitys' LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.014059s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 350000 [ RunTime:0.000387s ]
+---------------------------------------------------------------
+[2019-05-07T19:55:46+08:00] 127.0.0.1 POST dev.admin.com/api/manage/getdis
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000776s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018921s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/getdis' LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_area` [ RunTime:0.013248s ]
+[ sql ] [ SQL ] SELECT `id`,`area_name` FROM `system_area` WHERE  `area_parent_id` = 350500 [ RunTime:0.000464s ]
+---------------------------------------------------------------
+[2019-05-07T19:55:52+08:00] 127.0.0.1 POST dev.admin.com/api/manage/formdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000619s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017618s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'api/manage/formdata' LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_information` [ RunTime:0.013496s ]
+[ sql ] [ SQL ] INSERT INTO `system_information` (`name` , `mobile` , `province` , `city` , `district` , `address` , `add_time` , `ip`) VALUES ('1848' , '18592848121' , '福建省' , '泉州市' , '泉港区' , '15151' , '2019-05-07 19:55:52' , '127.0.0.1') [ RunTime:0.002181s ]

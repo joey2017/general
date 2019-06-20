@@ -1,0 +1,36 @@
+---------------------------------------------------------------
+[2019-04-10T09:24:19+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-57-58
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_v3.system_server' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-10T09:24:33+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [8]未定义数组索引: edit_time[D:\phpStudy\WWW\general\runtime\temp\b637303425f7d0eb3c4e2c62846fb54a.php:116]
+---------------------------------------------------------------
+[2019-04-10T09:25:57+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-57-58
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_v3.system_server' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-10T09:26:04+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-57-58
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_v3.system_server' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-10T09:32:38+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-57-58
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\runtime\temp\429a41291b28465bf0e92cb2ed82df3b.php:110]
+---------------------------------------------------------------
+[2019-04-10T11:41:00+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN `SystemServer` `AS` ON `s`.`id`=`SystemDomain`.`server_id` WHERE  `is_delet' at line 1[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-10T11:42:52+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN `system_server` `AS` ON `s`.`id`=`system_domain`.`server_id` WHERE  `is_del' at line 1[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-10T11:44:48+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN `system_server` `AS` ON `s`.`id`=`d`.`server_id` WHERE  `d`.`is_deleted` = ' at line 1[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-10T11:46:17+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN `system_server` `AS` ON `s`.`id`=`d`.`server_id` WHERE  `d`.`is_deleted` = ' at line 1[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-10T11:49:37+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.id' in 'on clause'[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-10T11:59:50+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56&name=&type=&status=&server_id=108&create_at=
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.server_id' in 'where clause'[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-10T12:01:00+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56&name=&type=&status=&server_id=108&create_at=
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.server_id' in 'where clause'[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]

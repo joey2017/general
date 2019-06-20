@@ -1,0 +1,13 @@
+---------------------------------------------------------------
+[2019-06-18T10:01:24+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/sendemail
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011030s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.034735s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/sendemail' LIMIT 1 [ RunTime:0.004087s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.023006s ]
+---------------------------------------------------------------
+[2019-06-18T10:02:56+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/sendemail
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001347s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022036s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/sendemail' LIMIT 1 [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.011798s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_email` = 0 [ RunTime:0.000386s ]

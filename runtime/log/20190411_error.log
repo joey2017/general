@@ -1,0 +1,21 @@
+---------------------------------------------------------------
+[2019-04-11T08:52:04+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-58-59
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'everyone.system_server' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-11T08:52:14+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'everyone.system_server' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-11T08:52:26+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ error ] [64]Cannot declare class app\admin\controller\Share, because the name is already in use[D:\phpStudy\WWW\general\application\admin\controller\file.php:144]
+---------------------------------------------------------------
+[2019-04-11T08:53:44+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'everyone.system_server' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-11T08:55:25+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'everyone.system_server' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-11T08:55:48+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/index.html?spm=m-1-55-56
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'everyone.system_server' doesn't exist[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-04-11T10:48:38+08:00] 127.0.0.1 POST dev.admin.com/admin/domain/noticedel.html
+[ error ] [8]未定义数组索引: id[D:\phpStudy\WWW\general\application\admin\controller\Domain.php:209]

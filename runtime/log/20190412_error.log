@@ -1,0 +1,33 @@
+---------------------------------------------------------------
+[2019-04-12T09:25:50+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.06754608952271646
+[ error ] [0]could not find driver[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:528]
+---------------------------------------------------------------
+[2019-04-12T09:26:50+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5174618053622035
+[ error ] [0]could not find driver[D:\phpStudy\WWW\general\thinkphp\library\think\db\Connection.php:528]
+---------------------------------------------------------------
+[2019-04-12T14:03:00+08:00] 127.0.0.1 GET dev.admin.com/admin/server/adver.html?id=112&spm=m-1-58-59
+[ error ] [0]不支持的数据表达式:[D:\phpStudy\WWW\general\thinkphp\library\think\db\builder\Mysql.php:149]
+---------------------------------------------------------------
+[2019-04-12T14:04:31+08:00] 127.0.0.1 GET dev.admin.com/admin/server/adver.html?id=108&spm=m-1-58-59
+[ error ] [0]不支持的数据表达式:[D:\phpStudy\WWW\general\thinkphp\library\think\db\builder\Mysql.php:149]
+---------------------------------------------------------------
+[2019-04-12T14:15:02+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-58-59
+[ error ] [0]语法解析错误: syntax error, unexpected ':'[D:\phpStudy\WWW\general\runtime\temp\429a41291b28465bf0e92cb2ed82df3b.php:132]
+---------------------------------------------------------------
+[2019-04-12T14:17:03+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-58-59
+[ error ] [2]Use of undefined constant vo - assumed 'vo' (this will throw an Error in a future version of PHP)[D:\phpStudy\WWW\general\runtime\temp\429a41291b28465bf0e92cb2ed82df3b.php:132]
+---------------------------------------------------------------
+[2019-04-12T14:21:01+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-58-59
+[ error ] [0]语法解析错误: syntax error, unexpected '$vo' (T_VARIABLE), expecting ',' or ')'[D:\phpStudy\WWW\general\runtime\temp\429a41291b28465bf0e92cb2ed82df3b.php:132]
+---------------------------------------------------------------
+[2019-04-12T14:21:16+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-58-59
+[ error ] [2]A non-numeric value encountered[D:\phpStudy\WWW\general\runtime\temp\429a41291b28465bf0e92cb2ed82df3b.php:132]
+---------------------------------------------------------------
+[2019-04-12T14:51:26+08:00] 127.0.0.1 POST dev.admin.com/admin/server/adver.html?spm=m-1-58-59
+[ error ] [0]致命错误: Class 'app\admin\controller\LogService' not found[D:\phpStudy\WWW\general\application\admin\controller\Server.php:162]
+---------------------------------------------------------------
+[2019-04-12T15:26:19+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-58-59
+[ error ] [0]语法解析错误: syntax error, unexpected 'neq' (T_STRING)[D:\phpStudy\WWW\general\runtime\temp\429a41291b28465bf0e92cb2ed82df3b.php:59]
+---------------------------------------------------------------
+[2019-04-12T15:26:47+08:00] 127.0.0.1 GET dev.admin.com/admin/server/index.html?spm=m-1-58-59
+[ error ] [0]语法解析错误: syntax error, unexpected 'neq' (T_STRING)[D:\phpStudy\WWW\general\runtime\temp\429a41291b28465bf0e92cb2ed82df3b.php:59]
