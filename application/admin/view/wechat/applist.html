@@ -25,6 +25,13 @@
     </div>
 
     <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">落地域名</label>
+        <div class="layui-input-inline">
+            <input name="bind_domain_ld" value="{$Think.get.bind_domain_ld}" placeholder="请输入落地域名" class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-inline">
         <label class="layui-form-label">添加时间</label>
         <div class="layui-input-inline">
             <input name="create_at" id="create_at" value="{$Think.get.create_at}" placeholder="请选择添加时间" class="layui-input">
@@ -57,7 +64,7 @@
             <th class='list-table-sort-td'>
                 <button type="submit" class="layui-btn layui-btn-normal layui-btn-xs">排 序</button>
             </th>
-            <th class='text-left nowrap'>IP</th>
+            <th class='text-left nowrap'>服务器ip</th>
             <th class='text-left nowrap'>公众号名称</th>
             <th class='text-left nowrap'>公众号appid</th>
             <th class='text-left nowrap'>公众号appsecret</th>
@@ -68,6 +75,7 @@
             <th class='text-left nowrap'>群入口域名</th>
             <th class='text-left nowrap'>圈入口域名</th>
             <th class='text-left nowrap'>落地域名</th>
+          	<th class='text-left nowrap'>备注</th>
             <th class='text-left nowrap'>添加时间</th>
             <th class='text-left nowrap'>公众号状态</th>
             <th class='text-left'>操作</th>
@@ -82,7 +90,7 @@
             <td class='list-table-sort-td'>
                 <input name="_{$vo.id}" value="{$vo.sort}" class="list-sort-input"/>
             </td>
-            <td class='text-left nowrap'>{$vo.name}</td>
+            <td class='text-left nowrap'>{$vo.ip}</td>
             <td class='text-left nowrap'>{$vo.name}</td>
             <td class='text-left nowrap'>{$vo.appid}</td>
             <td class='text-left nowrap'>{$vo.appsecret}</td>
@@ -93,6 +101,7 @@
             <td class='text-left nowrap'>{$vo.bind_domain_qun}</td>
             <td class='text-left nowrap'>{$vo.bind_domain_quan}</td>
             <td class='text-left nowrap'>{$vo.bind_domain_ld}</td>
+          	<td class='text-left nowrap'>{$vo.remark}</td>
             <td class='text-left nowrap'>{$vo.create_at|format_datetime}</td>
             <td class='text-left nowrap'>
                 {if $vo.status eq 0}<span class="color-red">已禁用</span>{elseif $vo.status eq 1}<span class="color-green">使用中</span>{/if}
