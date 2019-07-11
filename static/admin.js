@@ -656,6 +656,15 @@ $(function () {
         }), {boxShadow: 'none'});
     });
 
+    /*! 注册 list-check-box 表格颜色 */
+    $body.on('click', 'input.list-check-box', function () {
+        if ($(this).prop('checked')) {
+            $(this).parents('tr').addClass('checkedcolor');
+        } else {
+            $(this).parents('tr').removeClass('checkedcolor');
+        }
+    });
+
     /*! 分页事件切换处理 */
     $body.on('change', '.pagination-trigger select', function () {
         window.location.href = this.options[this.selectedIndex].getAttribute('data-url');

@@ -68,6 +68,9 @@ class BasicAdmin extends Controller
         }
         // POST请求, 数据自动存库
         $data = array_merge($this->request->post(), $extendData);
+        foreach ($data as $k => $d) {
+            $data[$k] = trim($d);
+        }
         if (false !== $this->_callback('_form_filter', $data, [])) {
             $result = DataService::save($db, $data, $pk, $where);
             if (false !== $this->_callback('_form_result', $result, $data)) {

@@ -99,9 +99,11 @@ class DataService
         $map[] = [empty($pk) ? 'id' : $pk, 'in', explode(',', $request->post('id', ''))];
         // 删除模式，如果存在 is_deleted 字段使用软删除
         if ($field === 'delete') {
+            /*
             if (method_exists($db, 'getTableFields') && in_array('is_deleted', $db->getTableFields())) {
                 return Db::table($table)->where($where)->where($map)->update(['is_deleted' => '1']) !== false;
             }
+            */
             return Db::table($table)->where($where)->where($map)->delete() !== false;
         }
         // 更新模式，更新指定字段内容
