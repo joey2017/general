@@ -188,7 +188,6 @@ class Server extends BasicAdmin
     {
         if ($this->request->isPost()) {
             $data = $this->request->post();
-            $data['value'] = in_array($data['value'],[0,1]) ? $data['value'] : 'http://'.trim($data['value']).'/';
             sysconf($data['name'], $data['value']);
             //LogService::write('系统管理', $data['name'] . '配置成功');
             $this->success('操作成功！', '');
