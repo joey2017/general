@@ -48,7 +48,7 @@ class Sharelog extends BasicAdmin
     public function index()
     {
         // 视频key
-        $keys = Db::table('system_video')->field('id')->where('is_deleted',0)->where('status',1)->order(['sort asc','id desc'])->select();
+        $keys = Db::table('system_video')->field('sort')->where('is_deleted',0)->where('status',1)->order(['sort asc','id desc'])->select();
         $this->assign('keys', $keys);
         // 日志数据库对象
         list($this->title, $get) = ['视频分享日志', $this->request->get()];

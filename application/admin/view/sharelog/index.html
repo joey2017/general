@@ -24,10 +24,10 @@
             <select name='key' class='layui-select' lay-search="">
                 <option value=''> - 所有key -</option>
                 <!--{foreach $keys as $key_v}-->
-                <!--{if $key_v===$Think.get.key}-->
-                <option selected="selected" value='{$key_v.id}'>{$key_v.id}</option>
+                <!--{if $key_v.sort==$Think.get.key and $Think.get.key != ''}-->
+                <option selected="selected" value='{$key_v.sort}'>{$key_v.sort}</option>
                 <!--{else}-->
-                <option value='{$key_v.id}'>{$key_v.id}</option>
+                <option value='{$key_v.sort}'>{$key_v.sort}</option>
                 <!--{/if}-->
                 <!--{/foreach}-->
             </select>

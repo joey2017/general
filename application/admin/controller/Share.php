@@ -31,16 +31,16 @@ class Share extends BasicAdmin
      * 当前默认数据模型
      * @var string
      */
-    public $table = 'SystemShare';
+    public $table = 'systemTips';
 
     /**
      * 当前页面标题
      * @var string
      */
-    public $title = '分享设置';
+    public $title = '分享提示语';
 
     /**
-     * 域名列表
+     * 列表
      * @return array|string
      * @throws \think\Exception
      * @throws \think\db\exception\DataNotFoundException
@@ -49,9 +49,9 @@ class Share extends BasicAdmin
      */
     public function index()
     {
-        $this->title = '分享设置列表';
         $get         = $this->request->get();
-        $db          = Db::name($this->table)->where(['is_deleted' => '0','type' => $get['type']]);
+        $this->title = $get['type'] == 1 ? '视频提示语列表' : '红包提示语列表';
+        $db          = Db::name($this->table)->where(['is_deleted' => '0', 'type' => $get['type']]);
         if (isset($get['name']) && $get['name'] !== '') {
             $db->whereLike('name', "%{$get['name']}%");
         }
@@ -62,8 +62,9 @@ class Share extends BasicAdmin
         return parent::_list($db->order('sort asc,id desc'));
     }
 
+
     /**
-     * 添加分享设置
+     * 添加分享提示语
      * @return array|string
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
@@ -72,12 +73,12 @@ class Share extends BasicAdmin
      */
     public function add()
     {
-        $this->title = '添加分享设置';
+        $this->title = '添加分享提示语';
         return $this->_form($this->table, 'form');
     }
 
     /**
-     * 编辑分享设置
+     * 编辑分享提示语
      * @return array|string
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
@@ -86,7 +87,7 @@ class Share extends BasicAdmin
      */
     public function edit()
     {
-        $this->title = '编辑分享设置';
+        $this->title = '编辑分享提示语';
         return $this->_form($this->table, 'form');
     }
 
@@ -97,26 +98,26 @@ class Share extends BasicAdmin
     protected function _form_result($result)
     {
         if ($result !== false) {
-            list($base, $spm, $url) = [url('@admin'), $this->request->get('spm'), url('admin/share/index').'?type='.$this->request->get('type')];
+            list($base, $spm, $url) = [url('@admin'), $this->request->get('spm'), url('admin/share/index') . '?type=' . $this->request->get('type')];
             $this->success('数据保存成功！', "{$base}#{$url}?spm={$spm}");
         }
     }
 
     /**
-     * 删除分享设置
+     * 删除分享提示语
      * @throws \think\Exception
      * @throws \think\exception\PDOException
      */
     public function del()
     {
         if (DataService::update($this->table)) {
-            $this->success("分享设置删除成功！", '');
+            $this->success("分享提示语删除成功！", '');
         }
-        $this->error("分享设置删除失败，请稍候再试！");
+        $this->error("分享提示语删除失败，请稍候再试！");
     }
 
     /**
-     * 分享设置禁用
+     * 分享提示语禁用
      * @throws \think\Exception
      * @throws \think\exception\PDOException
      */
@@ -129,16 +130,16 @@ class Share extends BasicAdmin
     }
 
     /**
-     * 分享设置启用
+     * 分享提示语启用
      * @throws \think\Exception
      * @throws \think\exception\PDOException
      */
     public function resume()
     {
         if (DataService::update($this->table)) {
-            $this->success("分享设置启用成功！", '');
+            $this->success("分享提示语启用成功！", '');
         }
-        $this->error("分享设置启用失败，请稍候再试！");
+        $this->error("分享提示语启用失败，请稍候再试！");
     }
 
 }
