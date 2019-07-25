@@ -250,4 +250,17 @@ class Manage extends Controller
             return json_encode(['code' => '100','msg' => '无访问权限']);
         }
     }
+
+    public function shareerror(){
+        if ($this->request->isPost()) {
+            $post =  $this->request->post();
+            $post['create_time'] = date('Y-m-d H:i:s');
+            $post['msg'] = '不是落地域名或找不到绑定的公众号';
+            if (Db::name('SystemShareError')->strict(false)->insert($post)) {
+                return json_encode(['status' => true]);
+            }
+        } else {
+            return json_encode(['code' => '100','msg' => '无访问权限']);
+        }
+    }
 }
