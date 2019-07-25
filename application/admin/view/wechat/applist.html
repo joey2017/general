@@ -18,6 +18,20 @@
 <form autocomplete="off" class="layui-form layui-form-pane form-search" action="{:request()->url()}" onsubmit="return false" method="get">
 
     <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">IP</label>
+        <div class="layui-input-inline">
+            <select class="form-control" name="server_id">
+                <option value="">-请选择-</option>
+                <option value="1" {if $Think.get.server_id eq 1}selected{/if}>入口域名</option>
+                <option value="2" {if $Think.get.server_id eq 2}selected{/if}>落地域名</option>
+                <option value="3" {if $Think.get.server_id eq 3}selected{/if}>跳转域名</option>
+                <option value="4" {if $Think.get.server_id eq 4}selected{/if}>播放域名</option>
+                <option value="5" {if $Think.get.server_id eq 5}selected{/if}>广告域名</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-inline">
         <label class="layui-form-label">公众号名称</label>
         <div class="layui-input-inline">
             <input name="name" value="{$Think.get.name}" placeholder="请输入公众号名称" class="layui-input">

@@ -74,6 +74,9 @@ class Wechat extends BasicAdmin
         $this->title = '公众号列表';
         $get = $this->request->get();
         $db = Db::name($this->table)->alias('w')->field('w.*,s.ip')->where(['w.is_deleted' => '0','d.is_deleted' => 0])->leftJoin('system_domain d','d.name=w.bind_domain_ld and d.type=2')->leftJoin('system_server s','s.id=d.server_id');
+        if (isset($get['server_id']) && $get['server_id'] !== '') {
+            $db->where('d.server_id', $get['server_id']);
+        }
         if (isset($get['name']) && $get['name'] !== '') {
             $db->whereLike('name', "%{$get['name']}%");
         }
