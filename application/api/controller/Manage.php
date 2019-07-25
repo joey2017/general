@@ -256,7 +256,7 @@ class Manage extends Controller
             $post =  $this->request->post();
             $post['create_time'] = date('Y-m-d H:i:s');
             $post['msg'] = '不是落地域名或找不到绑定的公众号';
-            if (Db::name('SystemShareError')->strict(false)->insert($post)) {
+            if (Db::name('SystemShareErrorLog')->strict(false)->insert($post)) {
                 return json_encode(['status' => true]);
             }
         } else {
