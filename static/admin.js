@@ -655,8 +655,8 @@ $(function () {
             }
         }), {boxShadow: 'none'});
     });
-
-    /*! 注册 list-check-box 表格颜色 */
+  
+  	/*! 注册 list-check-box 表格颜色 */
     $body.on('click', 'input.list-check-box', function () {
         if ($(this).prop('checked')) {
             $(this).parents('tr').addClass('checkedcolor');

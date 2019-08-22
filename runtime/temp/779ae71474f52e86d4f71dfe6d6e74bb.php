@@ -1,4 +1,4 @@
-<?php /*a:2:{s:63:"D:\phpStudy\WWW\general\application\admin\view\share\index.html";i:1554771484;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
+<?php /*a:2:{s:63:"D:\phpStudy\WWW\general\application\admin\view\share\index.html";i:1563266000;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
 <!-- 右则内容区域 开始 -->
 
 <div class="layui-card">
@@ -8,11 +8,11 @@
         <div class="pull-right margin-right-15 nowrap">
 
 <!--<?php if(auth("$classuri/add")): ?>-->
-<button data-open='<?php echo url("$classuri/add"); ?>?type=<?php echo htmlentities(app('request')->get('type')); ?>' data-title="添加分享设置" class='layui-btn layui-btn-sm layui-btn-info'>添加分享设置</button>
+<button data-open='<?php echo url("$classuri/add"); ?>?type=<?php echo htmlentities(app('request')->get('type')); ?>' data-title="添加分享提示语" class='layui-btn layui-btn-sm layui-btn-info'>添加分享提示语</button>
 <!--<?php endif; ?>-->
 
 <!--<?php if(auth("$classuri/del")): ?>-->
-<button data-update="" data-field='delete' data-action='<?php echo url("$classuri/del"); ?>' class='layui-btn layui-btn-sm layui-btn-danger'>删除分享设置</button>
+<button data-update="" data-field='delete' data-action='<?php echo url("$classuri/del"); ?>' class='layui-btn layui-btn-sm layui-btn-danger'>删除分享提示语</button>
 <!--<?php endif; ?>-->
 
 </div>
@@ -24,9 +24,9 @@
 <form autocomplete="off" class="layui-form layui-form-pane form-search" action="<?php echo request()->url(); ?>" onsubmit="return false" method="get">
 
     <div class="layui-form-item layui-inline">
-        <label class="layui-form-label">分享设置名称</label>
+        <label class="layui-form-label">分享提示语名称</label>
         <div class="layui-input-inline">
-            <input name="name" value="<?php echo htmlentities(app('request')->get('name')); ?>" placeholder="请输入分享设置名称" class="layui-input">
+            <input name="name" value="<?php echo htmlentities(app('request')->get('name')); ?>" placeholder="请输入分享提示语名称" class="layui-input">
         </div>
     </div>
 
@@ -63,16 +63,10 @@
             <th class='list-table-sort-td'>
                 <button type="submit" class="layui-btn layui-btn-normal layui-btn-xs">排 序</button>
             </th>
-            <th class='text-left nowrap'>分享设置名称</th>
-            <th class='text-left nowrap'>分享设置内容</th>
-            <th class='text-left nowrap'>分享标题</th>
-            <?php if(app('request')->get('type') == 1): ?>
-            <th class='text-left nowrap'>分享描述</th>
-            <?php endif; ?>
-            <!-- <th class='text-left nowrap'>分享链接</th> -->
-            <th class='text-left nowrap'>分享图片链接</th>
+            <th class='text-left nowrap'>分享提示语名称</th>
+            <th class='text-left nowrap'>分享提示语描述</th>
             <th class='text-left nowrap'>添加时间</th>
-            <th class='text-left nowrap'>公众号状态</th>
+            <th class='text-left nowrap'>提示语状态</th>
             <th class='text-left'>操作</th>
         </tr>
         </thead>
@@ -86,13 +80,7 @@
                 <input name="_<?php echo htmlentities($vo['id']); ?>" value="<?php echo htmlentities($vo['sort']); ?>" class="list-sort-input"/>
             </td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['name']); ?></td>
-            <td class='text-left nowrap'><?php echo htmlentities($vo['content']); ?></td>
-            <td class='text-left nowrap'><?php echo htmlentities($vo['title']); ?></td>
-            <?php if(app('request')->get('type') == 1): ?>
             <td class='text-left nowrap'><?php echo htmlentities($vo['desc']); ?></td>
-            <?php endif; ?>
-            <!-- <td class='text-left nowrap'><?php echo htmlentities($vo['link']); ?></td> -->
-            <td class='text-left nowrap'><?php echo htmlentities($vo['img_url']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities(format_datetime($vo['create_at'])); ?></td>
             <td class='text-left nowrap'>
                 <?php if($vo['status'] == 0): ?><span class="color-red">已禁用</span><?php elseif($vo['status'] == 1): ?><span class="color-green">使用中</span><?php endif; ?>
@@ -101,7 +89,7 @@
 
                 <?php if(auth("$classuri/edit")): ?>
                 <span class="text-explode">|</span>
-                <a data-title="编辑分享设置" data-open='<?php echo url("$classuri/edit"); ?>?id=<?php echo htmlentities($vo['id']); ?>&type=<?php echo htmlentities(app('request')->get('type')); ?>'>编辑</a>
+                <a data-title="编辑分享提示语" data-open='<?php echo url("$classuri/edit"); ?>?id=<?php echo htmlentities($vo['id']); ?>&type=<?php echo htmlentities(app('request')->get('type')); ?>'>编辑</a>
                 <?php endif; if($vo['status'] == 1 and auth("$classuri/forbid")): ?>
                 <span class="text-explode">|</span>
                 <a data-update="<?php echo htmlentities($vo['id']); ?>" data-field='status' data-value='0' data-action='<?php echo url("$classuri/forbid"); ?>'>禁用</a>

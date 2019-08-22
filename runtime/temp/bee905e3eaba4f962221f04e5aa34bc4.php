@@ -1,4 +1,4 @@
-<?php /*a:2:{s:63:"D:\phpStudy\WWW\general\application\admin\view\video\index.html";i:1554771484;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
+<?php /*a:2:{s:63:"D:\phpStudy\WWW\general\application\admin\view\video\index.html";i:1563350948;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
 <!-- 右则内容区域 开始 -->
 
 <div class="layui-card">
@@ -66,10 +66,8 @@
             <th class='text-left nowrap'>视频标题</th>
             <th class='text-left nowrap'>视频vid</th>
             <th class='text-left nowrap'>暂停播放秒数</th>
-            <th class='text-left nowrap'>最小阅读量</th>
-            <th class='text-left nowrap'>最大阅读量</th>
             <th class='text-left nowrap'>封面图片链接</th>
-            <th class='text-left nowrap'>点赞数</th>
+            <th class='text-left nowrap'>视频分享描述</th>
             <th class='text-left nowrap'>添加时间</th>
             <th class='text-left nowrap'>视频状态</th>
             <th class='text-left'>操作</th>
@@ -87,10 +85,8 @@
             <td class='text-left nowrap'><?php echo htmlentities($vo['title']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['vid']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['pause']); ?></td>
-            <td class='text-left nowrap'><?php echo htmlentities($vo['read_min']); ?></td>
-            <td class='text-left nowrap'><?php echo htmlentities($vo['read_max']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities($vo['image']); ?></td>
-            <td class='text-left nowrap'><?php echo htmlentities($vo['stars']); ?></td>
+            <td class='text-left nowrap'><?php echo htmlentities($vo['desc']); ?></td>
             <td class='text-left nowrap'><?php echo htmlentities(format_datetime($vo['create_at'])); ?></td>
             <td class='text-left nowrap'>
                 <?php if($vo['status'] == 0): ?><span class="color-red">已禁用</span><?php elseif($vo['status'] == 1): ?><span class="color-green">使用中</span><?php endif; ?>

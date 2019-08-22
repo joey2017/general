@@ -13,7 +13,7 @@ class Domain extends Controller
 {
   
   	//太阳湾检测
-  	private $_apiKey = 'd11d940a9d1b23ad8feee1a55406e447';
+  	private $_apiKey = '9d823f5f36a61cd09a1e3975c7587cc6';
   
   	private $_apiUrl = 'http://wx.rrbay.com/pro/wxUrlCheck2.ashx?key=%s&url=%s';
   
@@ -39,7 +39,8 @@ class Domain extends Controller
           	/*
             *太阳湾检测
             */
-
+			
+			/*
           	if ($check['State'] == true && $check['Code'] == 102) {
                 //正常的
                 //Db::name('systemDomainApiLog')->insert(['name' => $item['name'], 'status' => 1, 'descr' => $check['Msg'], 'add_time' => date('Y-m-d H:i:s')]);
@@ -76,7 +77,14 @@ class Domain extends Controller
                     Db::name('systemDomainUpdateLog')->insert(['name' => $item['name'], 'descr' => json_encode($msg), 'add_time' => date('Y-m-d H:i:s')]);
                 }
             }
-          
+            
+            */
+            if ($check['Code'] == 103) {
+            	usleep(2200000);// 等待2.2s
+            	$this->getCurl(trim($item['name']));
+            }
+        	
+        	
           	 usleep(2200000);// 等待2.2s
             
         }
@@ -102,6 +110,44 @@ class Domain extends Controller
         if (json_last_error() != JSON_ERROR_NONE) {
             return ['Code' => '100','Msg' => 'JSON 解析出错'];
         }
+        
+        if ($responseArr['State'] == true && $responseArr['Code'] == 102) {
+            //正常的
+            //Db::name('systemDomainApiLog')->insert(['name' => $reqUrl, 'status' => 1, 'descr' => $responseArr['Msg'], 'add_time' => date('Y-m-d H:i:s')]);
+        } elseif (in_array($responseArr['Code'], ['103', '001', '002', '003', '100', '9999'])) {
+            Db::name('systemDomainApiLog')->insert(['name' => $reqUrl, 'descr' => $responseArr['Msg'], 'add_time' => date('Y-m-d H:i:s')]);
+        } elseif ($responseArr['State'] == true && $responseArr['Code'] == 101) {
+            //被屏蔽
+            $result = Db::name('SystemDomain')->where(['name' => $reqUrl])->update(['status' => 0, 'edit_time' => date('Y-m-d H:i:s')]);
+            try {
+                if ($result > 0) {
+                    Db::name('systemDomainUpdateLog')->insert(['name' => $reqUrl, 'status' => 0, 'descr' => '更新成功', 'add_time' => date('Y-m-d H:i:s')]);
+                    Db::name('systemDomainApiLog')->insert(['name' => $reqUrl, 'status' => 0, 'descr' => $responseArr['Msg'], 'add_time' => date('Y-m-d H:i:s')]);
+                    Db::name('systemDisabledDomain')->insert(['domain' => $reqUrl, 'create_at' => date('Y-m-d H:i:s')]);
+                } else {
+                    Db::name('systemDomainUpdateLog')->insert(['name' => $reqUrl, 'status' => 0, 'descr' => '更新失败', 'add_time' => date('Y-m-d H:i:s')]);
+                }
+                if ($item['type'] == 1) {
+                    $bind_domains = Db::name('SystemApp')
+                        ->field('id,bind_domain_ld')
+                        ->where(['bind_domain_qun' => $reqUrl, 'bind_domain_quan' => $reqUrl, 'status' => 1, 'is_deleted' => 0])
+                        ->order('sort asc,id desc')
+                        ->select();
+                    if (!empty($bind_domains)) {
+                        foreach ($bind_domains as $bind) {
+                            Db::name('SystemDomain')->where(['name' => $bind['bind_domain_ld'], 'is_deleted' => 0])->update(['status' => 0, 'edit_time' => date('Y-m-d H:i:s')]);
+                        }
+                    }
+                    Db::name('SystemApp')->where(['bind_domain_qun' => $reqUrl, 'bind_domain_quan' => $reqUrl, 'is_deleted' => 0])->update(['status' => 0, 'edit_time' => date('Y-m-d H:i:s')]);
+                } elseif ($item['type'] == 2) {
+                    Db::name('SystemApp')->where(['bind_domain_ld' => $reqUrl, 'is_deleted' => 0])->update(['status' => 0, 'edit_time' => date('Y-m-d H:i:s')]);
+                }
+            } catch (\Exception $e) {
+                $msg = ['msg' => $e->getMessage()];
+                Db::name('systemDomainUpdateLog')->insert(['name' => $reqUrl, 'descr' => json_encode($msg), 'add_time' => date('Y-m-d H:i:s')]);
+            }
+        }
+        
       	
       	return is_array($responseArr) && !empty($responseArr) ? $responseArr : ['Code' => '9999','Msg' => 'api error'];
     }

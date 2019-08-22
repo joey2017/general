@@ -1,4 +1,4 @@
-<?php /*a:2:{s:62:"D:\phpStudy\WWW\general\application\admin\view\video\form.html";i:1551865641;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
+<?php /*a:2:{s:62:"D:\phpStudy\WWW\general\application\admin\view\video\form.html";i:1563350992;s:66:"D:\phpStudy\WWW\general\application\admin\view\public\content.html";i:1550126539;}*/ ?>
 <!-- 右则内容区域 开始 -->
 
 <div class="layui-card">
@@ -31,19 +31,19 @@
         </div>
     </div>
 
-    <div class="form-group">
-        <label class="col-sm-2 control-label">视频播放最小阅读量</label>
-        <div class='col-sm-8'>
-            <input autofocus name="read_min" value='<?php echo htmlentities((isset($vo['read_min']) && ($vo['read_min'] !== '')?$vo['read_min']:"")); ?>' required="required" title="请输入最小阅读量" placeholder="请输入最小阅读量" class="layui-input">
-        </div>
-    </div>
+    <!--<div class="form-group">-->
+        <!--<label class="col-sm-2 control-label">视频播放最小阅读量</label>-->
+        <!--<div class='col-sm-8'>-->
+            <!--<input autofocus name="read_min" value='<?php echo htmlentities((isset($vo['read_min']) && ($vo['read_min'] !== '')?$vo['read_min']:"")); ?>' required="required" title="请输入最小阅读量" placeholder="请输入最小阅读量" class="layui-input">-->
+        <!--</div>-->
+    <!--</div>-->
 
-    <div class="form-group">
-        <label class="col-sm-2 control-label">视频播放最大阅读量</label>
-        <div class='col-sm-8'>
-            <input autofocus name="read_max" value='<?php echo htmlentities((isset($vo['read_max']) && ($vo['read_max'] !== '')?$vo['read_max']:"")); ?>' required="required" title="请输入最大阅读量" placeholder="请输入最大阅读量" class="layui-input">
-        </div>
-    </div>
+    <!--<div class="form-group">-->
+        <!--<label class="col-sm-2 control-label">视频播放最大阅读量</label>-->
+        <!--<div class='col-sm-8'>-->
+            <!--<input autofocus name="read_max" value='<?php echo htmlentities((isset($vo['read_max']) && ($vo['read_max'] !== '')?$vo['read_max']:"")); ?>' required="required" title="请输入最大阅读量" placeholder="请输入最大阅读量" class="layui-input">-->
+        <!--</div>-->
+    <!--</div>-->
 
     <div class="form-group">
         <label class="col-sm-2 control-label">视频封面图片链接</label>
@@ -53,11 +53,18 @@
     </div>
 
     <div class="form-group">
-        <label class="col-sm-2 control-label">视频点赞数</label>
+        <label class="col-sm-2 control-label">视频分享描述</label>
         <div class='col-sm-8'>
-            <input autofocus name="stars" value='<?php echo htmlentities((isset($vo['stars']) && ($vo['stars'] !== '')?$vo['stars']:"")); ?>' required="required" title="请输入点赞数" placeholder="请输入点赞数" class="layui-input">
+            <input autofocus name="desc" value='<?php echo htmlentities((isset($vo['desc']) && ($vo['desc'] !== '')?$vo['desc']:"")); ?>' required="required" title="请输入视频分享描述" placeholder="请输入视频分享描述" class="layui-input">
         </div>
     </div>
+
+    <!--<div class="form-group">-->
+        <!--<label class="col-sm-2 control-label">视频点赞数</label>-->
+        <!--<div class='col-sm-8'>-->
+            <!--<input autofocus name="stars" value='<?php echo htmlentities((isset($vo['stars']) && ($vo['stars'] !== '')?$vo['stars']:"")); ?>' required="required" title="请输入点赞数" placeholder="请输入点赞数" class="layui-input">-->
+        <!--</div>-->
+    <!--</div>-->
 
     <div class="form-group">
         <label class="col-sm-2 control-label">排序</label>

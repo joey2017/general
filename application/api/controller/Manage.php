@@ -243,7 +243,7 @@ class Manage extends Controller
             $post =  $this->request->post();
           	$post['create_time'] = date('Y-m-d H:i:s');
           	$post['ip']       = $this->getIP();
-          	if (Db::name('SystemShareLog')->strict(false)->insert($post)) {
+          	if (Db::name('SystemDomainShareLog')->strict(false)->insert($post)) {
             	return json_encode(['status' => true]);
             }
         } else {

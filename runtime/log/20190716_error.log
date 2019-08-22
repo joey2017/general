@@ -1,0 +1,24 @@
+---------------------------------------------------------------
+[2019-07-16T16:02:42+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?spm=m-1-10-2
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:54]
+---------------------------------------------------------------
+[2019-07-16T16:02:46+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?spm=
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:54]
+---------------------------------------------------------------
+[2019-07-16T16:02:53+08:00] 127.0.0.1 GET dev.admin.com/admin/share/tips.html?spm=m-1-49-66
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:77]
+---------------------------------------------------------------
+[2019-07-16T16:28:55+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?spm=m-1-49-66
+[ error ] [0]语法解析错误: syntax error, unexpected '' data-title="添加分享提�' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-07-16T16:30:04+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?spm=m-1-49-66
+[ error ] [8]未定义数组索引: type[D:\phpStudy\WWW\general\application\admin\controller\Share.php:54]
+---------------------------------------------------------------
+[2019-07-16T16:31:10+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected '' data-title="添加分享提�' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-07-16T16:31:17+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ error ] [0]语法解析错误: syntax error, unexpected '' data-title="添加分享提�' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]
+---------------------------------------------------------------
+[2019-07-16T16:31:46+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=2&spm=m-1-49-51
+[ error ] [0]语法解析错误: syntax error, unexpected '' data-title="添加分享提�' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'[D:\phpStudy\WWW\general\runtime\temp\779ae71474f52e86d4f71dfe6d6e74bb.php:11]

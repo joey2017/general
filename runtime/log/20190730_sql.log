@@ -1,0 +1,1882 @@
+---------------------------------------------------------------
+[2019-07-30T10:09:31+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000855s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.031124s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.023964s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.020751s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000482s ]
+---------------------------------------------------------------
+[2019-07-30T10:09:32+08:00] 127.0.0.1 GET dev.admin.com/admin/video/index.html?spm=m-1-45-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000753s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.028980s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/video/index' LIMIT 1 [ RunTime:0.000744s ]
+---------------------------------------------------------------
+[2019-07-30T10:09:35+08:00] 127.0.0.1 GET dev.admin.com/admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009863s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.037779s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/login/index' LIMIT 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.019645s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[2019-07-30T10:09:37+08:00] 127.0.0.1 POST dev.admin.com/admin/login.html?spm=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000801s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026263s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/login/index' LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.024059s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `username` = 'admin'  AND `is_deleted` = 0 LIMIT 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] UPDATE `system_user`  SET `login_at` = now() , `login_num` = login_num+1  WHERE  `id` = 10000 [ RunTime:0.001564s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.022763s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth_node` [ RunTime:0.022582s ]
+[ sql ] [ SQL ] SELECT `node` FROM `system_auth_node` WHERE  `auth` IN (2) [ RunTime:0.000543s ]
+---------------------------------------------------------------
+[2019-07-30T10:09:38+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.029703s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.020984s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.020788s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth_node` [ RunTime:0.020499s ]
+[ sql ] [ SQL ] SELECT `node` FROM `system_auth_node` WHERE  `auth` IN (2) [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.020229s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.020816s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000499s ]
+---------------------------------------------------------------
+[2019-07-30T10:09:38+08:00] 127.0.0.1 GET dev.admin.com/admin/qrcode/index.html?spm=m-1-43-53
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000823s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022139s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/qrcode/index' LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_qrcode` [ RunTime:0.025222s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_qrcode` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `system_qrcode` WHERE  `is_deleted` = 0 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000664s ]
+---------------------------------------------------------------
+[2019-07-30T10:09:40+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011210s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.029138s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.023770s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:03+08:00] 127.0.0.1 GET dev.admin.com/admin/share/edit.html?id=1&type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000885s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.029698s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/edit' LIMIT 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.023982s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:06+08:00] 127.0.0.1 POST dev.admin.com/admin/share/edit.html?id=1&type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000770s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.019850s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] UPDATE `system_tips`  SET `type` = 1 , `name` = 'app1' , `desc` = '分享成功,请继续分享到<span style=\"font-size: 30px;color: #f5294c\">1</span>个不同的群即可免费观看！' , `sort` = 0 , `id` = 1  WHERE  `id` = 1 [ RunTime:0.001342s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:09+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011705s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.021029s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:14+08:00] 127.0.0.1 GET dev.admin.com/admin/share/edit.html?id=2&type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000728s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.028155s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000605s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:17+08:00] 127.0.0.1 POST dev.admin.com/admin/share/edit.html?id=2&type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010361s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.019948s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] UPDATE `system_tips`  SET `type` = 1 , `name` = 'app2' , `desc` = '分享成功,请继续分享到<span style=\"font-size: 30px;color: #f5294c\">1</span>个不同的群即可免费观看！' , `sort` = 1 , `id` = 2  WHERE  `id` = 2 [ RunTime:0.001382s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:20+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009917s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.032153s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.020555s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:28+08:00] 127.0.0.1 GET dev.admin.com/admin/share/edit.html?id=3&type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001165s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.021050s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:30+08:00] 127.0.0.1 POST dev.admin.com/admin/share/edit.html?id=3&type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009613s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.034132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.020817s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] UPDATE `system_tips`  SET `type` = 1 , `name` = 'app3' , `desc` = '分享失败,请分享到人数大于<span style=\"font-size: 30px;color: #f5294c\">50</span>人的微信群，即可免费观看！' , `sort` = 2 , `id` = 3  WHERE  `id` = 3 [ RunTime:0.001403s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:34+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021654s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.019660s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:38+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9988438398679609
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000724s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022008s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.023265s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000623s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:40+08:00] 127.0.0.1 GET dev.admin.com/admin/share/edit.html?id=4&type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000735s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023158s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/edit' LIMIT 1 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.020866s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:43+08:00] 127.0.0.1 POST dev.admin.com/admin/share/edit.html?id=4&type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000804s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.020375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] UPDATE `system_tips`  SET `type` = 1 , `name` = 'app4' , `desc` = '<span style=\"font-size: 24px;color: #f5294c\">分享成功！</span><br>仅剩最后一步！请将视频分享到<br><span style=\"font-size: 30px;color: #f5294c\">朋友圈</span>即可免费观看！' , `sort` = 3 , `id` = 4  WHERE  `id` = 4 [ RunTime:0.001409s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:46+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000847s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022047s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.031339s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000693s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:52+08:00] 127.0.0.1 GET dev.admin.com/admin/share/edit.html?id=5&type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009665s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.022571s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000564s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:54+08:00] 127.0.0.1 POST dev.admin.com/admin/share/edit.html?id=5&type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000903s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.036141s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.023502s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] UPDATE `system_tips`  SET `type` = 1 , `name` = 'app5' , `desc` = '<span style=\"font-size: 24px;color: #f5294c\">分享成功！</span><br>仅剩最后一步！请将视频分享到<br><span style=\"font-size: 30px;color: #f5294c\">朋友圈</span>即可免费观看！' , `sort` = 4 , `id` = 5  WHERE  `id` = 5 [ RunTime:0.001242s ]
+---------------------------------------------------------------
+[2019-07-30T10:10:58+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000661s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024408s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.026698s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000558s ]
+---------------------------------------------------------------
+[2019-07-30T10:11:39+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9487992666530516
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000769s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017937s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020053s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000526s ]
+---------------------------------------------------------------
+[2019-07-30T10:11:42+08:00] 127.0.0.1 GET dev.admin.com/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000726s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022069s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/index/index' LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.020388s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.020181s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (2,4)  AND `status` = 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth_node` [ RunTime:0.019658s ]
+[ sql ] [ SQL ] SELECT `node` FROM `system_auth_node` WHERE  `auth` IN (2) [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.019637s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT `node`,`is_menu`,`is_auth`,`is_login`,`title` FROM `system_node` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.020055s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000434s ]
+---------------------------------------------------------------
+[2019-07-30T10:11:43+08:00] 127.0.0.1 GET dev.admin.com/admin/share/index.html?type=1&spm=m-1-49-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010073s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023976s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/share/index' LIMIT 1 [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_tips` [ RunTime:0.021921s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 LIMIT 1 [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `system_tips` WHERE  `is_deleted` = 0  AND `type` = 1 ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000582s ]
+---------------------------------------------------------------
+[2019-07-30T10:12:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4102991654771182
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000757s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021571s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020213s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000455s ]
+---------------------------------------------------------------
+[2019-07-30T10:13:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.17033248263960066
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011294s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.030835s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020381s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-30T10:14:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9584260842693573
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000734s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.032414s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021284s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000546s ]
+---------------------------------------------------------------
+[2019-07-30T10:15:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9022729658658093
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000910s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022082s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.027236s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[2019-07-30T10:16:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5501921919519204
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000847s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025734s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.023280s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000570s ]
+---------------------------------------------------------------
+[2019-07-30T10:17:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.22326783232364877
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010236s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024715s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020048s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[2019-07-30T10:18:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.025885784680838464
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000802s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024471s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.035215s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000453s ]
+---------------------------------------------------------------
+[2019-07-30T10:19:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7743678063644661
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010043s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023713s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021120s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000505s ]
+---------------------------------------------------------------
+[2019-07-30T10:20:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4493078829713364
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011033s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025412s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019663s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[2019-07-30T10:21:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.43796882273411764
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000857s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.037653s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020808s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000537s ]
+---------------------------------------------------------------
+[2019-07-30T10:22:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7102255480317017
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000863s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.031655s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019943s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000468s ]
+---------------------------------------------------------------
+[2019-07-30T10:23:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8087781717833467
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009799s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022624s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019615s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[2019-07-30T10:24:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6880467883286889
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000995s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026841s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020546s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000476s ]
+---------------------------------------------------------------
+[2019-07-30T10:25:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.555076353816786
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009962s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020872s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020011s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000498s ]
+---------------------------------------------------------------
+[2019-07-30T10:26:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.2259312905008759
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000724s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021745s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020761s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000669s ]
+---------------------------------------------------------------
+[2019-07-30T10:27:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3543856057631405
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000733s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022929s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021196s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000622s ]
+---------------------------------------------------------------
+[2019-07-30T10:28:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6357154556638984
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000901s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019859s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021439s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000537s ]
+---------------------------------------------------------------
+[2019-07-30T10:29:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3971970815509087
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009877s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019947s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020144s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000436s ]
+---------------------------------------------------------------
+[2019-07-30T10:30:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3860272940988123
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009713s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.050187s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019206s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[2019-07-30T10:31:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.25261751182474756
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000820s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023686s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021430s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000516s ]
+---------------------------------------------------------------
+[2019-07-30T10:32:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4393984461300866
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000777s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024673s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022197s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000569s ]
+---------------------------------------------------------------
+[2019-07-30T10:33:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7140073208699342
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000737s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016070s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.016508s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[2019-07-30T10:34:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.20822894013573445
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000833s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.035399s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.026035s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.002111s ]
+---------------------------------------------------------------
+[2019-07-30T10:35:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3481384341585749
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010899s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015189s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.015859s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000586s ]
+---------------------------------------------------------------
+[2019-07-30T10:36:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5955874864770969
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009945s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021402s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020739s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000558s ]
+---------------------------------------------------------------
+[2019-07-30T10:37:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5276812643015507
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009879s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022856s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021246s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[2019-07-30T10:38:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.15479567312066322
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000855s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023137s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019636s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000465s ]
+---------------------------------------------------------------
+[2019-07-30T10:39:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.43219790517920265
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010619s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019662s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019504s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[2019-07-30T10:40:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9447201159150325
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000751s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020687s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.026622s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000531s ]
+---------------------------------------------------------------
+[2019-07-30T10:41:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5300654288434525
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009802s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016295s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.035997s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000558s ]
+---------------------------------------------------------------
+[2019-07-30T10:42:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6225864780328401
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000881s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.029935s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.017922s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[2019-07-30T10:43:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.17616572500756256
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000928s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021069s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021269s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000482s ]
+---------------------------------------------------------------
+[2019-07-30T10:44:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.128785440001008
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009975s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021219s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022357s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000577s ]
+---------------------------------------------------------------
+[2019-07-30T10:45:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.45798211957925083
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010207s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.029103s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021713s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000554s ]
+---------------------------------------------------------------
+[2019-07-30T10:46:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8799888736113832
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009763s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023189s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020572s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000434s ]
+---------------------------------------------------------------
+[2019-07-30T10:47:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.49148546609117916
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020241s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.017169s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[2019-07-30T10:48:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.875088511301414
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000793s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020852s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020138s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000485s ]
+---------------------------------------------------------------
+[2019-07-30T10:49:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5444393263680909
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000786s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015284s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.015400s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[2019-07-30T10:50:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6325316180155967
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000878s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025195s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020271s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000457s ]
+---------------------------------------------------------------
+[2019-07-30T10:51:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3938668139045822
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010382s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016407s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.026949s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[2019-07-30T10:52:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5527489523982829
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000831s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033328s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001107s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019380s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000545s ]
+---------------------------------------------------------------
+[2019-07-30T10:53:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.823908356832113
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000883s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023216s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019982s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[2019-07-30T10:54:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.48918093848900757
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000829s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021292s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020366s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000499s ]
+---------------------------------------------------------------
+[2019-07-30T10:55:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.2633361726638419
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009862s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020508s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021221s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000454s ]
+---------------------------------------------------------------
+[2019-07-30T10:56:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.619532779227753
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011045s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.051126s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020549s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[2019-07-30T10:57:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8594640502523436
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000790s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021635s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019644s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[2019-07-30T10:58:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5171223613404385
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000829s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026245s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022095s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000466s ]
+---------------------------------------------------------------
+[2019-07-30T10:59:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9200616720753698
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010981s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033231s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020459s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000540s ]
+---------------------------------------------------------------
+[2019-07-30T11:00:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.40003991569798236
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001066s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020905s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020538s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[2019-07-30T11:01:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.2894767261956166
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000812s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020409s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.028370s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[2019-07-30T11:02:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8150870785388824
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011398s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025451s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.024418s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000571s ]
+---------------------------------------------------------------
+[2019-07-30T11:03:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8976120350326218
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001204s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.037102s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020563s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[2019-07-30T11:04:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5352869911164855
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000829s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021168s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020224s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[2019-07-30T11:05:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5315590970367341
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000846s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033441s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.015874s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000449s ]
+---------------------------------------------------------------
+[2019-07-30T11:06:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7970653535169951
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001569s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.048659s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020901s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[2019-07-30T11:07:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7440743420224691
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000808s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.037126s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019295s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000428s ]
+---------------------------------------------------------------
+[2019-07-30T11:08:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.932302071183118
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000997s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025023s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020171s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[2019-07-30T11:09:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7123924375329076
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009859s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.028582s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.032411s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000408s ]
+---------------------------------------------------------------
+[2019-07-30T11:10:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.47271527441616623
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.032937s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022177s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[2019-07-30T11:11:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.20978033305580213
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010619s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022412s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019928s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[2019-07-30T11:12:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6295523557883358
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000705s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.027165s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020882s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[2019-07-30T11:13:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.011686514313335117
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000714s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022477s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022017s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[2019-07-30T11:14:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.14878934889732465
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000809s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.032006s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.030037s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000462s ]
+---------------------------------------------------------------
+[2019-07-30T11:15:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6686789120418046
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000748s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020550s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021654s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000448s ]
+---------------------------------------------------------------
+[2019-07-30T11:16:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.1052784213452016
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000731s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026861s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020510s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000509s ]
+---------------------------------------------------------------
+[2019-07-30T11:17:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.40026817827797667
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000824s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024469s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020534s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000547s ]
+---------------------------------------------------------------
+[2019-07-30T11:18:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6316358881133695
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000739s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024119s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020775s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000498s ]
+---------------------------------------------------------------
+[2019-07-30T11:19:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.18412195560793543
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000742s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024271s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020363s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000621s ]
+---------------------------------------------------------------
+[2019-07-30T11:20:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5054076984276832
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000753s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024566s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.026268s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000541s ]
+---------------------------------------------------------------
+[2019-07-30T11:21:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9405503713192362
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010639s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.042441s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.023113s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[2019-07-30T11:22:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9929925871864875
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010156s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023403s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019219s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000555s ]
+---------------------------------------------------------------
+[2019-07-30T11:23:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.35928706314200753
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000786s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021182s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019456s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[2019-07-30T11:24:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.815378124567727
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000798s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021559s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.015603s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000444s ]
+---------------------------------------------------------------
+[2019-07-30T11:25:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5439511537670527
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009894s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033733s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019789s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000453s ]
+---------------------------------------------------------------
+[2019-07-30T11:26:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.08600846583516142
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.031063s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019984s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000455s ]
+---------------------------------------------------------------
+[2019-07-30T11:27:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.31589338816941126
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000832s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019251s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.023613s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[2019-07-30T11:28:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.46406426284747293
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009809s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.038009s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019854s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000520s ]
+---------------------------------------------------------------
+[2019-07-30T11:29:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8291565116105846
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000770s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016718s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021045s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[2019-07-30T11:30:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.05967160211276945
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001244s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020413s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022381s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000513s ]
+---------------------------------------------------------------
+[2019-07-30T11:31:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9202126490824394
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010864s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017409s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020073s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000498s ]
+---------------------------------------------------------------
+[2019-07-30T11:32:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5955846890244882
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000857s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020107s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020084s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[2019-07-30T11:33:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.009146028075403878
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001033s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020286s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019559s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000534s ]
+---------------------------------------------------------------
+[2019-07-30T11:34:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9089960393555707
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010096s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026975s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022194s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000563s ]
+---------------------------------------------------------------
+[2019-07-30T11:35:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7508663138653524
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009934s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020941s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019275s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[2019-07-30T11:36:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9578447182401211
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000863s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021157s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020041s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000468s ]
+---------------------------------------------------------------
+[2019-07-30T11:37:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9959166999796505
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000755s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.031910s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020648s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000589s ]
+---------------------------------------------------------------
+[2019-07-30T11:38:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.006816988112276157
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000865s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.030892s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020169s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[2019-07-30T11:39:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6172572827459453
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000995s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.038572s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020069s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[2019-07-30T11:40:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.22555740457800066
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009950s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021372s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020534s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000526s ]
+---------------------------------------------------------------
+[2019-07-30T11:41:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.43330809909030976
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000984s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.035355s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001129s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.028467s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000554s ]
+---------------------------------------------------------------
+[2019-07-30T11:42:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8461708500070304
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011293s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018660s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019270s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000557s ]
+---------------------------------------------------------------
+[2019-07-30T11:43:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5046617049997189
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011659s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.029107s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.027522s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000706s ]
+---------------------------------------------------------------
+[2019-07-30T11:44:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6620109010664406
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009870s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033635s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020308s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000416s ]
+---------------------------------------------------------------
+[2019-07-30T11:45:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7355493996381786
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000741s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020984s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.016632s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000473s ]
+---------------------------------------------------------------
+[2019-07-30T11:46:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7467784481589856
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000822s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.035421s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022517s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000686s ]
+---------------------------------------------------------------
+[2019-07-30T11:47:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7338605787342698
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000794s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.032447s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019886s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000460s ]
+---------------------------------------------------------------
+[2019-07-30T11:48:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.16223575802516277
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010099s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.027472s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020392s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000489s ]
+---------------------------------------------------------------
+[2019-07-30T11:49:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.0868605991894853
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000828s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021284s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019472s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000552s ]
+---------------------------------------------------------------
+[2019-07-30T11:50:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6708325837089975
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000865s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018873s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019972s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000455s ]
+---------------------------------------------------------------
+[2019-07-30T11:51:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.2674213619651995
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000848s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020730s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020069s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[2019-07-30T11:52:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.07461440416145715
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000730s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024887s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022369s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000491s ]
+---------------------------------------------------------------
+[2019-07-30T11:53:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7101187569317664
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010598s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024614s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020218s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000524s ]
+---------------------------------------------------------------
+[2019-07-30T11:54:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.24551541732569349
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010168s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.030201s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.033867s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[2019-07-30T11:55:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8992088349232834
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000924s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025651s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022936s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[2019-07-30T11:56:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7583574181395503
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000786s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.032442s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020167s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000544s ]
+---------------------------------------------------------------
+[2019-07-30T11:57:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.781278839365392
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010097s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021552s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.028853s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000463s ]
+---------------------------------------------------------------
+[2019-07-30T11:58:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8042351937620769
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000783s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.038840s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020964s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[2019-07-30T11:59:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4391301225576745
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000852s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.035710s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.023436s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000469s ]
+---------------------------------------------------------------
+[2019-07-30T12:00:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.1830025405244029
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000845s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020637s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.018906s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[2019-07-30T12:01:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5400702752844011
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009704s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017335s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.016777s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000568s ]
+---------------------------------------------------------------
+[2019-07-30T12:02:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7011757004572188
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009813s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026990s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.033576s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000472s ]
+---------------------------------------------------------------
+[2019-07-30T12:03:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.13200594113996167
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000824s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.036686s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021239s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000518s ]
+---------------------------------------------------------------
+[2019-07-30T12:04:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9164075221970318
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000665s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025860s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.023192s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+[2019-07-30T12:05:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6154059576107469
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000805s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.027739s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020686s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[2019-07-30T12:06:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.24297157355210697
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010261s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.041926s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019485s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000518s ]
+---------------------------------------------------------------
+[2019-07-30T12:07:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.735244884856114
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010417s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.038421s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021262s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000503s ]
+---------------------------------------------------------------
+[2019-07-30T12:08:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.813375868927829
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010224s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025078s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.017873s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000522s ]
+---------------------------------------------------------------
+[2019-07-30T12:09:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7566660259409441
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.030532s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021024s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000534s ]
+---------------------------------------------------------------
+[2019-07-30T12:10:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.10954869423370228
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011824s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.027830s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019331s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[2019-07-30T12:11:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3235362243951023
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010146s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021074s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001092s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.032931s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000825s ]
+---------------------------------------------------------------
+[2019-07-30T12:12:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.2811538023555784
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010631s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023076s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020633s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000435s ]
+---------------------------------------------------------------
+[2019-07-30T12:13:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5308427302219532
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010575s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.028182s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000515s ]
+---------------------------------------------------------------
+[2019-07-30T12:14:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8216582621765782
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001304s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.045459s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001103s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.032441s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[2019-07-30T12:15:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.1862177225241417
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000901s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020016s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020660s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[2019-07-30T12:16:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7517777967863732
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009953s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016271s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.024916s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000473s ]
+---------------------------------------------------------------
+[2019-07-30T12:17:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8302439727519664
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010050s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.046431s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020888s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000524s ]
+---------------------------------------------------------------
+[2019-07-30T12:18:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6017757127768799
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000768s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021507s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020456s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[2019-07-30T12:19:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.430057326969999
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010725s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015228s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.039547s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000802s ]
+---------------------------------------------------------------
+[2019-07-30T12:20:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8096158938688509
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011629s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.039020s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021322s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[2019-07-30T12:21:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.793160011217142
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000739s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021417s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020195s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000480s ]
+---------------------------------------------------------------
+[2019-07-30T12:22:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.052667979714559054
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009642s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019529s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.025325s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[2019-07-30T12:23:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5249871313913237
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010503s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021724s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020566s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000522s ]
+---------------------------------------------------------------
+[2019-07-30T12:24:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9179039457334139
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010488s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033745s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020572s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[2019-07-30T12:25:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9630491258942229
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000709s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.041476s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.016497s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000420s ]
+---------------------------------------------------------------
+[2019-07-30T12:26:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9772708296655297
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010474s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022267s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021598s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000553s ]
+---------------------------------------------------------------
+[2019-07-30T12:27:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9032208824600421
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010694s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024512s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020729s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[2019-07-30T12:28:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.44750457238244534
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010194s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.030959s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021440s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[2019-07-30T12:29:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6007821618009488
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000818s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.043124s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020260s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000419s ]
+---------------------------------------------------------------
+[2019-07-30T12:30:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.36297568290496085
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.042291s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021826s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[2019-07-30T12:31:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.1951938815754921
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010493s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.039216s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020621s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000434s ]
+---------------------------------------------------------------
+[2019-07-30T12:32:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5217280278957461
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001473s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.049477s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020110s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[2019-07-30T12:33:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4764650825200769
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010174s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.052267s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019785s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[2019-07-30T12:34:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8040688268981742
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000644s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025308s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020104s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000494s ]
+---------------------------------------------------------------
+[2019-07-30T12:35:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.28489708749418785
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009700s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024747s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020522s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000770s ]
+---------------------------------------------------------------
+[2019-07-30T12:36:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7196731851521847
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009759s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021691s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020547s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000503s ]
+---------------------------------------------------------------
+[2019-07-30T12:37:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.24942205056484812
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000793s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.018554s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.018070s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000420s ]
+---------------------------------------------------------------
+[2019-07-30T12:38:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9697652457477153
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000780s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.031072s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020181s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[2019-07-30T12:39:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.22297966412910886
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009829s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.039132s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.041554s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000929s ]
+---------------------------------------------------------------
+[2019-07-30T12:40:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.21430635058480818
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010156s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021109s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020063s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000466s ]
+---------------------------------------------------------------
+[2019-07-30T12:41:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4676139915763786
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000870s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.041468s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020494s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[2019-07-30T12:42:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.13417177050814244
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000862s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.034940s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020511s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[2019-07-30T12:43:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.2927799369773747
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010377s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020352s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020527s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[2019-07-30T12:44:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.013827731426704348
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010622s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022615s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020431s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[2019-07-30T12:45:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7867282033525336
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000897s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033709s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020411s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[2019-07-30T12:46:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.11214945760824846
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.016173s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.029036s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[2019-07-30T12:47:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6431143812107551
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000901s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025979s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019984s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[2019-07-30T12:48:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.04233225563235998
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011297s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.044464s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021203s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000464s ]
+---------------------------------------------------------------
+[2019-07-30T12:49:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8519043272305873
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010132s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021595s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.016101s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000466s ]
+---------------------------------------------------------------
+[2019-07-30T12:50:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.00214407606975775
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000854s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.041689s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020863s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[2019-07-30T12:51:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3260384248238286
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000933s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.040468s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019859s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000473s ]
+---------------------------------------------------------------
+[2019-07-30T12:52:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.07986596577748495
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000678s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023776s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020568s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000545s ]
+---------------------------------------------------------------
+[2019-07-30T12:53:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.807407681697889
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000843s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.039070s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019995s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000517s ]
+---------------------------------------------------------------
+[2019-07-30T12:54:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.48242993711158655
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000734s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026888s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019624s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000450s ]
+---------------------------------------------------------------
+[2019-07-30T12:55:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.12877971947669642
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000868s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020070s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.017206s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000493s ]
+---------------------------------------------------------------
+[2019-07-30T12:56:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5467074888330961
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000865s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.043332s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022719s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000546s ]
+---------------------------------------------------------------
+[2019-07-30T12:57:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5258670065629576
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025467s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.024308s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[2019-07-30T12:58:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4214783192369085
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009807s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022232s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.035909s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000760s ]
+---------------------------------------------------------------
+[2019-07-30T12:59:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6208365501778048
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009845s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.049141s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020376s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000491s ]
+---------------------------------------------------------------
+[2019-07-30T13:00:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.38098580599961185
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024336s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019964s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[2019-07-30T13:01:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3597335384409712
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000793s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.028020s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.025750s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000578s ]
+---------------------------------------------------------------
+[2019-07-30T13:02:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.24079990397553308
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000894s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022418s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020950s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[2019-07-30T13:03:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4747588747333369
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000799s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021607s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020069s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000548s ]
+---------------------------------------------------------------
+[2019-07-30T13:04:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.07499138597333799
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000788s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.036746s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019849s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[2019-07-30T13:05:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8665266891183212
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010214s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024626s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020258s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000542s ]
+---------------------------------------------------------------
+[2019-07-30T13:06:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.0633271778065223
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000888s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.037365s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020873s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000457s ]
+---------------------------------------------------------------
+[2019-07-30T13:07:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5517086092698138
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011451s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.041813s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020357s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000473s ]
+---------------------------------------------------------------
+[2019-07-30T13:08:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7144874538682571
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011129s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.035691s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019962s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000489s ]
+---------------------------------------------------------------
+[2019-07-30T13:09:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3631412271109855
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010991s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.041605s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020456s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000432s ]
+---------------------------------------------------------------
+[2019-07-30T13:10:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.22118470934502543
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000835s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.027753s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020667s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000655s ]
+---------------------------------------------------------------
+[2019-07-30T13:11:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9436060888570272
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000718s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.015884s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.015702s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[2019-07-30T13:12:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8787728743491412
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021799s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020337s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[2019-07-30T13:13:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6957351730612991
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000761s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.032209s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020144s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[2019-07-30T13:14:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8311603694059304
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000737s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019635s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.017183s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000535s ]
+---------------------------------------------------------------
+[2019-07-30T13:15:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8777210146349581
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010306s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023517s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019760s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000452s ]
+---------------------------------------------------------------
+[2019-07-30T13:16:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9548667371391382
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010434s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021348s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019836s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000526s ]
+---------------------------------------------------------------
+[2019-07-30T13:17:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8341858095033055
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010533s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022936s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020256s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000538s ]
+---------------------------------------------------------------
+[2019-07-30T13:18:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.10868242111901849
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010565s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023483s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020048s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[2019-07-30T13:19:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.41988332808740525
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000927s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.035435s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019386s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000543s ]
+---------------------------------------------------------------
+[2019-07-30T13:20:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6746524405204524
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010893s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.027842s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021943s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000488s ]
+---------------------------------------------------------------
+[2019-07-30T13:21:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.21874963501777844
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000733s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.036456s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.030200s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000444s ]
+---------------------------------------------------------------
+[2019-07-30T13:22:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8498275590973026
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010354s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021129s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022442s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-30T13:23:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.282928101509649
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000733s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.029401s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021453s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[2019-07-30T13:24:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3717442086322298
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000721s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020970s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020498s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[2019-07-30T13:25:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3009432974755286
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010462s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.030474s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020994s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000513s ]
+---------------------------------------------------------------
+[2019-07-30T13:26:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4277610181043887
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010510s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024854s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022885s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000524s ]
+---------------------------------------------------------------
+[2019-07-30T13:27:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6650890758182229
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009909s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033023s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020332s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-30T13:28:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8223421672730498
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000830s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019623s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020297s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[2019-07-30T13:29:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.10770301675816296
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000768s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026028s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020115s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000438s ]
+---------------------------------------------------------------
+[2019-07-30T13:30:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8114826710267977
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000880s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023316s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021718s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000668s ]
+---------------------------------------------------------------
+[2019-07-30T13:31:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9587063944247423
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000835s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020070s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020086s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000436s ]
+---------------------------------------------------------------
+[2019-07-30T13:32:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.04013039943945862
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000700s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.036941s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020659s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000546s ]
+---------------------------------------------------------------
+[2019-07-30T13:33:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6707419551056908
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017780s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020858s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000492s ]
+---------------------------------------------------------------
+[2019-07-30T13:34:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.16930264730667255
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000774s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020790s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020127s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[2019-07-30T13:35:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.15153153527410645
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000757s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.035077s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020172s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000440s ]
+---------------------------------------------------------------
+[2019-07-30T13:36:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.10720814341828122
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000799s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025612s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020534s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[2019-07-30T13:37:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.2768165447748123
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000841s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022694s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020607s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000510s ]
+---------------------------------------------------------------
+[2019-07-30T13:38:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.11386552478308398
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011363s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021339s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019805s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000485s ]
+---------------------------------------------------------------
+[2019-07-30T13:39:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4954338246895258
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011451s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026688s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020505s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[2019-07-30T13:40:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9083951169126168
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010415s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.027462s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.037747s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[2019-07-30T13:41:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.3027862142107265
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000667s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024366s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020846s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000548s ]
+---------------------------------------------------------------
+[2019-07-30T13:42:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7220395942426026
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010529s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.025669s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020408s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[2019-07-30T13:43:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8967698890596634
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010420s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.036745s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020552s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000537s ]
+---------------------------------------------------------------
+[2019-07-30T13:44:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8421203544425961
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009676s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033317s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001099s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.040866s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000951s ]
+---------------------------------------------------------------
+[2019-07-30T13:45:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.11116363780937166
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000737s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024972s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019972s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[2019-07-30T13:46:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.2253913815717492
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000787s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026543s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020122s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000543s ]
+---------------------------------------------------------------
+[2019-07-30T13:47:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.34269064035566776
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000796s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.031386s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020571s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000466s ]
+---------------------------------------------------------------
+[2019-07-30T13:48:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.07401436426699282
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010888s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021213s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020194s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000466s ]
+---------------------------------------------------------------
+[2019-07-30T13:49:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.6736079348370041
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000837s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.024615s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019982s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000419s ]
+---------------------------------------------------------------
+[2019-07-30T13:50:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.402165275283735
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000697s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.033961s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020175s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[2019-07-30T13:51:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.991822983803369
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011534s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.036891s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020009s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[2019-07-30T13:52:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.816489731007813
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.026085s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020330s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000534s ]
+---------------------------------------------------------------
+[2019-07-30T13:53:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.1786605125848888
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000736s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.029874s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020826s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[2019-07-30T13:54:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.7202447973400175
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010497s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.023616s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020483s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[2019-07-30T13:55:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8128795948685958
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010159s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.031378s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.041143s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.001232s ]
+---------------------------------------------------------------
+[2019-07-30T13:56:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.45438481688997134
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010563s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.032039s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001040s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.039189s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000884s ]
+---------------------------------------------------------------
+[2019-07-30T13:57:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8768090327442621
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000951s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021526s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.022387s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[2019-07-30T13:58:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.41493213088808556
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010461s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.028575s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.001306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021896s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[2019-07-30T13:59:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.9727401078185427
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000944s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022087s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020301s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000594s ]
+---------------------------------------------------------------
+[2019-07-30T14:00:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.5218645439692904
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000657s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020110s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021325s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000482s ]
+---------------------------------------------------------------
+[2019-07-30T14:01:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.11537115326311476
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000781s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.021574s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020363s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000470s ]
+---------------------------------------------------------------
+[2019-07-30T14:02:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.976368592068142
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000772s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.022049s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021610s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000638s ]
+---------------------------------------------------------------
+[2019-07-30T14:03:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.14555558619201392
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010034s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020424s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.015229s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000463s ]
+---------------------------------------------------------------
+[2019-07-30T14:04:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.506432576609922
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000771s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.020169s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[2019-07-30T14:05:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.4053641274278086
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000756s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.042532s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021584s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[2019-07-30T14:06:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8965557831774906
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000823s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.019682s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.021848s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000457s ]
+---------------------------------------------------------------
+[2019-07-30T14:07:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.36532996584603783
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001034s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017693s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019938s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[2019-07-30T14:08:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.007025924421688812
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010596s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.017922s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.019751s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000431s ]
+---------------------------------------------------------------
+[2019-07-30T14:09:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.8092187137279707
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010368s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.050562s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.018651s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000485s ]
+---------------------------------------------------------------
+[2019-07-30T14:10:43+08:00] 127.0.0.1 GET dev.admin.com/admin/domain/getnotice.html?t=0.013695931712295328
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011296s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v3;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_node` [ RunTime:0.037490s ]
+[ sql ] [ SQL ] SELECT * FROM `system_node` WHERE  `node` = 'admin/domain/getnotice' LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_disabled_domain` [ RunTime:0.020019s ]
+[ sql ] [ SQL ] SELECT * FROM `system_disabled_domain` WHERE  `status_notice` = 0 [ RunTime:0.000494s ]

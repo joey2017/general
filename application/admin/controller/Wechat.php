@@ -55,8 +55,8 @@ class Wechat extends BasicAdmin
             foreach ($this->request->post() as $key => $vo) {
                 sysconf($key, $vo);
             }
-            //LogService::write('参数管理', '参数配置成功');
-            $this->success('参数配置成功！', '');
+            LogService::write('公众号管理', '公众号参数配置成功');
+            $this->success('公众号参数配置成功！', '');
         }
     }
 
@@ -73,21 +73,23 @@ class Wechat extends BasicAdmin
     {
         $this->title = '公众号列表';
         $get = $this->request->get();
-        $db = Db::name($this->table)->alias('w')->field('w.*,s.ip')->where(['w.is_deleted' => '0','d.is_deleted' => 0])->leftJoin('system_domain d','d.name=w.bind_domain_ld and d.type=2')->leftJoin('system_server s','s.id=d.server_id');
+        //$db = Db::name($this->table)->where(['is_deleted' => '0']);
+      	$db = Db::name($this->table)->alias('w')->field('w.*,s.ip')->where(['w.is_deleted' => '0','d.is_deleted' => 0])->leftJoin('system_domain d','d.name=w.bind_domain_ld and d.type=2')->leftJoin('system_server s','s.id=d.server_id');
         if (isset($get['server_id']) && $get['server_id'] !== '') {
             $db->where('d.server_id', $get['server_id']);
         }
-        if (isset($get['name']) && $get['name'] !== '') {
-            $db->whereLike('name', "%{$get['name']}%");
+      
+      	if (isset($get['name']) && $get['name'] !== '') {
+            $db->whereLike('w.name', "%{$get['name']}%");
         }
-        if (isset($get['bind_domain_ld']) && $get['bind_domain_ld'] !== '') {
-            $db->whereLike('bind_domain_ld', "%{$get['bind_domain_ld']}%");
+      	if (isset($get['bind_domain_ld']) && $get['bind_domain_ld'] !== '') {
+            $db->whereLike('w.bind_domain_ld', "%{$get['bind_domain_ld']}%");
         }
         if (isset($get['create_at']) && $get['create_at'] !== '') {
             list($start, $end) = explode(' - ', $get['create_at']);
-            $db->whereBetween('create_at', ["{$start} 00:00:00", "{$end} 23:59:59"]);
+            $db->whereBetween('w.create_at', ["{$start} 00:00:00", "{$end} 23:59:59"]);
         }
-        return parent::_list($db->order('sort asc,id desc'));
+        return parent::_list($db->order('w.sort asc,w.id desc'));
     }
 
     /**
@@ -187,5 +189,4 @@ class Wechat extends BasicAdmin
         };
 
     }
-
 }
