@@ -51,8 +51,8 @@ class Server extends BasicAdmin
     public function index()
     {
         $this->title = '服务器列表';
-        $get         = $this->request->get();
-        $db          = Db::name($this->table)->where(['is_deleted' => '0']);
+        $get         = $this->request->get('', null, 'trim');
+        $db = Db::name($this->table)->where(['is_deleted' => '0']);
         if (isset($get['name']) && $get['name'] !== '') {
             $db->whereLike('name', "%{$get['name']}%");
         }
@@ -161,14 +161,14 @@ class Server extends BasicAdmin
                 ->alias('d')
                 ->field('d.id,d.name,s.ip,s.name as sname')
                 ->where(['d.is_deleted' => '0', 'd.status' => '1', 'd.type' => '2'])->where('d.server_id', '<>', $data['id'])
-                ->join('system_server s','s.id=d.server_id','LEFT')
+                ->join('system_server s', 's.id=d.server_id', 'LEFT')
                 ->order('d.sort asc,d.id desc')
                 ->select();
             $html = '<select name="dl_domain" style="width:80%;margin: 20px auto 0px auto;" class="form-control">' .
-                    '<option data-domain="" value="">--请选择--</option>';
+                '<option data-domain="" value="">--请选择--</option>';
             if (!empty($list)) {
                 foreach ($list as $item) {
-                    $html .= '<option data-domain="'.$item['name'].'" value="' . $item['id'] . '">' . $item['name'] . '('.$item['ip'].')'.'</option>';
+                    $html .= '<option data-domain="' . $item['name'] . '" value="' . $item['id'] . '">' . $item['name'] . '(' . $item['ip'] . ')' . '</option>';
                 }
 
             }

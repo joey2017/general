@@ -60,8 +60,6 @@ class Video extends BasicAdmin
 //    }
 
 
-
-
     /**
      * 视频列表
      * @return array|string
@@ -73,10 +71,13 @@ class Video extends BasicAdmin
     public function index()
     {
         $this->title = '视频设置列表';
-        $get         = $this->request->get();
-        $db          = Db::name($this->table)->where(['is_deleted' => '0']);
+        $get         = $this->request->get('', null, 'trim');
+        $db = Db::name($this->table)->where(['is_deleted' => '0']);
         if (isset($get['title']) && $get['title'] !== '') {
             $db->whereLike('title', "%{$get['title']}%");
+        }
+        if (isset($get['status']) && $get['status'] !== '') {
+            $db->where('status', "{$get['status']}");
         }
         if (isset($get['create_at']) && $get['create_at'] !== '') {
             list($start, $end) = explode(' - ', $get['create_at']);

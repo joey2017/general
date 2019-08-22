@@ -44,7 +44,7 @@ class User extends BasicAdmin
     public function index()
     {
         $this->title = '系统用户管理';
-        list($get, $db) = [$this->request->get(), Db::name($this->table)];
+        list($get, $db) = [$this->request->get('',null,'trim'), Db::name($this->table)];
         foreach (['username', 'phone', 'mail'] as $key) {
             (isset($get[$key]) && $get[$key] !== '') && $db->whereLike($key, "%{$get[$key]}%");
         }

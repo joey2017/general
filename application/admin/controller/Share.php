@@ -49,11 +49,14 @@ class Share extends BasicAdmin
      */
     public function index()
     {
-        $get         = $this->request->get();
+        $get = $this->request->get('', null, 'trim');
         $this->title = $get['type'] == 1 ? '视频提示语列表' : '红包提示语列表';
         $db          = Db::name($this->table)->where(['is_deleted' => '0', 'type' => $get['type']]);
         if (isset($get['name']) && $get['name'] !== '') {
             $db->whereLike('name', "%{$get['name']}%");
+        }
+        if (isset($get['status']) && $get['status'] !== '') {
+            $db->where('status', "{$get['status']}");
         }
         if (isset($get['create_at']) && $get['create_at'] !== '') {
             list($start, $end) = explode(' - ', $get['create_at']);

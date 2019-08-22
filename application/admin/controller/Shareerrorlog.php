@@ -48,7 +48,7 @@ class Shareerrorlog extends BasicAdmin
     public function index()
     {
         // 日志数据库对象
-        list($this->title, $get) = ['分享错误日志', $this->request->get()];
+        list($this->title, $get) = ['分享错误日志', $this->request->get('',null,'trim')];
         $db = Db::name($this->table)->order('id desc');
         (isset($get['name']) && $get['name'] !== '') && $db->whereLike('name', "%{$get['name']}%");
         if (isset($get['create_at']) && $get['create_at'] !== '') {

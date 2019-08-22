@@ -51,7 +51,7 @@ class Domain extends BasicAdmin
     public function index()
     {
         $this->title = '域名列表';
-        $get         = $this->request->get();
+        $get         = $this->request->get('',null,'trim');
         $db          = Db::name($this->table)->alias('d')->where(['d.is_deleted' => '0']);
         if (isset($get['name']) && $get['name'] !== '') {
             $db->whereLike('d.name', "%{$get['name']}%");

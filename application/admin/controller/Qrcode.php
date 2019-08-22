@@ -44,7 +44,7 @@ class Qrcode extends BasicAdmin
     public function index()
     {
         $this->title = '二维码设置';
-        $get = $this->request->get();
+        $get = $this->request->get('',null,'trim');
         $db = Db::name($this->table)->where(['is_deleted' => '0']);
         if (isset($get['title']) && $get['title'] !== '') {
             $db->whereLike('title', "%{$get['title']}%");

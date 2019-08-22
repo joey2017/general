@@ -23,7 +23,16 @@
             <input name="title" value="{$Think.get.title}" placeholder="请输入视频标题" class="layui-input">
         </div>
     </div>
-
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-inline">
+            <select class="form-control" name="status">
+                <option value="">-请选择-</option>
+                <option value="0" {if $Think.get.status eq 0 and $Think.get.status neq ''}selected{/if}>已禁用</option>
+                <option value="1" {if $Think.get.status eq 1}selected{/if}>使用中</option>
+            </select>
+        </div>
+    </div>
     <div class="layui-form-item layui-inline">
         <label class="layui-form-label">添加时间</label>
         <div class="layui-input-inline">

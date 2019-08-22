@@ -71,7 +71,7 @@ class Advertisement extends BasicAdmin
     public function position()
     {
         $this->title = '广告位设置';
-        $get = $this->request->get();
+        $get = $this->request->get('',null,'trim');
         $db = Db::name($this->table)->where(['is_deleted' => '0']);
         if (isset($get['title']) && $get['title'] !== '') {
             $db->whereLike('title', "%{$get['title']}%");

@@ -24,18 +24,32 @@
             </select>
         </div>
     </div>
-
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-inline">
+            <select class="form-control" name="status">
+                <option value="">-请选择-</option>
+                <option value="0" {if $Think.get.status eq 0 and $Think.get.status neq ''}selected{/if}>已禁用</option>
+                <option value="1" {if $Think.get.status eq 1}selected{/if}>使用中</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">入口域名</label>
+        <div class="layui-input-inline">
+            <input name="bind_domain_qun" value="{$Think.get.bind_domain_qun}" placeholder="请输入入口域名" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">落地域名</label>
+        <div class="layui-input-inline">
+            <input name="bind_domain_ld" value="{$Think.get.bind_domain_ld}" placeholder="请输入落地域名" class="layui-input">
+        </div>
+    </div>
     <div class="layui-form-item layui-inline">
         <label class="layui-form-label">公众号名称</label>
         <div class="layui-input-inline">
             <input name="name" value="{$Think.get.name}" placeholder="请输入公众号名称" class="layui-input">
-        </div>
-    </div>
-  
-  	<div class="layui-form-item layui-inline">
-        <label class="layui-form-label">落地域名</label>
-        <div class="layui-input-inline">
-            <input name="bind_domain_ld" value="{$Think.get.bind_domain_ld}" placeholder="请输入落地域名" class="layui-input">
         </div>
     </div>
 
